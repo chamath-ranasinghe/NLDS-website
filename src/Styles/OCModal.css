@@ -1,0 +1,82 @@
+.oc-modal-container {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    position: relative;
+    border-radius: 15px; /* Rounds the corners of the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a drop shadow */
+    overflow: hidden; /* Ensures rounded corners are visible */
+    background: #fff; /* Default background color for the modal */
+    cursor: pointer; /* Indicates interactivity */
+  }
+  
+  /* For web devices: Hover effect */
+  @media (min-width: 768px) {
+    .oc-modal-container:hover .oc-modal {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  .oc-modal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .oc-modal-front, .oc-modal-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .oc-modal-front {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: #fff;
+  }
+  
+  .oc-modal-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  /* For mobile devices: Touch flip */
+  @media (max-width: 767px) {
+    .oc-modal-container.flipped .oc-modal {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  .oc-modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .oc-modal-front-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #333;
+    background-color: #e8e8e8;
+    padding: 2px;
+    border-radius: 15px;
+    margin: 10px;
+  }
+
+  .oc-modal-back-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #333;
+  }
+  

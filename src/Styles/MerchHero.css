@@ -1,0 +1,74 @@
+/* MerchHero.css */
+
+/* Background setup for the smaller hero section */
+.merch-hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background: url('../Assets/5.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  /* Slider container to keep slides in a row */
+  .slider-container {
+    display: flex;
+    flex-direction: row;
+    width: 400%; /* Ensure this is 100% * number of slides */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Each slide */
+  .slide {
+    width: 25%; /* Adjust based on the number of slides */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100%; /* Ensure it takes up full height */
+    text-align: center;
+  }
+  
+  /* Ensure images take up full width of their container */
+  .slide img {
+    width: 150px; /* Adjust image size as needed */
+    height: auto;
+    position: absolute;
+    left: 10%; /* Adjust positioning */
+  }
+  
+  .slide .slide-text {
+    position: absolute;
+    right: 10%; /* Adjust positioning */
+    color: #fff;
+    font-size: 2rem; /* Adjust text size */
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  
+  /* Centered text on top of the background image */
+  .merch-hero-text {
+    position: absolute;
+    bottom: 10px; /* Adjust position from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .merch-hero-text h1 {
+    font-size: 2rem; /* Adjust size as needed */
+    margin: 0;
+  }
+  
+  .merch-hero-text p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
