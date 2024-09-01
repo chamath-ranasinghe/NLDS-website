@@ -26,7 +26,7 @@ const CountDown = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [calculateTimeLeft]);
   return (
     <div className='countdown-container'>
        <div className="stay-tuned">STAY TUNED!!!</div>
