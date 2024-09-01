@@ -33,6 +33,7 @@
     overflow: hidden;
   }
   
+  
   .modal-left {
     flex: 1;
     background-color: #f4f4f4;
@@ -133,6 +134,15 @@
     border-radius: 5px;
     width: 100%;
   }
+
+  input.invalid-email {
+    border: 2px solid red;
+  }
+  
+  input:focus.invalid-email {
+    border-color: darkred;
+  }
+  
   
   .carousel-controls {
     display: flex;
@@ -154,6 +164,14 @@
   button:hover {
     background-color: #AA4465;
   }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: right;
+  }
+  
   
   /* Responsive Styles */
   @media screen and (max-width: 768px) {
@@ -203,4 +221,6 @@
       font-size: 12px;
     }
   }
+
+
   
