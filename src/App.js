@@ -8,6 +8,7 @@ import Register from './Pages/Register';
 import OC from "./Pages/OC"
 import Faci from "./Pages/Faci"
 import Partners from './Pages/Partners'
+import Gallery from './Pages/Gallery'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/MerchHome" element={<MerchHome />} />
         <Route path="/MerchTest" element={<Merch />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="/Gallery" element={<Gallery />} />
         <Route path="/OC" element={<OC />} />
         <Route path="/Faci" element={<Faci />} />
         <Route path="/Partners" element={<Partners />} />

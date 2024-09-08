@@ -26,7 +26,7 @@ const NavBar = () => {
       <ul className={mobileMenu?'':'hide-mobile-menu'}>
         <li><RLink to="/" smooth={true} offset={-200} duration={500}>Home</RLink></li>
         <li><Link to="AbNlds" smooth={true} offset={-200} duration={500}>About NLDS</Link></li>
-        <li><RLink to="Gallery" smooth={true} offset={-250} duration={500}>Gallery</RLink></li>
+        <li><RLink to="/Gallery" smooth={true} offset={-250} duration={500}>Gallery</RLink></li>
         <li><RLink to="/OC" smooth={true} offset={-250} duration={500}>OC</RLink></li>
         <li><RLink to="/Faci" smooth={true} offset={-250} duration={500}>Faci</RLink></li>
         <li><RLink to="/MerchHome" smooth={true} offset={-250} duration={500}>Merch</RLink></li>
