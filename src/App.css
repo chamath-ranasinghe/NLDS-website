@@ -438,6 +438,7 @@ nav ul li{
 .footer-text {
   flex-basis: 75%;
   text-align: justify;
+  font-weight: 300;
 }
 
 .footer-copyright {

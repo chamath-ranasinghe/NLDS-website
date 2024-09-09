@@ -28,6 +28,11 @@
   cursor: pointer; /* Change cursor to indicate clickable */
 }
 
+.slider-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 /* Style for the image */
 .slider-img {
   width: 80%; /* Adjust as needed */
@@ -37,7 +42,12 @@
 
 /* Style for the text */
 .slider-text {
+  position: bottom;
+  bottom: 0; /* Sticks the text to the bottom */
+  width: 100%; /* Ensures the text spans the full width of the slider item */
+  margin: 0;
   padding: 10px;
+  text-align: center;
 }
 
 /* Slider Heading */
@@ -62,7 +72,7 @@
 
 /* Popup Content */
 .popup-content {
-  background: white;
+  background: #f7f4f4;
   border-radius: 10px;
   width: 80%;
   max-width: 800px; /* Increased max-width for larger images */
@@ -147,6 +157,6 @@
 }
 
 .popup-close:hover {
-    background-color: white;
+    background-color: #f7f4f4;
     color: black; /* Change text color to maintain visibility */
 }

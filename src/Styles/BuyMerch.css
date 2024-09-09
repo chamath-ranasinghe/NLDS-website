@@ -1,0 +1,58 @@
+.buymerch {
+  background: url('../Assets/Merch/BGM.jpg') no-repeat center center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  height: 10%;
+  }
+  
+  .buy-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .merch-pack {
+    flex-basis: 40%;
+  }
+  
+  .merch-items {
+    width: 150%;
+    max-width: 100%;
+  }
+  
+  .buy-text {
+    flex-basis: 60%;
+    text-align: right;
+  }
+
+.buy-text {
+  z-index: 2;
+}
+
+.buy-text p {
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.buy-text-link {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  background-color: #0433c0;
+  border-radius: 10px;
+  padding: 1%;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.buy-text-link:hover{
+  background-color: #fff;
+  color: #0433c0;
+}
+

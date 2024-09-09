@@ -1,7 +1,7 @@
 import React, { useState }  from 'react'
-import image1 from '../Assets/Merch/band.png';
-import image2 from '../Assets/Merch/band.png';
-import image3 from '../Assets/Merch/band.png';
+import image1 from '../Assets/Merch/skinny.png';
+import image2 from '../Assets/Merch/skinny.png';
+import image3 from '../Assets/Merch/cap.png';
 import image4 from '../Assets/Merch/band.png';
 
 import '../Styles/MerchSlider.css'

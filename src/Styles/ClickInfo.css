@@ -1,0 +1,14 @@
+.click-info-section {
+  margin-top: 40px;
+    text-align: center;
+    background: none; /* Optional: Light background color */
+    margin: 20px 0; /* Adds spacing above and below the section */
+  }
+  
+  .click-info-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    align-items: center; /* Adjust the text color as needed */
+  }
+  
