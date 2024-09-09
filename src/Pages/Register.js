@@ -278,7 +278,7 @@ const Register = () => {
                 {errorMessage && (
                   <div className="error-message">{errorMessage}</div>
                 )}
-                <div className="carousel-controls">
+                <div className="register-carousel-controls">
                   {page > 0 && (
                     <button type="button" onClick={prevPage}>
                       Previous

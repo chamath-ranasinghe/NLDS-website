@@ -1,0 +1,108 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1020;
+  }
+  
+  .overlay-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    overflow: hidden;
+  }
+  
+  .overlay-carousel {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .overlay-carousel-slide {
+    position: absolute; /* Stack slides on top of each other */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    z-index: 0; /* Default z-index for inactive slides */
+  }
+
+  .overlay-carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .overlay-carousel-slide.inactive {
+    opacity: 0;
+  }
+  
+  .overlay-carousel-slide img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+  }
+  
+  .overlay-arrow-btn {
+    position: absolute;
+    bottom: 20px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    z-index: 1030;
+  }
+  
+  .overlay-arrow-btn.overlay-left {
+    left: 20px;
+  }
+  
+  .overlay-arrow-btn.overlay-right {
+    right: 20px;
+  }
+  
+  .overlay-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1010;
+  }
+  
+  .overlay-close-btn:hover {
+    background-color: #333;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .overlay-content img {
+      max-width: 90%;
+    }
+  
+    .overlay-arrow-btn {
+      font-size: 18px;
+    }
+  }
+  
