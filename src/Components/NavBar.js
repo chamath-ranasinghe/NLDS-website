@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link as RLink} from 'react-router-dom';
 import logo from "../Assets/2024.png";
-import { Link } from 'react-scroll';
+
 import menu from "../Assets/icons/menu-icon.png"
+
+
 
 
 const NavBar = () => {

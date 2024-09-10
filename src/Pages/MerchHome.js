@@ -4,15 +4,18 @@ import NavBar from "../Components/NavBar";
 import MerchSlider from "../Components/MerchSlider";
 import ClickInfoSection from "../Components/ClickInfoSection";
 import BuyMerch from "../Components/BuyMerch";
+import GiftBox from "../Components/MysteryBox";
+import Footer from "../Components/Footer";
 const MerchHome = () => {
   return (
     <div id="MerchHome">
-      <NavBar />
+       <NavBar /> 
       <MerchHero />
       <ClickInfoSection/>
       <MerchSlider/>
       <BuyMerch/>
-      <ClickInfoSection/> 
+      <GiftBox/>
+      <Footer/>
     </div>
   );
 };

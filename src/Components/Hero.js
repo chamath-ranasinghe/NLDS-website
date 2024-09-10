@@ -44,14 +44,18 @@ const Hero = () => {
       </div>
       <div className="Hero-content">
         <div className="hero-text">
-          <p><bold>DEFY YOUR LIMITS!</bold></p>
-          <h1>NATIONAL</h1>
-          <h1>LEADERSHIP</h1>
-          <h1>DEVELOPMENT</h1>
-          <h1>SEMINAR 2024</h1>
-          <p>17th October 2024</p>
+          <p className="defy"><bold>DEFY YOUR LIMITS!</bold></p>
+          <div className="hero-heading">
+      NATIONAL<br />
+      LEADERSHIP<br />
+      DEVELOPMENT<br />
+      SEMINAR 2024
+    </div>
+          <p className='date'>17th October 2024</p>
+          <br></br>
         </div>
       </div>
+      <br/>
       <div className="dots">
         {images.map((_, index) => (
           <span

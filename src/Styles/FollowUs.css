@@ -1,0 +1,88 @@
+.followus {
+  background: url('../Assets/FollowUs/followus.jpg') no-repeat center center;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  height: auto; /* Allow the container to expand */
+}
+
+.follow-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0px;
+}
+
+.fbelmnt {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row; /* Default is side by side */
+  align-items: center;
+  justify-content: center;
+}
+
+.element-item {
+  scale: 150%;
+  width: 100%;
+  max-width: 100%;
+  margin-right: 20px; /* Adjusted to ensure better spacing */
+}
+
+.follow-text {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.follow-text p {
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.follow-text-link {
+ 
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  background-color: #0433c0;
+  border-radius: 10px;
+  padding: 2%;
+  transition: background-color 0.3s ease;
+}
+
+.follow-text-link:hover {
+  background-color: #fff;
+  color: #0433c0;
+}
+
+@media (max-width: 768px) {
+  .followus{
+    overflow: hidden;
+  }
+  .follow-content {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center;
+      text-align: center;
+  }
+
+  .fbelmnt {
+      flex-direction: column; /* Stack the image above the text */
+      justify-content: center;
+  }
+
+  .element-item {
+      width: 80%;
+      margin-top: 20px;
+      margin-right: 0;
+      margin-bottom: 20px; /* Add margin below the image */
+  }
+
+  .follow-text {
+      text-align: center; /* Center the text on mobile */
+  }
+
+  .follow-text p {
+      font-size: 45px; /* Reduce font size for mobile */
+  }
+}

@@ -1,226 +1,227 @@
 .registration-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Fallback color */
-    overflow: hidden;
-  }
-  
-  .registration-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../Assets/3.jpg') no-repeat center center/cover;
-    filter: blur(10px);
-    z-index: -1;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fallback color */
+  overflow: hidden;
+}
+
+.registration-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../Assets/3.jpg') no-repeat center center/cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.registration-modal {
+  display: flex;
+  width: 60%;
+  height: 60%;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-left {
+  flex: 1;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures the image fills the container */
+}
+
+.modal-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.modal-right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot-indicator-register {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.dot-register {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.dot-register.active {
+  background-color: #000;
+}
+
+.initial-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #462255;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #AA4465;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input.invalid-email {
+  border: 2px solid red;
+}
+
+input:focus.invalid-email {
+  border-color: darkred;
+}
+
+.register-carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #462255;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #AA4465;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
   .registration-modal {
-    display: flex;
-    width: 60%;
-    height: 60%;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    overflow: hidden;
+    width: 80%;
+    height: 70%;
+    flex-direction: column;
+    border-radius: 10px; /* Ensures rounded corners in responsive view */
   }
-  
-  
+
   .modal-left {
-    flex: 1;
-    background-color: #f4f4f4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 40%;
   }
-  
-  .modal-left img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+
   .modal-right {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .carousel-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 60%;
+    padding: 15px;
   }
 
-  .dot-indicator-register {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-  }
-  
-  .dot-register {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .dot-register.active {
-    background-color: #000;
-  }
-
-  .initial-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .modal-content p {
-    margin-bottom: 20px;
-  }
-  
-  .modal-content button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #462255;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .modal-content button:hover {
-    background-color: #AA4465;
-  }
-  
-  
-  
-  .input-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-  
-  input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-  }
-
-  input.invalid-email {
-    border: 2px solid red;
-  }
-  
-  input:focus.invalid-email {
-    border-color: darkred;
-  }
-  
-  
-  .register-carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
-  }
-  
   button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #462255;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #AA4465;
-  }
-
-  .error-message {
-    color: red;
+    padding: 8px 16px;
     font-size: 14px;
-    margin-top: 10px;
-    text-align: right;
   }
-  
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 768px) {
-    .registration-modal {
-      width: 80%;
-      height: 70%;
-      flex-direction: column;
-    }
-  
-    .modal-left {
-      height: 40%;
-    }
-  
-    .modal-right {
-      height: 60%;
-      padding: 15px;
-    }
-  
-    button {
-      padding: 8px 16px;
-      font-size: 14px;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .registration-modal {
-      width: 90%;
-      height: 80%;
-    }
-  
-    .modal-left {
-      display: none; /* Hide the left image on very small screens */
-    }
-  
-    .modal-right {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    input {
-      padding: 8px;
-      font-size: 14px;
-    }
-  
-    button {
-      padding: 6px 12px;
-      font-size: 12px;
-    }
+}
+
+@media screen and (max-width: 480px) {
+  .registration-modal {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px; /* Ensures rounded corners in responsive view */
   }
 
+  .modal-left {
+    display: none; /* Hide the left image on very small screens */
+    
+  }
 
-  
+  .modal-right {
+
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px; /* Curved rectangle for the modal-right */
+    background-color: #f4f4f4; /* Light grey background for the curved rectangle */
+  }
+
+  input {
+    
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

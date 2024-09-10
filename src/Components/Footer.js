@@ -1,5 +1,6 @@
 import React from 'react'
 import lg from "../Assets/lg.png"
+import "../Styles/Footer.css"
 
 const Footer = () => {
   return (

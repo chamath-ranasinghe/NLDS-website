@@ -1,0 +1,93 @@
+.footer {
+    padding: 20px;
+    background-color: rgba(3, 73, 114);
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    flex-basis: 20%;
+}
+
+.logo-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-text {
+    flex-basis: 75%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px; /* Adjusted to a normal readable size */
+    font-family: 'YourButtonFontFamily', sans-serif; /* Replace with the actual font used for buttons */
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.5;
+    color: #eeecec;
+    font-weight: 400; /* Set font weight to 400 for normal weight */
+    font-family: 'YourButtonFontFamily', sans-serif; /* Use the same font family as buttons */
+}
+
+.footer-copyright {
+    position: relative;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #eeecec;
+}
+
+.footer-copyright::before {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #eeecec;
+    margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center; /* Center align items */
+    }
+
+    .footer-logo {
+        flex-basis: auto; /* Reset flex-basis */
+        margin-bottom: 10px; /* Space between logo and paragraph */
+    }
+
+    .footer-text {
+        flex-basis: auto; /* Reset flex-basis */
+        text-align: center; /* Center align text */
+    }
+
+    .footer p {
+        margin: 0;
+        line-height: 1.5;
+        color: #eeecec;
+        font-weight: 400;
+        font-family: 'YourButtonFontFamily', sans-serif; /* Use the same font family as buttons */
+    }
+
+    .footer-copyright {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .footer-copyright::before {
+        content: '';
+        display: block;
+        width: 100%; /* Full width on mobile */
+        height: 1px;
+        background-color: #eeecec;
+        margin: 10px auto;
+    }
+}
