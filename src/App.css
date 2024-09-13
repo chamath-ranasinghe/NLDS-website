@@ -569,6 +569,10 @@ nav ul li{
 
   .about-img {
     margin-top: 20px; /* Add space between text and image */
+    width: 90%; /* Slightly smaller width for mobile devices */
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
   }
 
   .about p {

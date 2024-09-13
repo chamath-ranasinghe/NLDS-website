@@ -40,7 +40,7 @@ function Overlay({ image, text, onClose, images }) {
                 index === currentIndex ? "active" : "inactive"
               }`}
             >
-              <img src={img.src} alt={`Slide ${index + 1}`} />
+              <img src={img} alt={`Slide ${index + 1}`} />
             </div>
           ))}
         </div>
