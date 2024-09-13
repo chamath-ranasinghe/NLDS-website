@@ -10,7 +10,7 @@ function BuyMerch() {
                 </div>
                 <div className="buy-text">
         <p>CLICK HERE TO BUY THE MERCH PACK</p>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="buy-text-link">
+        <a href="https://forms.gle/DZbGMCKoFzqBwt92A" target="_blank" rel="noopener noreferrer" className="buy-text-link">
           CLICK HERE
         </a>
       </div>

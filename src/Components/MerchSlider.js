@@ -7,8 +7,8 @@ import image4 from '../Assets/Merch/band.png';
 import '../Styles/MerchSlider.css'
 
 const slides = [
-  { png: image1, heading: 'T-SHIRT', details: 'Available Sizes: S M L XL | Available Color: Black', color: 'black', sizes: 'S M L XL' },
-  { png: image2, heading: 'SKINNY', details: 'Available Sizes: S M L XL | Available Color: White', color: 'white', sizes: 'S M L XL' },
+  { png: image1, heading: 'T-SHIRT', details: 'Available Sizes: S M L XL | Available Color: Black', color: 'black', sizes: 'XS S M L XL XXL' },
+  { png: image2, heading: 'SKINNY', details: 'Available Sizes: S M L XL | Available Color: White', color: 'white', sizes: 'XS S M L XL XXL' },
   { png: image3, heading: 'CAP', details: 'Available Color: Navy Blue', color: 'navy', sizes: '' },
   { png: image4, heading: 'BAND', details: 'Available Color: Black and Blue', color: 'black, blue', sizes: '' } // Updated color format
 ];
@@ -61,7 +61,7 @@ function MerchSlider() {
                 </React.Fragment>
               ))}
               <br />
-              <a href="https://www.facebook.com" className="popup-buy-button" target="_blank" rel="noopener noreferrer">Buy Now</a>
+              <a href="https://forms.gle/DZbGMCKoFzqBwt92A" className="popup-buy-button" target="_blank" rel="noopener noreferrer">Buy Now</a>
             </p>
           </div>
         </div>
