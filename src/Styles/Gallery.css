@@ -55,7 +55,7 @@
   
   .carousel-text {
     position: absolute;
-    bottom: 15%;
+    bottom: 25%;
     padding: 10px 20px;
     color: white;
     font-size: 1.5rem;
@@ -74,7 +74,7 @@
   
   .view-more-btn {
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     padding: 10px 20px;
     background-color: #AA4465; /* Updated button color */
     color: white; /* White text */
@@ -100,7 +100,7 @@
   
   .carousel-controls {
     position: absolute;
-    bottom: 10px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

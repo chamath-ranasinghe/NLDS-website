@@ -27,14 +27,14 @@ const DinuliDetails = {name: "Dinuli Liyanage", nickname:"Season 01", funfact: "
 const SheveDetails = {name: "Sheveke Gnanapandithen", nickname:"Sheve/Bridgerton", funfact: "Bridgeton>>>"};
 
 const IndeeraDetails = {name: "Indeera Udayanga", nickname:"Mal Kumara", funfact: "Always late but not late enough"};
-const IsuruDetails = {name: "Isuru Fernando", nickname:"Batch Top", funfact: ""};
+const IsuruDetails = {name: "Isuru Fernando", nickname:"Batch Top", funfact: "A ekak ganna misak exam ekata yn na"};
 const LasithDetails = {name: "Lasitha Sudharaka", nickname:"Lasith but with an A", funfact: "Music"};
 
 const DhanushiDetails = {name: "Dhanushi Jayaweera", nickname:"DanuC", funfact: "Fun nm nah ithin baninw"};
 
 const AsirimathDetails = {name: "Asirimath Vimukthi", nickname:"Siri", funfact: "Invisible"};
 const DarshanaDetails = {name: "Darshana Nuwan", nickname:"Sanvedhi Manussaya", funfact: "Never sleeps"};
-const GodfriDetails = {name: "Godfri John", nickname:"Godpi", funfact: "Ahinsakai"};
+const GodfriDetails = {name: "Godfri John", nickname:"Godpara", funfact: "Goni andina rap deyya"};
 
 
 const OC = () => {

@@ -4,7 +4,7 @@ import FaciModal from "../Components/FaciModal";
 import "../Styles/OC.css";
 import NavBar from "../Components/NavBar";
 
-import chair from "../Assets/Faci/vikum.jpeg";
+import chair from "../Assets/Faci/Chair.png";
 import vikum from "../Assets/Faci/vikum.jpeg";
 import dineli from "../Assets/Faci/dineli 2.jpeg";
 import hassan from "../Assets/Faci/hassan.jpeg";
@@ -42,7 +42,7 @@ const DileeshaDetails = {name: "Dileesha Hettiarachchi", position:"MCVP NS"};
 const SanjeevDetails = {name: "Sanjeev Dhananjana", position:"MCVP BD"};
 
 const SapnaDetails = {name: "Sapna Ravishika", position:"MCVP FnL"};
-const SanuthiDetails = {name: "Sanuthi Perera", position:"MCVP iGV"};
+const SanuthiDetails = {name: "Sanuthi Weerasena", position:"MCVP iGV"};
 const SenuriDetails = {name: "Senuri Bandara", position:"MCVP iGT"};
 
 const AakkashDetails = {name: "Aakkash Gnanarathnam", position:"MCVP OD"};
@@ -59,7 +59,7 @@ const OC = () => {
 
           <p> Chair </p>
           <div className="organize">
-            <FaciModal src={chair} alt="Chamath" frontText="Chair" backText= {ChairDetails} />
+            <FaciModal src={chair} alt="?" frontText="Chair" backText= {ChairDetails} />
           </div>
 
           <p> MCP </p>
