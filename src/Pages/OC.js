@@ -8,7 +8,7 @@ import sheveke from "../Assets/OC/SheV.jpg";
 import indeera from "../Assets/OC/Indeera.jpg";
 import isuru from "../Assets/OC/Isuru.jpg";
 import lasith from "../Assets/OC/Lasith.jpg";
-import dhanushi from "../Assets/OC/Chamath2.jpg";
+import dhanushi from "../Assets/OC/danuc.jpg";
 import asirimath from "../Assets/OC/Asirimath.jpg";
 import darshana from "../Assets/OC/Darshana.jpg";
 import godfri from "../Assets/OC/Godfri.jpg";
@@ -17,24 +17,24 @@ import OCModal from "../Components/OCModal";
 import "../Styles/OC.css";
 import NavBar from "../Components/NavBar";
 
-const ChamathDetails = {name: "Chamath Ranasinghe", nickname:"Chama", funfact: "Music"};
+const ChamathDetails = {name: "Chamath Ranasinghe", nickname:"Appacci", funfact: "Ahinsakaya vage boruwa danne"};
 
-const AmayaDetails = {name: "Amaya Amarasinghe", nickname:"Amaya", funfact: "Music"};
-const ChelakaDetails = {name: "Chelaka Wijesekara", nickname:"Che", funfact: "Music"};
-const MahimaDetails = {name: "Mahima Yasas", nickname:"Mahima", funfact: "Music"};
+const AmayaDetails = {name: "Amaya Amarasinghe", nickname:"Amaya", funfact: "Looks innocent but not"};
+const ChelakaDetails = {name: "Chelaka Wijesekara", nickname:"Kiri", funfact: "Sugarmommy lover"};
+const MahimaDetails = {name: "Mahima Yasas", nickname:"Nilame", funfact: "Doesn't know about the Kandy Beach"};
 
-const DinuliDetails = {name: "Dinuli Liyanage", nickname:"Season 01", funfact: "Music"};
-const SheveDetails = {name: "Sheveke Gnanapandithen", nickname:"Sheve/Bridgerton", funfact: "Music"};
+const DinuliDetails = {name: "Dinuli Liyanage", nickname:"Season 01", funfact: "Only watches Season 01 in every series"};
+const SheveDetails = {name: "Sheveke Gnanapandithen", nickname:"Sheve/Bridgerton", funfact: "Bridgeton>>>"};
 
-const IndeeraDetails = {name: "Indeera Udayanga", nickname:"Indu", funfact: "Music"};
-const IsuruDetails = {name: "Isuru Fernando", nickname:"Batch Topayya", funfact: "Music"};
-const LasithDetails = {name: "Lasitha Sudharaka", nickname:"Lasith", funfact: "Music"};
+const IndeeraDetails = {name: "Indeera Udayanga", nickname:"Mal Kumara", funfact: "Always late but not late enough"};
+const IsuruDetails = {name: "Isuru Fernando", nickname:"Batch Top", funfact: ""};
+const LasithDetails = {name: "Lasitha Sudharaka", nickname:"Lasith but with an A", funfact: "Music"};
 
-const DhanushiDetails = {name: "Dhanushi Jayaweera", nickname:"DanuC", funfact: "Music"};
+const DhanushiDetails = {name: "Dhanushi Jayaweera", nickname:"DanuC", funfact: "Fun nm nah ithin baninw"};
 
-const AsirimathDetails = {name: "Asirimath Vimukthi", nickname:"Siri", funfact: "Music"};
-const DarshanaDetails = {name: "Darshana Nuwan", nickname:"Nuwan", funfact: "Music"};
-const GodfriDetails = {name: "Godfri John", nickname:"Godapara", funfact: "Music"};
+const AsirimathDetails = {name: "Asirimath Vimukthi", nickname:"Siri", funfact: "Invisible"};
+const DarshanaDetails = {name: "Darshana Nuwan", nickname:"Sanvedhi Manussaya", funfact: "Never sleeps"};
+const GodfriDetails = {name: "Godfri John", nickname:"Godpi", funfact: "Ahinsakai"};
 
 
 const OC = () => {

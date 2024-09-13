@@ -1,0 +1,88 @@
+/* Make sure the navbar spans the full width */
+nav {
+    width: 100%;
+    color: #fff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    box-sizing: border-box; /* Prevents overflow due to padding */
+  }
+  
+  .logo {
+    width: 180px;
+  }
+  
+  /* Ensure ul fits within the screen */
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap; /* Prevents overflowing the screen */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure it doesn't overflow */
+    box-sizing: border-box;
+  }
+  
+  /* Fix list items for mobile view */
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 15px;
+  }
+  
+  /* Mobile menu styles */
+  .hide-mobile-menu {
+    display: none;
+  }
+  
+  .menu-icon {
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .darknav {
+    background: rgba(3, 73, 114);
+    transition: 0.5s;
+  }
+  
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 100%; /* Prevent container from exceeding screen */
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+  }
+  
+  /* Button styling */
+  .btn {
+    background: #fff;
+    color: #0433c0;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+  }
+  
+  .btn:hover {
+    background: #AA4465;
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+  .btn img {
+    width: 20px;
+    margin-left: 10px;
+  }
+  
+  .darkbtn {
+    background: rgba(3, 73, 114);
+    color: #fff;
+  }
+  

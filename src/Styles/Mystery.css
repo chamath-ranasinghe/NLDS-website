@@ -1,0 +1,147 @@
+.giftbox {
+    background: none;
+    margin-top: -50px;
+    padding: 0px;
+    color: #333;
+    text-align: center;
+    height: 1%;
+    overflow:hidden;
+}
+
+.mystery-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+/* For larger screens (default) */
+.gift-pack {
+    flex-basis: 50%;
+}
+
+.gift-items {
+    margin-right: 12%;
+    scale: 75%;
+    width: 100%;
+    max-width: 100%;
+    animation: shake-pause 4s infinite;
+}
+
+/* Keyframes for 2 seconds shake, 2 seconds pause */
+@keyframes shake-pause {
+  0%, 50% { transform: translate(0px, 0px); } /* Pause */
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+}
+
+.gift-text {
+    margin-right: 5%;
+    flex-basis: 60%;
+    text-align: left;
+    z-index: 2;
+    margin-left: 5%;
+}
+
+.mystext {
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.guesstext {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.guess-input {
+    padding: 8px;
+    font-size: 16px;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.submit-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.submit-button:hover {
+    background-color: #111111;
+}
+
+/* Media Queries for Tablet Devices */
+@media (max-width: 768px) {
+  .mystext {
+    font-size: 50px; /* Smaller text size */
+  }
+  .guesstext {
+    font-size: 30px; /* Smaller text size */
+  }
+  .guess-input {
+    width: 50%; /* Make input box wider */
+  }
+  .gift-items {
+    scale: 65%; /* Scale down the image */
+  }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 840px) {
+  .mystery-content {
+    flex-direction: column; /* Stack image and text in a column */
+    text-align: center;
+  }
+
+  .gift-pack {
+    margin-bottom: -50px; /* Reduce space between image and text */
+  }
+
+  .gift-items {
+    scale: 55%; /* Scale down the image further */
+    margin: 0; /* Remove margin */
+  }
+
+  .gift-text {
+    order: 1; /* Ensure text is below the image */
+    text-align: center; /* Center text */
+    margin-left: 0;
+    margin-right: 0;
+    flex-basis: auto;
+    margin-top: 0px; /* Add some space above the text */
+  }
+
+  .mystext {
+    font-size: 40px; /* Smaller text size */
+  }
+
+  .guesstext {
+    font-size: 20px; /* Smaller text size */
+  }
+
+  .guess-input {
+    width: 80%; /* Make input box wider */
+  }
+
+  .submit-button {
+    width: 80%; /* Make button same width as input box */
+    margin-left: 0; /* Remove margin */
+    margin-top: 10px; /* Add space above button */
+  }
+}

@@ -1,0 +1,131 @@
+.buymerch {
+  background: url('../Assets/Merch/BGM.jpg') no-repeat center center;
+  background-size: cover; /* Ensure the background image covers the entire section */
+  padding: 20px;
+  color: white;
+  text-align: center;
+  height: auto; /* Adjust height to fit content */
+  
+}
+
+.buy-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/* For larger screens (default) */
+.merch-pack {
+  flex-basis: 50%;
+}
+
+.merch-items {
+  margin-left: 8%; /* Reduced margin to bring image closer to text */
+  scale: 175%; /* Increase size of the image */
+  width: 100%;
+  max-width: 100%;
+}
+
+.buy-text {
+  margin-right: 5%;
+  flex-basis: 60%;
+  text-align: right;
+}
+
+.buy-text {
+  z-index: 2;
+}
+
+.buy-text p {
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.buy-text-link {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  background-color: #0433c0;
+  border-radius: 10px;
+  padding: 1%;
+  transition: background-color 0.3s ease;
+}
+
+.buy-text-link:hover {
+  background-color: #fff;
+  color: #0433c0;
+}
+
+/* Media Queries for Tablet Devices */
+@media (max-width: 768px) {
+  .buy-content {
+    flex-direction: column; /* Stack image and text in a column */
+    text-align: center;
+  }
+
+  .merch-pack {
+    margin-bottom: 10px; /* Space between image and text */
+  }
+
+  .merch-items {
+    scale: 125%; /* Increase size of the image for tablets */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .buy-text {
+    margin-right: 0; /* Remove margin-right */
+    text-align: center; /* Center text */
+    flex-basis: auto;
+  }
+
+  .buy-text p {
+    font-size: 50px; /* Smaller text size */
+  }
+
+  .buy-text-link {
+    font-size: 24px; /* Smaller link text size */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 720px) {
+  .buymerch {
+    overflow: hidden;
+  }
+  .buy-content {
+    flex-direction: column; /* Stack image and text in a column */
+    text-align: center;
+  }
+
+  .merch-pack {
+    margin-bottom: 5px; /* Reduce space between image and text */
+    text-align: center;
+  }
+
+  .merch-items {
+    scale: 150%; /* Increase size of the image further for mobile */
+    margin-left: 0; /* Remove margin */
+    align-items: center;
+    text-align: center;
+  }
+
+  .buy-text {
+    margin-right: 0; /* Remove margin-right */
+    text-align: center; /* Center text */
+    flex-basis: auto;
+  }
+
+  .buy-text p {
+    font-size: 35px; /* Smaller text size */
+  }
+
+  .buy-text-link {
+    font-size: 20px; /* Smaller link text size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}

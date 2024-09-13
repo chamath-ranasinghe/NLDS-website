@@ -1,50 +1,42 @@
 import React, { useEffect, useRef, useState } from 'react'
+import image1 from '../Assets/Merch/skinny.png';
+import image2 from '../Assets/Merch/cap.png';
+import image3 from '../Assets/Merch/skinny.png';
+import image4 from '../Assets/Merch/band.png';
+import image5 from '../Assets/Merch/giftbox.png';
 import '../Styles/MerchHero.css'
 
 
 const MerchHero = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const slidesRef = useRef(null);
-    const slideCount = 4; // Number of slides
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentIndex(prevIndex => (prevIndex + 1) % slideCount); // Loop through slides
-      }, 5000); // Change slide every 5 seconds
-  
-      return () => clearInterval(interval); // Cleanup on unmount
-    }, []);
-  
-    useEffect(() => {
-      if (slidesRef.current) {
-        slidesRef.current.style.transform = `translateX(-${currentIndex * 100}%)`;
-      }
-    }, [currentIndex]);
+  const sets = [
+    { png: image1, title: 'T-SHIRT' },
+    { png: image2, title: 'CAP' },
+    { png: image3, title: 'SKINNY' },
+    { png: image4, title: 'WRIST BAND' },
+    { png: image5, title: 'MYSTERY GIFT' }
+  ];
+
+  const [currentSet, setCurrentSet] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSet((prevSet) => (prevSet + 1) % sets.length);
+    }, 5000); // Change set every 10 seconds (5s in + 5s out)
+
+    return () => clearInterval(interval);
+  }, [sets.length]);
 
   return (
-    <div className="merch-hero">
-       <div className="slider-container" ref={slidesRef}>
-        <div className="slide">
-          <img src="/path/to/image1.png" alt="Slide 1" />
-          <div className="slide-text">Text 1</div>
+    <div className="header-container">
+      {sets.map((set, index) => (
+        <div
+          key={index}
+          className={`header-set ${index === currentSet ? 'active' : ''} ${index === (currentSet - 1 + sets.length) % sets.length ? 'exit' : ''}`}
+        >
+          <img src={set.png} alt={set.title} className="header-img" />
+          <h1 className="header-title">{set.title}</h1>
         </div>
-        <div className="slide">
-          <img src="/path/to/image2.png" alt="Slide 2" />
-          <div className="slide-text">Text 2</div>
-        </div>
-        <div className="slide">
-          <img src="/path/to/image3.png" alt="Slide 3" />
-          <div className="slide-text">Text 3</div>
-        </div>
-        <div className="slide">
-          <img src="/path/to/image4.png" alt="Slide 4" />
-          <div className="slide-text">Text 4</div>
-        </div>
-      </div>
-      <div className="merch-hero-text">
-        <h1>Your Title Here</h1>
-        <p>Additional description or tagline.</p>
-      </div>
+      ))}
     </div>
   )
 }

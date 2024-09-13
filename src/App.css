@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif !important;
+  
 }
 body {
   background-color: #f6f6f6;
@@ -23,10 +24,12 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  right:0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 10;
+  overflow: hidden;
 }
 
 .logo {
@@ -51,9 +54,9 @@ nav ul li{
   
   .btn{
     background: #fff;
-    color: #0433c0;
-    padding:14px 25px;
-    font-size: 16px;
+    color: rgba(3, 73, 114);
+    padding:10px 25px;
+    font-size: 15px;
     border-radius: 30px;
     cursor:pointer;
     border: 0;
@@ -73,7 +76,7 @@ nav ul li{
     margin-left: 10px;
   }
   .darkbtn{
-    background: #0433c0;
+    background: rgba(3, 73, 114);
     color: #fff;
   }
 
@@ -90,9 +93,11 @@ nav ul li{
 }
 
 .Hero-content {
+  margin-top: 20px;
   position: relative;
   z-index: 2;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .hero-text {
@@ -101,13 +106,22 @@ nav ul li{
   max-width: 1500px;
 }
 
-.hero-text h1 {
-  font-size: 100px;
-  font-weight: 700;
-  margin: 0;
+.hero-heading {
+  text-align: center; /* Center the text horizontally */
+  font-size: 100px; /* Adjust font size as needed */
+  font-weight: 700; /* Make text bold */
+  color: #fff; /* Set text color */
+  line-height: 1.2; /* Adjust line height for spacing between lines */
 }
 
-.hero-text p {
+.defy {
+  max-width: 700px;
+  margin: 25px auto 0;
+  line-height: 1;
+  font-size: 25px;
+  text-align: center;
+}
+.date {
   max-width: 700px;
   margin: 10px auto 0;
   line-height: 1;
@@ -181,6 +195,7 @@ nav ul li{
 }
 
 .countdown-container {
+  margin-top: 20px;
   position: relative;
   width: 100%;
   min-height: 50vh;
@@ -192,6 +207,7 @@ nav ul li{
   padding: 20px;
   box-sizing: border-box;
   color: #082668;
+  overflow: hidden;
 }
 
 .stay-tuned {
@@ -240,6 +256,7 @@ nav ul li{
   align-items: center;
   justify-content: space-between;
   width: 90%;
+  overflow: hidden;
 }
 .aboutleft{
   flex-basis: 35%;
@@ -276,54 +293,8 @@ nav ul li{
   text-transform: uppercase;
 }
 
-.follow-us-container {
-  position: relative;
-  width: 100%;
-  min-height: 50vh; 
-  background: linear-gradient(rgba(120, 0, 162, 0.8), rgba(4, 51, 192, 0.8)),url('./Assets/1.jpg'); /* Replace 'your-image.jpg' with the actual image */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
 
-.follow-us-content {
-  z-index: 2;
-}
 
-.follow-us-content p {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.follow-us-link {
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 5px;
-}
-
-.follow-us-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition: width 0.3s ease;
-}
-
-.follow-us-link:hover::after {
-  width: 100%;
-}
 
 .title{
   text-align: center;
@@ -411,38 +382,6 @@ nav ul li{
 .slide img{
   width: 500px;
 }
-.footer {
-  background-color: #0433c0;
-  padding: 20px;
-  color: white;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 10px;
-  border-bottom: 1px solid white;
-}
-
-.footer-logo {
-  flex-basis: 40%;
-}
-
-.logo-image {
-  width: 300px;
-  max-width: 100%;
-}
-
-.footer-text {
-  flex-basis: 75%;
-  text-align: justify;
-}
-
-.footer-copyright {
-  margin-top: 10px;
-}
 
 .menu-icon{
   display: none;
@@ -462,7 +401,7 @@ nav ul li{
     padding:14px 22px;
   }
   .logo{
-    width:140px;
+    width:100px;
     }
   nav ul li{
     margin:10px 15px;
@@ -478,7 +417,7 @@ nav ul li{
     top: 0;
     right:0px;
     bottom:0;
-    background: #0433c0;
+    background: rgba(3, 73, 114);
     z-index: -1;
     width:200px;
     padding-top: 70px ;
@@ -497,50 +436,8 @@ nav ul li{
   .hide-mobile-menu{
     right: -200px;
   }
-  .hero-text h1{
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .about{
-    flex-direction: column;
-  }
-  .aboutleft{
-    flex-basis: 100px;
-    margin: 20px;
-  }
-  .aboutright{
-    flex-basis: 100px;
-    margin: 20px;
-  }
-
-  .gallery{
-    flex-wrap: wrap;
-  }
-  .gallery img{
-    width: 48%;
-    margin-bottom: 25px;
-  }
-
-  .merch{
-    padding: 0 40px;
-  }
-  .nextbtn, .backbtn{
-    padding: 10px;
-    width: 35px;
-  }
-  .merch ul li{
-    padding: 10px;
-  }
-  .slide{
-    padding: 10px;
-  }
-  .slide img{
-    width: 220px;
-  }
 }
-
-@media (max-width:650px){
+@media (max-width:840px){
   .hero-text h1{
     font-size: 30px;
     max-width: 40px;
@@ -568,7 +465,7 @@ nav ul li{
     width: 200px;
   }
   .footer {
-    background-color: #0433c0;
+    background-color: rgba(3, 73, 114);
     padding: 10px;
     color: white;
     text-align: center;
@@ -594,11 +491,125 @@ nav ul li{
   .footer-text {
     flex-basis: 75%;
     text-align: justify;
-    font-size: 10px;
+    font-size: 7px;
+    margin-right:10px;
   }
   
   .footer-copyright {
     margin-top: 5px;
   }
+  
+}
+
+@media (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 80px; /* Adjust font size for medium screens */
+  }
+  .defy, .date {
+    font-size: 20px; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 60px; /* Further reduce font size for smaller screens */
+  }
+  .defy, .date {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 40px; /* Smaller font size for mobile screens */
+  }
+  .defy, .date {
+    font-size: 16px; /* Smaller font size for mobile screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 50px; 
+    text-align:center;/* Further reduce font size for very small screens */
+  }
+  .defy, .date {
+    font-size: 14px; /* Smaller font size for very small screens */
+    margin: 10px auto; /* Adjust margins for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  /*Hero*/
+  .Hero {
+    min-height: 60vh; /* Further reduced height for mobile screens */
+    align-items: center;
+  }
+
+  .hero-heading {
+    font-size: 2rem; /* Smaller font size for mobile screens */
+  }
+
+  .defy, .date {
+    font-size: 16px; /* Smaller font size for mobile screens */
+  }
+
+  /*About*/
+
+  .about {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .aboutleft,
+  .aboutright {
+    flex-basis: auto; /* Reset flex-basis */
+    max-width: 90%; /* Limit width on mobile */
+  }
+
+  .about-img {
+    margin-top: 20px; /* Add space between text and image */
+  }
+
+  .about p {
+    max-width: 100%; /* Ensure text uses full width */
+    text-align: justify; /* Center align text */
+  }
+
+  .about h3,
+  .about h2 {
+    font-size: 30px; /* Adjusted font size for mobile */
+    text-align: center;
+  }
+
+  .about h2 {
+    font-size: 50px; /* Adjusted font size for mobile */
+    text-align: center;
+  }
+  /*Count down*/
+
+   .stay-tuned {
+    font-size: 30px; /* Reduced font size for mobile */
+  }
+
+  .countdown {
+    gap: 10px; /* Reduce gap between items */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .countdown-item {
+    padding: 5px; /* Reduce padding */
+  }
+
+  .countdown-number {
+    font-size: 60px; /* Reduced font size for mobile */
+    border-bottom-width: 5px; /* Thinner bottom border */
+    margin-bottom: 5px;
+  }
+
+  .countdown-label {
+    font-size: 20px; /* Reduced font size for mobile */
+  }
+
   
 }

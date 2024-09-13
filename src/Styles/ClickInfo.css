@@ -1,0 +1,36 @@
+.click-info-section {
+  margin-top: 50px;
+    text-align: center;
+    background: none; /* Optional: Light background color */
+    margin: 50px 0; /* Adds spacing above and below the section */
+  }
+  
+  .click-info-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    align-items: center; /* Adjust the text color as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .click-info-section {
+      margin-top: 30px; /* Reduced margin on smaller screens */
+      margin: 30px 0; /* Adjust spacing for smaller screens */
+    }
+  
+    .click-info-text {
+      font-size: 18px; /* Smaller font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .click-info-section {
+      margin-top: 20px; /* Further reduced margin for very small screens */
+      margin: 20px 0; /* Further reduced spacing */
+      padding: 0 10px; /* Add more padding for very small screens */
+    }
+  
+    .click-info-text {
+      font-size: 16px; /* Further reduced font size for very small screens */
+    }
+  }
