@@ -46,6 +46,7 @@ const Hero = () => {
         <div className="hero-text">
           <p className="defy"><bold>DEFY YOUR LIMITS!</bold></p>
           <div className="hero-heading">
+      TRANSCEND <br/>      
       NATIONAL<br />
       LEADERSHIP<br />
       DEVELOPMENT<br />

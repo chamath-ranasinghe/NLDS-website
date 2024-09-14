@@ -8,6 +8,7 @@ const AbNlds = () => {
       <div className="about" id='AbNlds'>
         <div className="aboutright">
           <h3>ABOUT EVENT </h3>
+          <h2>TRANSCEND</h2>
           <h2>NATIONAL</h2>
           <h2>LEADERSHIP</h2>
           <h2>DEVELOPMENT</h2>

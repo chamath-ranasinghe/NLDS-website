@@ -45,7 +45,7 @@ const Register = () => {
   ];
 
   //Roles
-  const roles = ["LCPe", "LCP", "LCVP", "Manager","Team Leader","Member"];
+  const roles = ["LCPe","Specialist", "Manager","Team Leader","Member"];
 
   const images = [img1, img2, img3, img4,img5];
 
