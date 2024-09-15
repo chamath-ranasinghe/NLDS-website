@@ -67,7 +67,7 @@ const Register = () => {
     "Fifth Year",
   ];
 
-  const genders = ["Female", "Male"];
+  const genders = ["Female", "Male", "Prefer not to say"];
 
   const excitementList = [
     "1. Curious – \"I'm interested but still exploring\"",
@@ -151,7 +151,7 @@ const Register = () => {
       console.log("Submission successful:", responseText);
 
       // Optionally show a success message to the user
-      alert("Form submitted successfully!");
+      alert("Your application is recieved! Await for further instructions...");
       navigate("/");
 
       // Clear the form or take other actions
@@ -400,6 +400,8 @@ const Register = () => {
                         </option>
                       ))}
                     </select>
+                    <p>An adventure of a lifetime awaits for just 19,000/- LKR!
+                    (Investment from your Local Entity will be unlocked through the efforts and impact you make within your entity.)</p>
                   </div>
                 )}
                 {errorMessage && (
