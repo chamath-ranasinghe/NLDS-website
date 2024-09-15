@@ -4,7 +4,10 @@ import './App.css';
 import Home from './Pages/Home';
 import MerchHome from './Pages/MerchHome';
 import Merch from './Components/Merch'
+
 import Register from './Pages/Register';
+import TempRegister from './Pages/TempRegister';
+
 import OC from "./Pages/OC"
 import Faci from "./Pages/Faci"
 import Partners from './Pages/Partners'
@@ -17,7 +20,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/MerchHome" element={<MerchHome />} />
         <Route path="/MerchTest" element={<Merch />} />
-        <Route path="/Register" element={<Register />} />
+        {/* <Route path="/Register" element={<Register />} /> */} {/*Change this after registration opens*/}
+        <Route path="/Register" element={<TempRegister />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/OC" element={<OC />} />
         <Route path="/Faci" element={<Faci />} />
