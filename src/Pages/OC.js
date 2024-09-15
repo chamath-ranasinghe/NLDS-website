@@ -33,7 +33,7 @@ const LasithDetails = {name: "Lasitha Sudharaka", nickname:"Lasith but with an A
 const DhanushiDetails = {name: "Dhanushi Jayaweera", nickname:"DanuC", funfact: "Fun nm nah ithin baninw"};
 
 const AsirimathDetails = {name: "Asirimath Vimukthi", nickname:"Siri", funfact: "Invisible"};
-const DarshanaDetails = {name: "Darshana Nuwan", nickname:"Darsana", funfact: "Never sleeps"};
+const DarshanaDetails = {name: "Nuwan Darshana", nickname:"Darsana", funfact: "Never sleeps"};
 const GodfriDetails = {name: "Godfri John", nickname:"Godpi", funfact: "Goni andina rap deyya"};
 
 
