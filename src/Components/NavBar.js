@@ -32,7 +32,7 @@ const NavBar = () => {
         <li><RLink to="/OC" smooth={true} offset={-250} duration={500}>OC</RLink></li>
         <li><RLink to="/Faci" smooth={true} offset={-250} duration={500}>Faci</RLink></li>
         <li><RLink to="/MerchHome" smooth={true} offset={-250} duration={500}>Merch</RLink></li>
-        <li><RLink to="/Partners" smooth={true} offset={-250} duration={500}>Partners</RLink></li>
+        {/* <li><RLink to="/Partners" smooth={true} offset={-250} duration={500}>Partners</RLink></li> */}
         <li><RLink to="/Register" smooth={true} offset={-250} duration={500} className='btn bt'>Register</RLink></li>
       </ul>
       <img src={menu} alt="" className='menu-icon' onClick={toggleMenu}/>

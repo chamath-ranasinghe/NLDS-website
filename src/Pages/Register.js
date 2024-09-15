@@ -44,16 +44,16 @@ const Register = () => {
 
   //Entities
   const entities = [
-    "CS",
-    "CN",
     "CC",
-    "USJ",
-    "SLIIT",
-    "Ruhuna",
+    "CN",
+    "CS",
     "Kandy",
     "NIBM",
     "NSBM",
     "Rajarata",
+    "Ruhuna",
+    "SLIIT",
+    "USJ",
   ];
 
   //Roles
@@ -235,6 +235,30 @@ const Register = () => {
                 )}
                 {page === 1 && (
                   <div className="input-group">
+                    <label>Which faculty are you part of?</label>
+                    <input
+                      type="text"
+                      value={formData.faculty}
+                      onChange={(e) => handleInputChange(e, "faculty")}
+                      required
+                    />
+                    <label>Which year are you in?</label>
+                    <select
+                      value={formData.yearOfStudy}
+                      onChange={(e) => handleInputChange(e, "yearOfStudy")}
+                      required
+                    >
+                      <option value="">Select Year</option>
+                      {yearsOfStudy.map((year, index) => (
+                        <option key={index} value={year}>
+                          {year}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+                {page === 2 && (
+                  <div className="input-group">
                     <label>Email (AIESEC email preferred)</label>
                     <input
                       type="email"
@@ -257,30 +281,6 @@ const Register = () => {
                       onChange={(e) => handleInputChange(e, "contactno")}
                       required
                     />
-                  </div>
-                )}
-                {page === 2 && (
-                  <div className="input-group">
-                    <label>Which faculty are you part of?</label>
-                    <input
-                      type="text"
-                      value={formData.faculty}
-                      onChange={(e) => handleInputChange(e, "faculty")}
-                      required
-                    />
-                    <label>Which year are you in?</label>
-                    <select
-                      value={formData.yearOfStudy}
-                      onChange={(e) => handleInputChange(e, "yearOfStudy")}
-                      required
-                    >
-                      <option value="">Select Year</option>
-                      {yearsOfStudy.map((year, index) => (
-                        <option key={index} value={year}>
-                          {year}
-                        </option>
-                      ))}
-                    </select>
                   </div>
                 )}
                 {page === 3 && (

@@ -21,7 +21,7 @@ function App() {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/OC" element={<OC />} />
         <Route path="/Faci" element={<Faci />} />
-        <Route path="/Partners" element={<Partners />} />
+        {/* <Route path="/Partners" element={<Partners />} /> */}
       </Routes>
     </Router>
   );
