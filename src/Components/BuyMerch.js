@@ -1,5 +1,5 @@
 import React from 'react'
-import merch from "../Assets/Merch/merch.png"
+import merch from "../Assets/Merch/merchpack.png"
 import "../Styles/BuyMerch.css"
 function BuyMerch() {
   return (
