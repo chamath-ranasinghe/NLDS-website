@@ -73,9 +73,10 @@ const OC = () => {
             <FaciModal src={hassan} alt="Hassan" frontText="Hassan" backText= {HassanDetails}/>
           </div>
 
-          <p> Agenda Manager </p>  
+          <p> Agenda Managers </p>  
           <div className="organize">
-            <FaciModal src={uthpalani} alt="Uthpalani" frontText="Uthpalani" backText= {UthpalaniDetails}/>
+            <FaciModal src={aakkash} alt="Aakkash" frontText="Aakkash" backText= {AakkashDetails}/>
+            <FaciModal src={chamuditha} alt="Chamuditha" frontText="Chamuditha" backText= {ChamudithaDetails}/>
           </div>
 
           <p>MCVPs</p>
@@ -98,8 +99,7 @@ const OC = () => {
           </div>
 
           <div className="organize">
-            <FaciModal src={aakkash} alt="Aakkash" frontText="Aakkash" backText= {AakkashDetails}/>
-            <FaciModal src={chamuditha} alt="Chamuditha" frontText="Chamuditha" backText= {ChamudithaDetails}/>
+            <FaciModal src={uthpalani} alt="Uthpalani" frontText="Uthpalani" backText= {UthpalaniDetails}/>
             <FaciModal src={jayani} alt="Jayani" frontText="Jayani" backText= {JayaniDetails}/>
           </div>
         </div>
