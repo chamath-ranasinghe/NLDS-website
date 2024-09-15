@@ -13,7 +13,7 @@ const AbNlds = () => {
           <h2>LEADERSHIP</h2>
           <h2>DEVELOPMENT</h2>
           <h2>SEMINAR 2024</h2>
-          <p>NLDS is the most anticipated national conference of the year conducted to develop leadership, enhance employability and personal development skills of AIESECers. This four-day conference connects 250+ AIESECers through events, workshops and fun activities.</p>
+          <p>NLDS is the most anticipated national conference of the year conducted to develop leadership, enhance employability and personal development skills of AIESECers. This three-day conference connects 250+ AIESECers through events, workshops and fun activities.</p>
         
 
           
