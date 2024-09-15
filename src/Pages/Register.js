@@ -131,7 +131,7 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log(formData);
     try {
       const response = await fetch(process.env.REACT_APP_APP_URL, {
         method: "POST",
@@ -374,12 +374,12 @@ const Register = () => {
                   <img
                     src={MerchFlyer}
                     alt="Merch"
-                    style={{ width: "50%", height: "auto", margin:'30px auto 0 auto' }} // Adjust size as needed
+                    style={{ width: "40%", height: "auto", margin:'30px auto 0 auto' }} // Adjust size as needed
                   />
                   <button
                     onClick={handleMerch}
-                    className="merch-button"
-                    style={{ width:'40%', margin: '10px auto 10px auto', padding: '10px', backgroundColor: '#AA4465', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
+                    className="reg-merch-btn"
+                    style={{ width:'40%', margin: '10px auto 0 auto', padding: '10px', backgroundColor: '#462255', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
                   >
                     Buy Merch
                   </button>

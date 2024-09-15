@@ -163,6 +163,10 @@ button:hover {
   background-color: #AA4465;
 }
 
+.reg-merch-btn:hover{
+  background-color: #AA4465;
+}
+
 .error-message {
   color: red;
   font-size: 14px;
