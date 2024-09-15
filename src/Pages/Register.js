@@ -1,12 +1,17 @@
-import React, { useState} from "react";
-import {useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "../Styles/Register.css";
 import img1 from "../Assets/1.jpg";
 import img2 from "../Assets/2.jpg";
 import img3 from "../Assets/4.jpg";
-import img4 from "../Assets/5.jpg"
-import img5 from "../Assets/6.jpg"
+import img4 from "../Assets/5.jpg";
+import img5 from "../Assets/6.jpg";
+import img6 from "../Assets/7.jpg";
+import img7 from "../Assets/8.jpg";
+import img8 from "../Assets/11.jpg";
+import MerchFlyer from "../Assets/MerchFlyer.jpg"
+
 import NavBar from "../Components/NavBar";
 
 const Register = () => {
@@ -17,13 +22,20 @@ const Register = () => {
     firstName: "",
     lastName: "",
     entity: "",
-    gender: "",
-    dob: "",
     email: "",
+    dob: "",
     contactno: "",
-    role: "",
+    faculty: "",
+    yearOfStudy:"",
+    role:"",
+    nic:"",
+    gender: "",
     foodpreference: "",
     allergiesMedication: "",
+    address:"",
+    guardianName:"",
+    emergency:"",
+    partnerConsent:"",
     excitement: "",
   });
   const [showModal, setShowModal] = useState(true);
@@ -45,15 +57,33 @@ const Register = () => {
   ];
 
   //Roles
-  const roles = ["LCPe","Specialist", "Manager","Team Leader","Member"]; //Roles
+  const roles = ["LCPe", "Specialist", "Manager", "Team Leader", "Member"]; //Roles
 
-  const images = [img1, img2, img3, img4,img5];
+  const yearsOfStudy = [
+    "First Year",
+    "Second Year",
+    "Third Year",
+    "Fourth Year",
+    "Fifth Year",
+  ];
+
+  const genders = ["Female", "Male"];
+
+  const excitementList = [
+    "1. Curious – \"I'm interested but still exploring\"",
+    '2. Warming Up – "Starting to feel the excitement!"',
+    '3. Pretty Excited – "Can’t wait to meet new people and learn!"',
+    '4. Super Excited – "Ready for the challenges and fun ahead!"',
+    '5. Pumped! – "This will be the highlight of my year!"',
+  ];
+
+  const images = [img1, img2, img3, img4, img6, img7, img8, img5];
 
   // Make sure all the boxes are filled before moving to the next page
   const validateInputs = () => {
     // Skip validation if on page 3
-    if (page === 3) return true;
-  
+    if (page === 4) return true;
+
     const inputs = document.querySelectorAll(
       ".carousel-content input, .carousel-content select, .carousel-content textarea"
     );
@@ -75,7 +105,7 @@ const Register = () => {
   const nextPage = (e) => {
     e.preventDefault();
     if (validateInputs()) {
-      if (page < 4) {
+      if (page < 7) {
         setPage(page + 1);
         setErrorMessage(""); // Clear error message
       } else {
@@ -94,49 +124,57 @@ const Register = () => {
     }
   };
 
+  const handleMerch = (e)=>{
+    e.preventDefault(); 
+    window.open('https://forms.gle/DZbGMCKoFzqBwt92A', '_blank');
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       const response = await fetch(process.env.REACT_APP_APP_URL, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          "Content-Type": "application/x-www-form-urlencoded",
         },
         body: new URLSearchParams(formData), // Adjust based on your form fields
       });
-  
+
       if (!response.ok) {
-        throw new Error(`Network response was not ok. Status: ${response.status}`);
+        throw new Error(
+          `Network response was not ok. Status: ${response.status}`
+        );
       }
-  
+
       const responseText = await response.text();
-      console.log('Submission successful:', responseText);
-  
+      console.log("Submission successful:", responseText);
+
       // Optionally show a success message to the user
-      alert('Form submitted successfully!');
-      navigate('/');
-  
+      alert("Form submitted successfully!");
+      navigate("/");
+
       // Clear the form or take other actions
       // Example: setFormData({}); // Reset formData
-  
     } catch (error) {
-      console.error('Submission failed:', error);
-  
+      console.error("Submission failed:", error);
+
       // Handle CORS errors separately
-      if (error.message.includes('NetworkError') || error.message.includes('Failed to fetch')) {
-        console.log('CORS issue or network error, treating it as success.');
-        alert('Form submitted successfully!');
-        navigate('/');
-        
+      if (
+        error.message.includes("NetworkError") ||
+        error.message.includes("Failed to fetch")
+      ) {
+        console.log("CORS issue or network error, treating it as success.");
+        alert("Form submitted successfully!");
+        navigate("/");
+
         // Optionally reset the form
         // Example: setFormData({});
       } else {
-        alert('An error occurred. Please try again.');
+        alert("An error occurred. Please try again.");
       }
     }
   };
-  
 
   const handleAgree = () => {
     setShowModal(false);
@@ -166,21 +204,21 @@ const Register = () => {
               <form onSubmit={handleSubmit} className="carousel-content">
                 {page === 0 && (
                   <div className="input-group">
-                    <label>First Name</label>
+                    <label>What's your first name?</label>
                     <input
                       type="text"
                       value={formData.firstName}
                       onChange={(e) => handleInputChange(e, "firstName")}
                       required
                     />
-                    <label>Last Name</label>
+                    <label>What's your last name?</label>
                     <input
                       type="text"
                       value={formData.lastName}
                       onChange={(e) => handleInputChange(e, "lastName")}
                       required
                     />
-                    <label>Entity</label>
+                    <label>Which AIESEC Entity do you belong to?</label>
                     <select
                       value={formData.entity}
                       onChange={(e) => handleInputChange(e, "entity")}
@@ -197,7 +235,7 @@ const Register = () => {
                 )}
                 {page === 1 && (
                   <div className="input-group">
-                    <label>Email</label>
+                    <label>Email (AIESEC email preferred)</label>
                     <input
                       type="email"
                       value={formData.email}
@@ -212,7 +250,7 @@ const Register = () => {
                       onChange={(e) => handleInputChange(e, "dob")}
                       required
                     />
-                    <label>Contact Number</label>
+                    <label>Contact Number (Whatsapp Preferred)</label>
                     <input
                       type="tel"
                       value={formData.contactno}
@@ -223,26 +261,31 @@ const Register = () => {
                 )}
                 {page === 2 && (
                   <div className="input-group">
-                    <label>Food Preference</label>
-                    <select
-                      value={formData.foodpreference}
-                      onChange={(e) => handleInputChange(e, "foodpreference")}
-                      required
-                    >
-                      <option value="">Select Food Preference</option>
-                      <option value="veg">Non-veg</option>
-                      <option value="veg">Veg</option>
-                      {/* Add more options here */}
-                    </select>
-                    <label>Allergies/Medication</label>
-                    <textarea
-                      value={formData.allergiesMedication}
-                      onChange={(e) =>
-                        handleInputChange(e, "allergiesMedication")
-                      }
+                    <label>Which faculty are you part of?</label>
+                    <input
+                      type="text"
+                      value={formData.faculty}
+                      onChange={(e) => handleInputChange(e, "faculty")}
                       required
                     />
-                    <label>Role</label>
+                    <label>Which year are you in?</label>
+                    <select
+                      value={formData.yearOfStudy}
+                      onChange={(e) => handleInputChange(e, "yearOfStudy")}
+                      required
+                    >
+                      <option value="">Select Year</option>
+                      {yearsOfStudy.map((year, index) => (
+                        <option key={index} value={year}>
+                          {year}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+                {page === 3 && (
+                  <div className="input-group">
+                    <label>What's your role/ position in AIESEC?</label>
                     <select
                       value={formData.role}
                       onChange={(e) => handleInputChange(e, "role")}
@@ -255,24 +298,122 @@ const Register = () => {
                         </option>
                       ))}
                     </select>
-                  </div>
-                )}
-                {page === 3 && (
-                  <div className="input-group">
-                    {/*Merh Details*/ }
+                    <label>NIC</label>
+                    <input
+                      type="text"
+                      value={formData.nic}
+                      onChange={(e) => handleInputChange(e, "nic")}
+                      required
+                    />
+                    <label>Gender</label>
+                    <select
+                      value={formData.gender}
+                      onChange={(e) => handleInputChange(e, "gender")}
+                      required
+                    >
+                      <option value="">Select Gender</option>
+                      {genders.map((gender, index) => (
+                        <option key={index} value={gender}>
+                          {gender}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                 )}
                 {page === 4 && (
                   <div className="input-group">
-                    <label>How excited are you? (1 to 10)</label>
+                    <label>Food Preference</label>
+                    <select
+                      value={formData.foodpreference}
+                      onChange={(e) => handleInputChange(e, "foodpreference")}
+                      required
+                    >
+                      <option value="">Select Food Preference</option>
+                      <option value="veg">Non-veg</option>
+                      <option value="veg">Veg</option>
+                      {/* Add more options here */}
+                    </select>
+                    <label>Any allergies or medical conditions we should know about?</label>
+                    <textarea
+                      value={formData.allergiesMedication}
+                      onChange={(e) =>
+                        handleInputChange(e, "allergiesMedication")
+                      }
+                      required
+                    />
+                  </div>
+                )}
+                {page === 5 && (
+                  <div className="input-group">
+                    <label>Home Address</label>
                     <input
-                      type="number"
-                      min="1"
-                      max="10"
+                      type="text"
+                      value={formData.address}
+                      onChange={(e) => handleInputChange(e, "address")}
+                      required
+                    />
+                    <label>Guardian's Name</label>
+                    <input
+                      type="text"
+                      value={formData.guardianName}
+                      onChange={(e) => handleInputChange(e, "guardianName")}
+                      required
+                    />
+                    <label>Emergency Contact Number</label>
+                    <input
+                      type="text"
+                      value={formData.emergency}
+                      onChange={(e) => handleInputChange(e, "emergency")}
+                      required
+                    />
+                  </div>
+                )}
+                {page === 6 && (
+                  <div className="input-group">
+                  {/* Merch Details */}
+                  <img
+                    src={MerchFlyer}
+                    alt="Merch"
+                    style={{ width: "50%", height: "auto", margin:'30px auto 0 auto' }} // Adjust size as needed
+                  />
+                  <button
+                    onClick={handleMerch}
+                    className="merch-button"
+                    style={{ width:'40%', margin: '10px auto 10px auto', padding: '10px', backgroundColor: '#AA4465', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
+                  >
+                    Buy Merch
+                  </button>
+                </div>
+                )}
+                {page === 7 && (
+                  <div className="input-group">
+                    <label>
+                      Do you consent to share your information with TRANSCEND -
+                      NLDS 2024 partners?
+                    </label>
+                    <select
+                      value={formData.partnerConsent}
+                      onChange={(e) => handleInputChange(e, "partnerConsent")}
+                      required
+                    >
+                      <option value="">Select Option</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                      {/* Add more options here */}
+                    </select>
+                    <label>How excited are you? (1 to 5)</label>
+                    <select
                       value={formData.excitement}
                       onChange={(e) => handleInputChange(e, "excitement")}
                       required
-                    />
+                    >
+                      <option value="">Select</option>
+                      {excitementList.map((excitement, index) => (
+                        <option key={index} value={excitement}>
+                          {excitement}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                 )}
                 {errorMessage && (
@@ -284,7 +425,7 @@ const Register = () => {
                       Previous
                     </button>
                   )}
-                  {page < 4 ? (
+                  {page < 7 ? (
                     <button type="button" onClick={nextPage}>
                       Next
                     </button>

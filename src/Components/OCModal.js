@@ -24,7 +24,7 @@ const OCModal = ({ src, alt, frontText, backText }) => {
           <div className="oc-modal-back-text">
             <p id="back">{backText.name}</p>
             <p id="back">Nickname: {backText.nickname}</p>
-            <p id="back">Fun Fact: {backText.funfact}</p>
+            {/* <p id="back">Fun Fact: {backText.funfact}</p> */}
           </div>
         </div>
       </div>
