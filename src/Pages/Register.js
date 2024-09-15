@@ -131,14 +131,14 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    
     try {
       const response = await fetch(process.env.REACT_APP_APP_URL, {
         method: "POST",
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Content-Type": "text/plain",
         },
-        body: new URLSearchParams(formData), // Adjust based on your form fields
+        body: JSON.stringify(formData), // Adjust based on your form fields
       });
 
       if (!response.ok) {
@@ -157,22 +157,8 @@ const Register = () => {
       // Clear the form or take other actions
       // Example: setFormData({}); // Reset formData
     } catch (error) {
+      alert("Error Occurred: Check your network connection!");
       console.error("Submission failed:", error);
-
-      // Handle CORS errors separately
-      if (
-        error.message.includes("NetworkError") ||
-        error.message.includes("Failed to fetch")
-      ) {
-        console.log("CORS issue or network error, treating it as success.");
-        alert("Form submitted successfully!");
-        navigate("/");
-
-        // Optionally reset the form
-        // Example: setFormData({});
-      } else {
-        alert("An error occurred. Please try again.");
-      }
     }
   };
 
