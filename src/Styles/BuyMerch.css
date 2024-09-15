@@ -22,7 +22,7 @@
 
 .merch-items {
   margin-left: 8%; /* Reduced margin to bring image closer to text */
-  scale: 175%; /* Increase size of the image */
+  scale: 150%; /* Increase size of the image */
   width: 100%;
   max-width: 100%;
 }
@@ -72,11 +72,12 @@
   }
 
   .merch-items {
-    scale: 125%; /* Increase size of the image for tablets */
+    scale: 100%; /* Increase size of the image for tablets */
     margin-left: 0; /* Remove margin */
   }
 
   .buy-text {
+    
     margin-right: 0; /* Remove margin-right */
     text-align: center; /* Center text */
     flex-basis: auto;
