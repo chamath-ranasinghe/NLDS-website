@@ -34,7 +34,7 @@ const DhanushiDetails = {name: "Dhanushi Jayaweera", nickname:"DanuC", funfact: 
 
 const AsirimathDetails = {name: "Asirimath Vimukthi", nickname:"Siri", funfact: "Invisible"};
 const DarshanaDetails = {name: "Nuwan Darshana", nickname:"Darsana", funfact: "Never sleeps"};
-const GodfriDetails = {name: "Godfri John", nickname:"Godpi", funfact: "Goni andina rap deyya"};
+const GodfriDetails = {name: "Godfri John", nickname:"Godapara", funfact: "Goni andina rap deyya"};
 
 
 const OC = () => {
