@@ -20,8 +20,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/MerchHome" element={<MerchHome />} />
         <Route path="/MerchTest" element={<Merch />} />
-        {/* <Route path="/Register" element={<Register />} /> Change this after registration opens */}
-        <Route path="/Register" element={<TempRegister />} />
+        <Route path="/Register" element={<Register />} />
+        {/* <Route path="/Register" element={<TempRegister />} /> */}
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/OC" element={<OC />} />
         <Route path="/Faci" element={<Faci />} />
