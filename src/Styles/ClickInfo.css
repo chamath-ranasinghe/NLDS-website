@@ -11,6 +11,11 @@
     color: #333;
     align-items: center; /* Adjust the text color as needed */
   }
+
+  .prices{
+    color: #261f51;
+    font-size: 18px;
+  }
   
   @media (max-width: 768px) {
     .click-info-section {
