@@ -12,6 +12,7 @@ import OC from "./Pages/OC"
 import Faci from "./Pages/Faci"
 import Partners from './Pages/Partners'
 import Gallery from './Pages/Gallery'
+import ContactUs from './Pages/ContactUs'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/Register" element={<Register />} />
         {/* <Route path="/Register" element={<TempRegister />} /> */}
         <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/OC" element={<OC />} />
         <Route path="/Faci" element={<Faci />} />
         {/* <Route path="/Partners" element={<Partners />} /> */}
