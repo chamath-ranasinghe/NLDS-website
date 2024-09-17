@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "../Styles/Register.css";
+import "../Styles/Loading.css"
+
 import img1 from "../Assets/1.jpg";
 import img2 from "../Assets/2.jpg";
 import img3 from "../Assets/4.jpg";
@@ -13,6 +15,14 @@ import img8 from "../Assets/11.jpg";
 import MerchFlyer from "../Assets/MerchFlyer.jpg"
 
 import NavBar from "../Components/NavBar";
+
+const Loading = () => {
+  return (
+    <div className="loading-overlay">
+      <div className="spinner"></div>
+    </div>
+  );
+};
 
 const Register = () => {
   const navigate = useNavigate();
@@ -41,6 +51,7 @@ const Register = () => {
   const [showModal, setShowModal] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
+  const [showLoading, setShowLoading] = useState(false);
 
   //Entities
   const entities = [
@@ -133,6 +144,8 @@ const Register = () => {
     e.preventDefault();
     
     try {
+      setShowLoading(true);
+
       const response = await fetch(process.env.REACT_APP_APP_URL, {
         method: "POST",
         headers: {
@@ -141,7 +154,10 @@ const Register = () => {
         body: JSON.stringify(formData), // Adjust based on your form fields
       });
 
+      setShowLoading(false);
+
       if (!response.ok) {
+        setShowLoading(false);
         throw new Error(
           `Network response was not ok. Status: ${response.status}`
         );
@@ -157,6 +173,7 @@ const Register = () => {
       // Clear the form or take other actions
       // Example: setFormData({}); // Reset formData
     } catch (error) {
+      setShowLoading(false);
       alert("Error Occurred: Check your network connection!");
       console.error("Submission failed:", error);
     }
@@ -169,6 +186,7 @@ const Register = () => {
   return (
     <div>
       <NavBar />
+      {showLoading && <Loading />}
       {showModal && (
         <div className="initial-modal">
           <div className="modal-content">
@@ -181,7 +199,7 @@ const Register = () => {
         </div>
       )}
       {!showModal && (
-        <div className="registration-container">
+        <div className={`registration-container ${showLoading ? 'loading' : ''}`}>
           <div className={`registration-modal ${showModal ? "slide-in" : ""}`}>
             <div className="modal-left">
               <img src={images[page]} alt="Registration Visual" />
@@ -315,7 +333,7 @@ const Register = () => {
                       required
                     >
                       <option value="">Select Food Preference</option>
-                      <option value="veg">Non-veg</option>
+                      <option value="non-veg">Non-veg</option>
                       <option value="veg">Veg</option>
                       {/* Add more options here */}
                     </select>
