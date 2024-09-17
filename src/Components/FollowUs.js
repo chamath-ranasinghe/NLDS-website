@@ -11,7 +11,7 @@ const FollowUs = () => {
                 </div>
                 <div className="follow-text">
         <p>FOLLOW US ON FACEBOOK</p>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="follow-text-link">
+        <a href="https://www.facebook.com/events/502246742718082" target="_blank" rel="noopener noreferrer" className="follow-text-link">
           CLICK HERE
         </a>
       </div>
