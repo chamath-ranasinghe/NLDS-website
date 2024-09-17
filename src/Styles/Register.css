@@ -174,6 +174,28 @@ button:hover {
   text-align: right;
 }
 
+.contact-us {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact-us p {
+  color: #462255; /* Link color */
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.contact-us p:hover {
+  text-decoration: underline;
+}
+
+@media (max-height: 600px) {
+  .contact-us {
+    display: none;
+  }
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .registration-modal {
@@ -198,10 +220,13 @@ button:hover {
   }
 }
 
+
+
 @media screen and (max-width: 480px) {
   .registration-modal {
     width: 90%;
-    height: 80%;
+    height: 70%;
+    margin-top: 100px;
     border-radius: 10px; /* Ensures rounded corners in responsive view */
   }
 

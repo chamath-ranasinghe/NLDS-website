@@ -90,6 +90,10 @@ const Register = () => {
 
   const images = [img1, img2, img3, img4, img6, img7, img8, img5];
 
+  const handleContact = ()=>{
+    navigate('/ContactUs');
+  }
+
   // Make sure all the boxes are filled before moving to the next page
   const validateInputs = () => {
     // Skip validation if on page 3
@@ -450,9 +454,12 @@ const Register = () => {
                   ))}
                 </div>
               </form>
+              <div className="contact-us">
+                Any issues? <p onClick={handleContact}>Contact us!</p>
+              </div>
             </div>
           </div>
-          
+
         </div>
       )}
       

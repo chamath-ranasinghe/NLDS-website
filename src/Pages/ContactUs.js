@@ -5,40 +5,21 @@ import sheveke from "../Assets/OC/SheV.jpg";
 import ContactUsModal from "../Components/ContactUsModal";
 
 import "../Styles/OC.css";
-import "../Styles/Loading.css"
 import NavBar from "../Components/NavBar";
 
-const ChamathDetails = {name: "Chamath Ranasinghe", nickname:"Chama", funfact: "Ahinsakaya vage boruwa danne"};
+const ChamathDetails = {name: "Chamath Ranasinghe", email: "chamath.ranasinghe@aiesec.net", whatsapp: "+94 72 494 7677"};
 
-const DinuliDetails = {name: "Dinuli Liyanage", nickname:"Season 01", funfact: "Only watches Season 01 in every series"};
-const SheveDetails = {name: "Sheveke Gnanapandithen", nickname:"Sheve/Bridgerton", funfact: "Bridgeton>>>"};
-
-const Loading = () => {
-  return (
-    <div className="loading-overlay">
-      <div className="spinner"></div>
-    </div>
-  );
-};
+const DinuliDetails = {name: "Dinuli Liyanage", email: "dinuli.liyanage@aiesec.net", whatsapp: "+94 70 121 2764"};
+const SheveDetails = {name: "Sheveke Gnanapandithen", email: "shevekegnanapandithen@aiesec.net", whatsapp: "+94 75 716 1649"};
 
 
 const ContactUs = () => {
 
-  const [showLoading, setShowLoading] = useState(false);
-
-  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-  const handleLoad = async () =>{
-    setShowLoading(true);
-    await delay(2000);
-    setShowLoading(false);
-  }
-
 
   return (
     <>
-      {showLoading && <Loading />}
-      <div className={`organize-container ${showLoading ? 'loading' : ''}`} style={{height: "100vh"}}>
+
+      <div className={"organize-container"} style={{height: "100vh"}}>
         <NavBar />
         <div className="organize-content">
           <p> Contact Us </p>
@@ -46,8 +27,8 @@ const ContactUs = () => {
             <ContactUsModal src={chamath} alt="Chamath" frontText="Chamath" backText= {ChamathDetails} />
             <ContactUsModal src={dinuli} alt="Dinuli" frontText="Dinuli" backText= {DinuliDetails}/>
             <ContactUsModal src={sheveke} alt="Sheveke" frontText="Sheveke" backText= {SheveDetails}/>
-            <button onClick={handleLoad}>Test</button>
           </div>
+          <p style={{fontSize: "15px"}}> Click for contact details</p>
         </div>
       </div>
     </>

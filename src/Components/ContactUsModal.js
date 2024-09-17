@@ -22,8 +22,23 @@ const ContactUsModal = ({ src, alt, frontText, backText }) => {
         </div>
         <div className="oc-modal-back">
           <div className="oc-modal-back-text">
-            <p id="back">{backText.name}</p>
-            <p id="back">Nickname: {backText.nickname}</p>
+            <p id="back" style={{ fontSize: "15px" }}>
+              {backText.name}
+            </p>
+            <p id="back" style={{ fontSize: "12px" }}>
+              Email
+              <br />
+              <a href={`mailto:${backText.email}`} style={{ color: "#200b41" }}>
+                {backText.email}
+              </a>
+            </p>
+            <p id="back" style={{ fontSize: "12px" }}>
+              Whatsapp
+              <br />
+              <a href={`tel:${backText.whatsapp}`} style={{ color: "#200b41" }}>
+                {backText.whatsapp}
+              </a>
+            </p>
             {/* <p id="back">Fun Fact: {backText.funfact}</p> */}
           </div>
         </div>
