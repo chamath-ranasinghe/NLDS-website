@@ -19,7 +19,7 @@ const ContactUs = () => {
   return (
     <>
 
-      <div className={"organize-container"} style={{height: "100vh"}}>
+      <div className="organize-container" style={{height: "110vh"}}>
         <NavBar />
         <div className="organize-content">
           <p> Contact Us </p>
