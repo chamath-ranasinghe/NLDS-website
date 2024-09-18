@@ -1,0 +1,65 @@
+/* PopUpAd.css */
+.popup-ad-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border: 2px solid #aa4465;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn 0.5s ease-out;
+    z-index: 1000;
+  }
+
+  p{
+    padding: 10px;
+  }
+  
+  .popup-ad-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .popup-ad-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #aa4465;
+    cursor: pointer;
+  }
+  
+  .popup-ad-close-btn:hover {
+    color: #ff0000;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  

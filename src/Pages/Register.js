@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import MerchAlert from '../Components/MerchAlert';
+
 import "../Styles/Register.css";
 import "../Styles/Loading.css"
 
@@ -52,6 +54,9 @@ const Register = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [showLoading, setShowLoading] = useState(false);
+
+  // Merch Alert
+  const [modalOpen, setModalOpen] = useState(false);
 
   //Entities
   const entities = [
@@ -171,8 +176,10 @@ const Register = () => {
       console.log("Submission successful:", responseText);
 
       // Optionally show a success message to the user
-      alert("Your application is recieved! Await for further instructions...");
-      navigate("/");
+      //alert("Your application is recieved! Await for further instructions...");
+      //navigate("/");
+
+      setModalOpen(true);
 
       // Clear the form or take other actions
       // Example: setFormData({}); // Reset formData
@@ -186,6 +193,12 @@ const Register = () => {
   const handleAgree = () => {
     setShowModal(false);
   };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    navigate("/"); // Navigate after closing the modal
+  };
+
 
   return (
     <div>
@@ -462,7 +475,7 @@ const Register = () => {
 
         </div>
       )}
-      
+      <MerchAlert isOpen={modalOpen} onClose={closeModal} />
     </div>
   );
 };
