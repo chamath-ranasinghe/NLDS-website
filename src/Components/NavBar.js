@@ -32,6 +32,7 @@ const NavBar = () => {
         <li><RLink to="/OC" smooth={true} offset={-250} duration={500}>OC</RLink></li>
         <li><RLink to="/Faci" smooth={true} offset={-250} duration={500}>Faci</RLink></li>
         <li><RLink to="/MerchHome" smooth={true} offset={-250} duration={500}>Merch</RLink></li>
+        <li><RLink to="/FAQ" smooth={true} offset={-250} duration={500}>FAQ</RLink></li>
         {/* <li><RLink to="/Partners" smooth={true} offset={-250} duration={500}>Partners</RLink></li> */}
         <li><RLink to="/Register" smooth={true} offset={-250} duration={500} className='btn bt'>Register</RLink></li>
       </ul>

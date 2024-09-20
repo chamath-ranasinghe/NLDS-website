@@ -12,15 +12,15 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What are the event dates?",
-      answer: "The event will take place from 18th to 20th October 2024.",
+      answer: "18th to 20th October 2024.",
     },
     {
       question: "Where is the event location?",
-      answer: "The Venue will be revealed soon :) Don't worry it's closer than you think",
+      answer: "It will be revealed soon :) Don't worry it's closer than you think",
     },
     {
         question: "Should I pay a total of 19,000 LKR to participate?",
-        answer: "Don't worry. Your entity will cover a portion for you. Contact your LCVP for more details",
+        answer: "Don't worry. Your entity will cover a portion for you. Contact your OEVP/LCVP for more details",
       },
     {
       question: "How can I register for the event?",
