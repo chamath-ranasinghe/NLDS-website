@@ -13,6 +13,7 @@ import Faci from "./Pages/Faci"
 import Partners from './Pages/Partners'
 import Gallery from './Pages/Gallery'
 import ContactUs from './Pages/ContactUs'
+import FAQ from './Pages/FAQ';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/OC" element={<OC />} />
         <Route path="/Faci" element={<Faci />} />
+        <Route path='/FAQ' element={<FAQ/>}/>
         {/* <Route path="/Partners" element={<Partners />} /> */}
       </Routes>
     </Router>

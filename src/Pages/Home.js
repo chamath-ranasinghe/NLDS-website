@@ -5,6 +5,7 @@ import AbNlds from '../Components/AbNlds'
 import Footer from '../Components/Footer'
 import CountDown from '../Components/CountDown'
 import FollowUs from '../Components/FollowUs'
+import When from '../Components/When'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <NavBar/>
       <Hero/>
       <CountDown/>
+      <When/>
       <AbNlds/>
       <FollowUs/>
       <Footer/>

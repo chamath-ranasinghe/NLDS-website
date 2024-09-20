@@ -1,0 +1,92 @@
+/* Container for background image and blur */
+.faq-background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../Assets/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Blurred background effect */
+  .faq-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Darkened overlay */
+    filter: blur(5px);
+    z-index: 1;
+  }
+  
+  .faq-container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #DDFFF7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure the FAQ section stays above the background */
+    position: relative;
+  }
+  
+  .faq-title {
+    font-size: 28px;
+    color: #462255; /* Theme color */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #462255;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-item.active {
+    background-color: #462255;
+  }
+  
+  .faq-question {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .faq-answer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #DDFFF7;
+  }
+  
+  .faq-item:hover {
+    background-color: #7A2A47;
+  }
+
+  /* Style for the arrow */
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Arrow pointing down */
+  .arrow-down {
+    transform: rotate(45deg);
+  }
+  
+  /* Arrow pointing up */
+  .arrow-up {
+    transform: rotate(-135deg);
+  }
+  
