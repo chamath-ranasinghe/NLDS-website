@@ -12,7 +12,6 @@ const MerchAlert = ({ isOpen, onClose }) => {
     <div className="merch-alert">
       <div className="merch-alert-content">
         <p>Your application is received! Await further instructions...</p>
-        <p>Don't forget to checkout our exclusive merch</p>
         <button className="merch-alert-button" onClick={onClose}>
           Close
         </button>

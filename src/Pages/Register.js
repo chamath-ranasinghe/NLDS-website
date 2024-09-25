@@ -398,11 +398,11 @@ const Register = () => {
                     style={{ width: "40%", height: "auto", margin:'30px auto 0 auto' }} // Adjust size as needed
                   />
                   <button
-                    onClick={handleMerch}
+                    onClick={(e)=>e.preventDefault()}
                     className="reg-merch-btn"
                     style={{ width:'40%', margin: '10px auto 0 auto', padding: '10px', backgroundColor: '#462255', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
                   >
-                    Buy Merch
+                    You Just Missed it :(
                   </button>
                 </div>
                 )}
