@@ -11,7 +11,10 @@ const TempRegister = () => {
       <div className="initial-modal">
           <div className="modal-content">
             <p>
-              Recruitments for a secret mission starts soon. Keep up your excitement!!!
+              For the ones who registered: Await your call!
+            </p>
+            <p>
+              If you missed it: Tough luck :(
             </p>
           </div>
         </div>

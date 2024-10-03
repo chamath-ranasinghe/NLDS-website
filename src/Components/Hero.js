@@ -52,7 +52,7 @@ const Hero = () => {
       DEVELOPMENT<br />
       SEMINAR 2024
     </div>
-          <p className='date'>18th-20th October 2024</p>
+          <p className='date'>25th-27th October 2024</p>
           <br></br>
         </div>
       </div>

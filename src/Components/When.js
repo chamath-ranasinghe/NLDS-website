@@ -6,7 +6,7 @@ const When = () => {
     <div className="when-container">
       <h2 className="when-title">When?</h2>
       <div className="dates">
-        <span className="date-date">18th - 20th October</span>
+        <span className="date-date">25th - 27th October</span>
       </div>
     </div>
   );
