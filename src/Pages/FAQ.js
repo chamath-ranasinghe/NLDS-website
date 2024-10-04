@@ -12,21 +12,16 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What are the event dates?",
-      answer: "18th to 20th October 2024.",
+      answer: "25th to 27th October 2024.",
     },
     {
       question: "Where is the event location?",
-      answer: "It will be revealed soon :) Don't worry it's closer than you think",
+      answer: "Carolina Beach Resort, Chilaw",
     },
     {
         question: "Should I pay a total of 19,000 LKR to participate?",
         answer: "Don't worry. Your entity will cover a portion for you. Contact your OEVP/LCVP for more details",
       },
-    {
-      question: "How can I register for the event?",
-      answer:
-        "You can register online via our official website.",
-    },
   ];
 
   return (
