@@ -6,11 +6,20 @@
     padding: 20px;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+
+  .partner-title {
+    font-size: 2rem; /* Adjust size for the heading */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the heading, adjust as needed */
+    color: #462255; /* Use your preferred color */
+    margin-bottom: 1rem; /* Add some space below the heading */
   }
   
   .left-section .logo {
-    width: 50px; /* Adjust the size as needed */
-    height: 50px;
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
   }
   
   .right-section {

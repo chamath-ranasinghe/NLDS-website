@@ -2,7 +2,7 @@
 import React from 'react';
 import '../Styles/PartnerBox.css';
 
-const PartnerBox = ({logoSrc,description}) => {
+const PartnerBox = ({logoSrc,partnerTitle,description}) => {
   return (
     <div className="partner-box">
       <div className="left-section">
@@ -10,6 +10,7 @@ const PartnerBox = ({logoSrc,description}) => {
         <img src={logoSrc} alt="Logo" className="logo" />
       </div>
       <div className="right-section">
+        <p className='partner-title'>{partnerTitle}</p>
         <p className="description">
           {description}
         </p>
