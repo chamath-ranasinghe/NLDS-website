@@ -1,0 +1,95 @@
+.agenda-container {
+    width: 80%;
+    margin: 100px auto;
+    color: white;
+  }
+
+  .agenda-container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Assets/11.jpg') no-repeat center center/cover;
+    filter: blur(5px); /* Adjust blur strength as needed */
+    z-index: -1; /* Place behind the content */
+  }
+  .agenda-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .agenda-header button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #00A2A2;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+  }
+  
+  .agenda-header button:hover {
+    background-color: #027575;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  .agenda-header button.active {
+    background-color: #590075;
+    color: white;
+  }
+  
+  .agenda-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for opacity and transform */
+  }
+  
+  .agenda-item.hidden {
+    opacity: 0;
+    transform: translateY(-20px); /* Slight upward movement when hidden */
+  }
+  
+  .agenda-item.visible {
+    opacity: 1;
+    transform: translateY(0); /* Brings item back to its original position */
+  }
+  
+  .agenda-item:hover {
+    transform: scale(1.05); /* Expands the item on hover */
+  }
+  
+  .agenda-time {
+    width: 100px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 15px;
+  }
+  
+  .agenda-title {
+    flex: 1;
+  }
+  
+  .parallel-container {
+    display: flex;
+    gap: 10px; /* Adds space between parallel sessions */
+  }
+  
+  .parallel-session {
+    padding: 10px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Additional global CSS transition properties for smoother experience */
+  .agenda-content {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
