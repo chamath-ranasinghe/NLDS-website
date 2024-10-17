@@ -12,7 +12,7 @@ import Dulux from "../Assets/Partner_Logos/Dulux.png";
 import IEC from "../Assets/Partner_Logos/IEC.png";
 // import CIPM from "../Assets/Partner_Logos/CIPM.png";
 import Iris from "../Assets/Partner_Logos/Iris.png";
-// import MINT from "../Assets/Partner_Logos/MINT.png";
+import MINT from "../Assets/Partner_Logos/MINT.png";
 import Frella from "../Assets/Partner_Logos/Frella.png";
 import Browniebae from "../Assets/Partner_Logos/BrownieBae.jpg";
 import CakeCloud from "../Assets/Partner_Logos/CakeCloud.jpg";
@@ -37,148 +37,71 @@ const Partners = () => {
       <div className="background-image"></div>
       <div className="partner-content">
         <div className="partner-container">
-          <MainPartnerBox
-            logoSrc={Ceylinco}
-            partnerTitle="Title Partner"
-            description="Ceylinco Life has helped people progress towards their aspirations with peace of mind for over 36 years. Their insurance solutions are built around keeping you and those who you love secure, so that you can follow your goals and ambitions, free of any risks.  "
-          />
-          <MainPartnerBox
-            logoSrc={Ceyline}
-            partnerTitle="Platinum Partner"
-            description="Ceylinco Life has helped people progress towards their aspirations with peace of mind for over 36 years. Their insurance solutions are built around keeping you and those who you love secure, so that you can follow your goals and ambitions, free of any risks.  "
-          />
-          <MainPartnerBox
-            logoSrc={Abans}
-            partnerTitle="Official Mobile Partner"
-            description="Ceylinco Life has helped people progress towards their aspirations with peace of mind for over 36 years. Their insurance solutions are built around keeping you and those who you love secure, so that you can follow your goals and ambitions, free of any risks.  "
-          />
-          <PartnerBox
-            logoSrc={GPTW}
-            partnerTitle="Bronze Partner"
-          />
-          <PartnerBox
-            logoSrc={Dulux}
-            partnerTitle="Associate Partner"
-          />
-          
+          <div className="partner-row">
+            <MainPartnerBox
+              logoSrc={Ceylinco}
+              partnerTitle="Title Partner"
+              description="Ceylinco Life has helped people progress towards their aspirations with peace of mind for over 36 years. Their insurance solutions are built around keeping you and those who you love secure, so that you can follow your goals and ambitions, free of any risks."
+              className="main-partner-box"
+            />
+            <MainPartnerBox
+              logoSrc={Ceyline}
+              partnerTitle="Platinum Partner"
+              description="Ceyline Life has provided insurance solutions for over 36 years, keeping people safe as they pursue their goals."
+              className="main-partner-box"
+            />
+            <MainPartnerBox
+              logoSrc={Abans}
+              partnerTitle="Official Mobile Partner"
+              description="Ceyline Life has provided insurance solutions for over 36 years, keeping people safe as they pursue their goals."
+              className="main-partner-box"
+            />
+          </div>
 
-          <PartnerBox
-            logoSrc={IEC}
-            partnerTitle="Official Education Partner"
-            description="International Education Consultancy"
-          />
-{/* 
-          <PartnerBox
-            logoSrc={CIPM}
-            partnerTitle="Professional Educational Partner"
-            description="Chartered Institute of Personnel Management Sri Lanka (CIPM)"
-          /> */}
+          <div className="partner-row">
+            <PartnerBox logoSrc={GPTW} partnerTitle="Bronze Partner" />
+            <PartnerBox logoSrc={Dulux} partnerTitle="Associate Partner" />
+            <PartnerBox logoSrc={IEC} partnerTitle="Banner Partner" description="International Education Consultancy" styleClass={"logo-resize"} />
+          </div>
 
-          <PartnerBox
-            logoSrc={Iris}
-            partnerTitle="Gift Partner"
-            description="Iris Garden"
-          />
+          <div className="partner-row">
+            <PartnerBox logoSrc={Iris} partnerTitle="Gift Partner" description="Iris Garden" />
+            <PartnerBox logoSrc={Frella} partnerTitle="Gift Partner" description="Frella International" styleClass={'logo-resize'} />
+            <PartnerBox logoSrc={MINT} partnerTitle="Gift Partner" description="MINT Products" styleClass={'logo-resize'}/>
+          </div>
 
-          {/* <PartnerBox
-            logoSrc={MINT}
-            partnerTitle="Gift Partner"
-            description="MINT Products (Pvt.) Ltd."
-          /> */}
+          <div className="partner-row">
+            <PartnerBox logoSrc={Browniebae} partnerTitle="Food Partner" description="Browniebae" />
+            <PartnerBox logoSrc={CakeCloud} partnerTitle="Food Partner" description="Cake Cloud" />
+            <PartnerBox logoSrc={Kalo} partnerTitle="Official Snacking Partner" description="Kalo" />
+          </div>
 
-          <PartnerBox
-            logoSrc={Frella}
-            partnerTitle="Gift Partner"
-            description="Frella International"
-          />
+          <div className="partner-row">
+            <PartnerBox logoSrc={Fonterra} partnerTitle="Official Nutrition Partner" description="Fonterra" />
+            <PartnerBox logoSrc={Mahagedara} partnerTitle="Official Merchandise Partner" description="Tshirt Mahagedara" />
+            <PartnerBox logoSrc={DeepPlus} partnerTitle="Official Entertainment Partner" description="Deep Plus" />
+          </div>
 
-          <PartnerBox
-            logoSrc={Browniebae}
-            partnerTitle="Food Partner"
-            description="Browniebae"
-          />
+          <div className="partner-row">
+            <PartnerBox logoSrc={NYSM} partnerTitle="Official Photography Partner" description="NowYouSeeMe" />
+            <PartnerBox logoSrc={MOODZ} partnerTitle="GALA Photography Partner" description="MOODZ" />
+            <PartnerBox logoSrc={SecretSeeker} partnerTitle="OBT Dronography Partner" description="Secret Seeker" />
+          </div>
 
-          <PartnerBox
-            logoSrc={CakeCloud}
-            partnerTitle="Food Partner"
-            description="Cake Cloud"
-          />
+          <div className="partner-row">
+            <PartnerBox logoSrc={HiOnline} partnerTitle="Digital Media Partner" description="Hi Online" />
+            <PartnerBox logoSrc={SundayTimes} partnerTitle="Printed Media Partner" description="Sunday Times – Education Times" styleClass={'logo-resize'} />
+          </div>
 
-          <PartnerBox
-            logoSrc={Kalo}
-            partnerTitle="Official Snacking Partner"
-            description="Kalo"
-          />
-
-          <PartnerBox
-            logoSrc={Fonterra}
-            partnerTitle="Official Nutrition Partner"
-            description="Fonterra"
-          />
-
-          {/* <PartnerBox
-            logoSrc={ElephantHouse}
-            partnerTitle="Official Beverage Partner"
-            description="Elephant House"
-          /> */}
-
-          <PartnerBox
-            logoSrc={Mahagedara}
-            partnerTitle="Official Merchandise Partner"
-            description="Tshirt Mahagedara"
-          />
-
-          <PartnerBox
-            logoSrc={DeepPlus}
-            partnerTitle="Official Entertainment Partner"
-            description="Deep Plus"
-          />
-
-          <PartnerBox
-            logoSrc={NYSM}
-            partnerTitle="Official Photography Partner"
-            description="NowYouSeeMe"
-          />
-
-          <PartnerBox
-            logoSrc={MOODZ}
-            partnerTitle="GALA Photography Partner"
-            description="MOODZ"
-          />
-
-          <PartnerBox
-            logoSrc={SecretSeeker}
-            partnerTitle="OBT Dronography Partner"
-            description="Secret Seeker"
-          />
-
-          <PartnerBox
-            logoSrc={TGWater}
-            partnerTitle="Complimentary Partner"
-            description="TG Water Technologies (Pvt) Ltd"
-          />
-
-          <PartnerBox
-            logoSrc={DNC}
-            partnerTitle="Complimentary Partner"
-            description="DNC Sports"
-          />
-
-          <PartnerBox
-            logoSrc={HiOnline}
-            partnerTitle="Digital Media Partner"
-            description="Hi Online"
-          />
-
-          <PartnerBox
-            logoSrc={SundayTimes}
-            partnerTitle="Printed Media Partner"
-            description="Sunday Times – Education Times"
-          />
+          <div className="partner-row">
+          <PartnerBox logoSrc={TGWater} partnerTitle="Complimentary Partner" description="TG Water Technologies (Pvt) Ltd" />
+          <PartnerBox logoSrc={DNC} partnerTitle="Complimentary Partner" description="DNC Sports" />
+          </div>
         </div>
       </div>
     </>
   );
 };
+
 
 export default Partners;

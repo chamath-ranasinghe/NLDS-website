@@ -16,6 +16,7 @@ import ContactUs from './Pages/ContactUs'
 import FAQ from './Pages/FAQ';
 import Agenda from './Pages/Agenda';
 import Venue from './Pages/Venue';
+import Abans from './Pages/Partners/Abans';
 
 function App() {
   return (
@@ -32,9 +33,10 @@ function App() {
         <Route path="/Faci" element={<Faci />} />
         <Route path='/FAQ' element={<FAQ/>}/>
         <Route path="/Partners" element={<Partners />} />
+        <Route path="/Partners/Abans" element={<Abans />} />
+
         {/* <Route path="/Agenda" element={<Agenda/>} />
         <Route path="/Venue" element={<Venue/>} /> */}
-        <Route path="/Partners" element={<Partners />} />
         
       </Routes>
     </Router>

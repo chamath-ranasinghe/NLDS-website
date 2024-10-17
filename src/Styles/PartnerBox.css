@@ -1,43 +1,89 @@
 .partner-box {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center elements horizontally */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Spread content evenly */
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  text-align: center; /* Center the text inside the box */
+  width: 15%; /* Fixed width */
+  height: 250px; /* Fixed height for uniformity */
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .partner-title {
-  font-size: 2rem; /* Adjust size for the heading */
-  font-weight: bold; /* Make the text bold */
-  color: #462255; /* Use your preferred color */
-  margin-bottom: 1rem; /* Add space below the heading */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #462255;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  flex-shrink: 0; /* Prevents shrinking */
 }
 
 .partner-logo {
-  width: 150px; /* Adjust the size as needed */
+  width: 100px;
   height: auto;
-  margin-bottom: 1rem; /* Add space below the logo */
+  margin: 10px 0; /* Adjust margins for spacing */
+  flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
 .description {
-  margin: 1rem 0;
-  color: #333; /* Adjust the color if necessary */
+  flex-grow: 1; /* Allow description to take up remaining space */
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .learn-more-btn {
   background-color: #462255;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 10px; /* Add some space between description and button */
+  flex-shrink: 0; /* Ensure button stays at the same position */
 }
 
 .learn-more-btn:hover {
   background-color: #AA4465;
+}
+
+.logo-resize{
+  width:150px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .partner-box {
+    width: 80%; /* Full width on smaller screens */
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .partner-logo {
+    width: 80px; /* Reduce logo size on smaller screens */
+  }
+
+  .partner-title {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.7rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .learn-more-btn {
+    font-size: 0.8rem;
+  }
 }

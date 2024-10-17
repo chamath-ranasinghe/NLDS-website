@@ -1,0 +1,215 @@
+/* src/Pages/ProductShowcase.css */
+
+.abans-product-showcase {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 100px;
+  }
+
+  /* Pseudo-element to handle the blurred background */
+  .abans-product-showcase::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Assets/11.jpg') no-repeat center center/cover;
+    filter: blur(5px); /* Adjust blur strength as needed */
+    z-index: -1; /* Place behind the content */
+  }
+  
+  .abans-hero {
+    display: flex;
+    align-items: center; /* Center the items vertically */
+    justify-content: space-between; /* Space between text and image */
+    background: linear-gradient(to right, #462255, #AA4465); /* Gradient background */
+    color: #DDFFF7;
+    padding: 60px 20px;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    max-width: 1200px; /* Max width for the section */
+    margin: 0 auto; /* Center the section */
+    overflow: hidden; /* Ensure rounded corners are maintained */
+  }
+  
+  .abans-hero-text {
+    flex: 1; /* Allow text to take available space */
+    padding-right: 40px; /* Increase spacing between text and image */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center text vertically */
+  }
+
+  .abans-hero-subtitle {
+    font-weight: 300;
+  }
+  
+  .abans-hero-image {
+    position: relative; /* For positioning the logo box */
+    border-radius: 20px; /* Round the image corners */
+    overflow: hidden; /* Ensure rounded corners are maintained */
+    flex: 1; /* Allow image to take available space */
+    max-width: 400px; /* Set a max width for the image */
+  }
+  
+  .abans-hero-image #productLogo {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .abans-logo-box {
+    position: absolute; /* Position it relative to the image */
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px; /* Padding around the logo */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Drop shadow for logo box */
+  }
+  
+  /* Description Section*/
+  .abans-description {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space out text and image */
+    padding: 40px 20px;
+    background: linear-gradient(to right, #462255, #AA4465); /* Gradient background */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  
+  .abans-description-text {
+    flex: 1;
+    padding-right: 40px; /* Space between text and image */
+  }
+  
+  .abans-description-image {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .abans-description-image img {
+    width: 100%;
+    border-radius: 20px; /* Rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  }
+  
+  .abans-features {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+  }
+  
+  .abans-feature-item {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    opacity: 0; /* Hidden initially */
+    transform: translateY(20px); /* Slight downward shift */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+  }
+  
+  .abans-feature-item.visible {
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Move into place */
+  }
+  
+  
+  .abans-product-showcase-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #DDFFF7;
+  }
+  
+  .abans-product-showcase-section h2 {
+    font-size: 2rem;
+    color: #462255;
+    margin-bottom: 20px;
+  }
+  
+  .abans-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .abans-product {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .abans-product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .abans-product-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .abans-product-price {
+    color: #AA4465;
+    font-size: 1.1rem;
+  }
+  
+  .abans-product-button {
+    background-color: #462255;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .abans-product-button:hover {
+    background-color: #AA4465;
+  }
+  
+  .abans-social-media {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #462255;
+    color: #DDFFF7;
+  }
+  
+  .abans-social-media h2 {
+    margin-bottom: 20px;
+  }
+  
+  .abans-social-media-icons a {
+    color: #DDFFF7;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .abans-social-media-icons a:hover {
+    color: #AA4465;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .abans-products {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .abans-product {
+      width: 90%; /* Make product cards full width on smaller screens */
+    }
+  }
+  
