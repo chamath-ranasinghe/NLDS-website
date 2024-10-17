@@ -16,7 +16,6 @@ import ContactUs from './Pages/ContactUs'
 import FAQ from './Pages/FAQ';
 import Agenda from './Pages/Agenda';
 import Venue from './Pages/Venue';
-import Surprise from './Pages/Surprise';
 
 function App() {
   return (
@@ -36,7 +35,6 @@ function App() {
         {/* <Route path="/Agenda" element={<Agenda/>} />
         <Route path="/Venue" element={<Venue/>} /> */}
         <Route path="/Partners" element={<Partners />} />
-        <Route path="/Surprise" element={<Surprise />} />
         
       </Routes>
     </Router>
