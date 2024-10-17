@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link as RLink} from 'react-router-dom';
 import logo from "../Assets/2024.png";
 import newLogo from "../Assets/2024-new.png";
+import newTitleLogo from "../Assets/2024-New-Title.png"
 
 import menu from "../Assets/icons/menu-icon.png"
 
@@ -25,7 +26,7 @@ const NavBar = () => {
 
   return (
     <nav className={`container ${sticky ? 'darknav': ''}`}>
-    <a href="/"><img src={newLogo} alt="" className ="logo"/></a>
+    <a href="/"><img src={newTitleLogo} alt="" className ="logo"/></a>
       <ul className={mobileMenu?'':'hide-mobile-menu'}>
         <li><RLink to="/" smooth={true} offset={-200} duration={500}>Home</RLink></li>
         <li><RLink to="/Gallery" smooth={true} offset={-250} duration={500}>Gallery</RLink></li>
