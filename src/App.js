@@ -29,7 +29,7 @@ function App() {
         <Route path="/OC" element={<OC />} />
         <Route path="/Faci" element={<Faci />} />
         <Route path='/FAQ' element={<FAQ/>}/>
-        {/* <Route path="/Partners" element={<Partners />} /> */}
+        <Route path="/Partners" element={<Partners />} />
       </Routes>
     </Router>
   );

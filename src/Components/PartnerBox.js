@@ -1,21 +1,11 @@
-// PartnerBox.js
 import React from 'react';
 import '../Styles/PartnerBox.css';
 
-const PartnerBox = ({logoSrc,partnerTitle,description}) => {
+const PartnerBox = ({ logoSrc, partnerTitle, description }) => {
   return (
     <div className="partner-box">
-      <div className="left-section">
-        {/* Replace with your logo image */}
-        <img src={logoSrc} alt="Logo" className="logo" />
-      </div>
-      <div className="right-section">
-        <p className='partner-title'>{partnerTitle}</p>
-        <p className="description">
-          {description}
-        </p>
-        <button className="learn-more-btn">Learn More</button>
-      </div>
+      <p className="partner-title">{partnerTitle}</p>
+      <img src={logoSrc} alt="Logo" className="partner-logo" />
     </div>
   );
 };

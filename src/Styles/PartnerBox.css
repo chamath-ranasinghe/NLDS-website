@@ -1,46 +1,43 @@
 .partner-box {
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-  }
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center; /* Center the text inside the box */
+}
 
-  .partner-title {
-    font-size: 2rem; /* Adjust size for the heading */
-    font-weight: bold; /* Make the text bold */
-    text-align: center; /* Center the heading, adjust as needed */
-    color: #462255; /* Use your preferred color */
-    margin-bottom: 1rem; /* Add some space below the heading */
-  }
-  
-  .left-section .logo {
-    width: 100px; /* Adjust the size as needed */
-    height: auto;
-  }
-  
-  .right-section {
-    flex: 1;
-    padding-left: 20px;
-  }
-  
-  .description {
-    margin: 0 0 10px 0;
-  }
-  
-  .learn-more-btn {
-    background-color: #462255;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .learn-more-btn:hover {
-    background-color: #AA4465;
-  }
-  
+.partner-title {
+  font-size: 2rem; /* Adjust size for the heading */
+  font-weight: bold; /* Make the text bold */
+  color: #462255; /* Use your preferred color */
+  margin-bottom: 1rem; /* Add space below the heading */
+}
+
+.partner-logo {
+  width: 150px; /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 1rem; /* Add space below the logo */
+}
+
+.description {
+  margin: 1rem 0;
+  color: #333; /* Adjust the color if necessary */
+}
+
+.learn-more-btn {
+  background-color: #462255;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.learn-more-btn:hover {
+  background-color: #AA4465;
+}
