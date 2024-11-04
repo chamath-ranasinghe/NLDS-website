@@ -5,7 +5,7 @@ const CountDown = () => {
 
   const calculateTimeLeft = () => {
     const now = new Date();
-    const difference = targetDate - now;
+    const difference = now - targetDate;
 
     let timeLeft = {
       months: Math.floor(difference / (1000 * 60 * 60 * 24 * 30)),
@@ -29,7 +29,7 @@ const CountDown = () => {
   }, [calculateTimeLeft]);
   return (
     <div className='countdown-container'>
-       <div className="stay-tuned">STAY TUNED!!!</div>
+       <div className="stay-tuned">Days Passed!</div>
       <div className="countdown">
         <div className="countdown-item">
           <div className="countdown-number">{timeLeft.months}</div>
