@@ -26,14 +26,14 @@ const Merch = () => {
 
   return (
     <div className="merch" id='Merch'>
-        <img src={next} className='nextbtn' onClick={slideFoward}/>
-        <img src={back} className='backbtn' onClick={slideBackward}/>
+        <img src={next.src} className='nextbtn' onClick={slideFoward}/>
+        <img src={back.src} className='backbtn' onClick={slideBackward}/>
         <div className='slider'>
             <ul ref={slider}>
                 <li>
                     <div className='slide'>
                         <div className="photo">
-                            <img src={tshirt} alt=""/>
+                            <img src={tshirt.src} alt=""/>
                         </div>
                         <h3>Tshirt</h3>
                     </div>
@@ -41,7 +41,7 @@ const Merch = () => {
                 <li>
                     <div className='slide'>
                         <div className="photo">
-                            <img src={cap} alt=""/>
+                            <img src={cap.src} alt=""/>
                         </div>
                         <h3>Cap</h3>
                     </div>
@@ -49,7 +49,7 @@ const Merch = () => {
                 <li>
                 <div className='slide'>
                         <div className="photo">
-                            <img src={band} alt=""/>
+                            <img src={band.src} alt=""/>
                         </div>
                         <h3>Band</h3>
                     </div>
@@ -57,7 +57,7 @@ const Merch = () => {
                 <li>
                 <div className='slide'>
                         <div className="photo">
-                            <img src={tanktop} alt=""/>
+                            <img src={tanktop.src} alt=""/>
                         </div>
                         <h3>Tanktop</h3>
                     </div>

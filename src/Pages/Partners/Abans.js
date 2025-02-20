@@ -59,9 +59,9 @@ Through Abans, the trusted reseller of Motorola in Sri Lanka, Motorola ensures y
           <button className="abans-hero-button">Visit their page</button>
         </div>
         <div className="abans-hero-image">
-          <img src={Product} alt="Product" id="productLogo" />
+          <img src={Product.src} alt="Product" id="productLogo" />
           <div className="abans-logo-box">
-            <img src={Logo} alt="Company Logo" width="100"/>{" "}
+            <img src={Logo.src} alt="Company Logo" width="100"/>{" "}
             {/* Adjust width as necessary */}
           </div>
         </div>
@@ -80,7 +80,7 @@ Through Abans, the trusted reseller of Motorola in Sri Lanka, Motorola ensures y
     </ul>
   </div>
   <div className="abans-description-image">
-    <img src={DescriptionImage} alt="About Our Products" />
+    <img src={DescriptionImage.src} alt="About Our Products" />
   </div>
 </section>
 

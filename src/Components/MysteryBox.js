@@ -41,7 +41,7 @@ function MysteryBox() {
         </div>
 
         <div className="gift-pack">
-          <img src={box} alt="Logo" className="gift-items" />
+          <img src={box.src} alt="Logo" className="gift-items" />
         </div>
       </div>
     </div>

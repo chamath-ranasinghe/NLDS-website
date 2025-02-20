@@ -1,6 +1,6 @@
 import React, { useState }  from 'react'
 import image1 from '../Assets/Merch/tshirt.png';
-import image2 from '../Assets/Merch/skinny.png';
+import image2 from '../Assets/Merch/skinny.webp';
 import image3 from '../Assets/Merch/cap.png';
 import image4 from '../Assets/Merch/band.png';
 
@@ -34,7 +34,7 @@ function MerchSlider() {
         className="slider-item"
         onClick={() => handleItemClick(slide)}
       >
-        <img src={slide.png} alt={slide.heading} className="slider-img" />
+        <img src={slide.png.src} alt={slide.heading} className="slider-img" />
         <div className="slider-text">
           <h2 className="slider-heading">{slide.heading}</h2>
         </div>
@@ -46,7 +46,7 @@ function MerchSlider() {
       <div className="popup-overlay">
         <div className="popup-content">
           <button className="popup-close" onClick={handleClosePopup}>×</button>
-          <img src={selectedItem.png} alt={selectedItem.heading} className="popup-img" />
+          <img src={selectedItem.png.src} alt={selectedItem.heading} className="popup-img" />
           <div className="popup-text">
             <h2 className="popup-heading">{selectedItem.heading}</h2>
             <p className="popup-details">

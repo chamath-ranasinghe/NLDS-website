@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return (
     <nav className={`container ${sticky ? 'darknav': ''}`}>
-    <a href="/"><img src={newTitleLogo} alt="" className ="logo"/></a>
+    <a href="/"><img src={newTitleLogo.src} alt="" className ="logo"/></a>
       <ul className={mobileMenu?'':'hide-mobile-menu'}>
         <li><RLink to="/" smooth={true} offset={-200} duration={500}>Home</RLink></li>
         <li><RLink to="/Gallery" smooth={true} offset={-250} duration={500}>Gallery</RLink></li>
@@ -37,7 +37,7 @@ const NavBar = () => {
         {/* <li><RLink to="/Partners" smooth={true} offset={-250} duration={500}>Partners</RLink></li> */}
         <li><RLink to="/Register" smooth={true} offset={-250} duration={500} className='btn bt'>Register</RLink></li>
       </ul>
-      <img src={menu} alt="" className='menu-icon' onClick={toggleMenu}/>
+      <img src={menu.src} alt="" className='menu-icon' onClick={toggleMenu}/>
     </nav>
   )
 }

@@ -15,7 +15,7 @@ const ContactUsModal = ({ src, alt, frontText, backText }) => {
     >
       <div className="oc-modal">
         <div className="oc-modal-front">
-          <img src={src} alt={alt} />
+          <img src={src.src} alt={alt} />
           <div className="oc-modal-front-text">
             <p id="front">{frontText}</p>
           </div>

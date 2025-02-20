@@ -7,7 +7,7 @@ const FollowUs = () => {
     <div className='followus'>
       <div className="follow-content">
       <div className="fbelmnt">
-                    <img src={element} alt="Logo" className="element-item" />
+                    <img src={element.src} alt="Logo" className="element-item" />
                 </div>
                 <div className="follow-text">
         <p>FOLLOW US ON FACEBOOK</p>

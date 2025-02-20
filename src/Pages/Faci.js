@@ -59,48 +59,48 @@ const OC = () => {
 
           <p> Chair </p>
           <div className="organize">
-            <FaciModal src={chair} alt="?" frontText="Chair" backText= {ChairDetails} />
+            <FaciModal src={chair.src} alt="?" frontText="Chair" backText= {ChairDetails} />
           </div>
 
           <p> MCP </p>
           <div className="organize">
-            <FaciModal src={vikum} alt="vikum" frontText="Vikum" backText= {VikumDetails}/>
+            <FaciModal src={vikum.src} alt="vikum" frontText="Vikum" backText= {VikumDetails}/>
           </div>
 
           <p> Conference Managers </p>
           <div className="organize">
-            <FaciModal src={dineli} alt="Dineli" frontText="Dineli" backText= {DineliDetails}/>
-            <FaciModal src={hassan} alt="Hassan" frontText="Hassan" backText= {HassanDetails}/>
+            <FaciModal src={dineli.src} alt="Dineli" frontText="Dineli" backText= {DineliDetails}/>
+            <FaciModal src={hassan.src} alt="Hassan" frontText="Hassan" backText= {HassanDetails}/>
           </div>
 
           <p> Agenda Managers </p>  
           <div className="organize">
-            <FaciModal src={aakkash} alt="Aakkash" frontText="Aakkash" backText= {AakkashDetails}/>
-            <FaciModal src={chamuditha} alt="Chamuditha" frontText="Chamuditha" backText= {ChamudithaDetails}/>
+            <FaciModal src={aakkash.src} alt="Aakkash" frontText="Aakkash" backText= {AakkashDetails}/>
+            <FaciModal src={chamuditha.src} alt="Chamuditha" frontText="Chamuditha" backText= {ChamudithaDetails}/>
           </div>
 
           <p>MCVPs</p>
           <div className="organize">
-            <FaciModal src={akasha} alt="Akasha" frontText="Akasha" backText= {AkashaDetails}/>
-            <FaciModal src={imesh} alt="Imesh" frontText="Imesh" backText= {ImeshDetails}/>
-            <FaciModal src={dunithi} alt="Dunithi" frontText="Dunithi" backText= {DunithiDetails}/>
+            <FaciModal src={akasha.src} alt="Akasha" frontText="Akasha" backText= {AkashaDetails}/>
+            <FaciModal src={imesh.src} alt="Imesh" frontText="Imesh" backText= {ImeshDetails}/>
+            <FaciModal src={dunithi.src} alt="Dunithi" frontText="Dunithi" backText= {DunithiDetails}/>
           </div>
 
           <div className="organize">
-            <FaciModal src={prabashi} alt="Prabashi" frontText="Prabashi" backText= {PrabashiDetails}/>
-            <FaciModal src={dileesha} alt="Dileesha" frontText="Dileesha" backText= {DileeshaDetails}/>
-            <FaciModal src={sanjeev} alt="Sanjeev" frontText="Sanjeev" backText= {SanjeevDetails}/>
+            <FaciModal src={prabashi.src} alt="Prabashi" frontText="Prabashi" backText= {PrabashiDetails}/>
+            <FaciModal src={dileesha.src} alt="Dileesha" frontText="Dileesha" backText= {DileeshaDetails}/>
+            <FaciModal src={sanjeev.src} alt="Sanjeev" frontText="Sanjeev" backText= {SanjeevDetails}/>
           </div>
 
           <div className="organize">
-            <FaciModal src={sapna} alt="Sapna" frontText="Sapna" backText= {SapnaDetails}/>
-            <FaciModal src={sanuthi} alt="Sanuthi" frontText="Sanuthi" backText= {SanuthiDetails}/>
-            <FaciModal src={senuri} alt="Senuri" frontText="Senuri" backText= {SenuriDetails}/>
+            <FaciModal src={sapna.src} alt="Sapna" frontText="Sapna" backText= {SapnaDetails}/>
+            <FaciModal src={sanuthi.src} alt="Sanuthi" frontText="Sanuthi" backText= {SanuthiDetails}/>
+            <FaciModal src={senuri.src} alt="Senuri" frontText="Senuri" backText= {SenuriDetails}/>
           </div>
 
           <div className="organize">
-            <FaciModal src={uthpalani} alt="Uthpalani" frontText="Uthpalani" backText= {UthpalaniDetails}/>
-            <FaciModal src={jayani} alt="Jayani" frontText="Jayani" backText= {JayaniDetails}/>
+            <FaciModal src={uthpalani.src} alt="Uthpalani" frontText="Uthpalani" backText= {UthpalaniDetails}/>
+            <FaciModal src={jayani.src} alt="Jayani" frontText="Jayani" backText= {JayaniDetails}/>
           </div>
         </div>
       </div>

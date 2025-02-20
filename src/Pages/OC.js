@@ -45,34 +45,34 @@ const OC = () => {
         <div className="organize-content">
           <p> President </p>
           <div className="organize">
-            <OCModal src={chamath} alt="Chamath" frontText="Chamath" backText= {ChamathDetails} />
+            <OCModal src={chamath.src} alt="Chamath" frontText="Chamath" backText= {ChamathDetails} />
           </div>
           <p> Vice Presidents - Business Development & Public Relations </p>
           <div className="organize">
-            <OCModal src={amaya} alt="Amaya" frontText="Amaya" backText= {AmayaDetails}/>
-            <OCModal src={chelaka} alt="Chelaka" frontText="Chelaka" backText= {ChelakaDetails}/>
-            <OCModal src={mahima} alt="Mahima" frontText="Mahima" backText= {MahimaDetails}/>
+            <OCModal src={amaya.src} alt="Amaya" frontText="Amaya" backText= {AmayaDetails}/>
+            <OCModal src={chelaka.src} alt="Chelaka" frontText="Chelaka" backText= {ChelakaDetails}/>
+            <OCModal src={mahima.src} alt="Mahima" frontText="Mahima" backText= {MahimaDetails}/>
           </div>
           <p> Vice Presidents - Delegates </p>
           <div className="organize">
-            <OCModal src={dinuli} alt="Dinuli" frontText="Dinuli" backText= {DinuliDetails}/>
-            <OCModal src={sheveke} alt="Sheveke" frontText="Sheveke" backText= {SheveDetails}/>
+            <OCModal src={dinuli.src} alt="Dinuli" frontText="Dinuli" backText= {DinuliDetails}/>
+            <OCModal src={sheveke.src} alt="Sheveke" frontText="Sheveke" backText= {SheveDetails}/>
           </div>
           <p> Vice Presidents - Logistics </p>
           <div className="organize">
-            <OCModal src={indeera} alt="Indeera" frontText="Indeera" backText= {IndeeraDetails}/>
-            <OCModal src={isuru} alt="Isuru" frontText="Isuru" backText= {IsuruDetails}/>
-            <OCModal src={lasith} alt="Lasith" frontText="Lasith" backText= {LasithDetails}/>
+            <OCModal src={indeera.src} alt="Indeera" frontText="Indeera" backText= {IndeeraDetails}/>
+            <OCModal src={isuru.src} alt="Isuru" frontText="Isuru" backText= {IsuruDetails}/>
+            <OCModal src={lasith.src} alt="Lasith" frontText="Lasith" backText= {LasithDetails}/>
           </div>
           <p> Vice President - Finance </p>
           <div className="organize">
-            <OCModal src={dhanushi} alt="Dhanushi" frontText="Dhanushi" backText= {DhanushiDetails}/>
+            <OCModal src={dhanushi.src} alt="Dhanushi" frontText="Dhanushi" backText= {DhanushiDetails}/>
           </div>
           <p> Vice Presidents - Marketing </p>
           <div className="organize">
-            <OCModal src={asirimath} alt="Asirimath" frontText="Asirimath" backText= {AsirimathDetails}/>
-            <OCModal src={darshana} alt="Darshana" frontText="Darshana" backText= {DarshanaDetails}/>
-            <OCModal src={godfri} alt="Godfri" frontText="Godfri" backText= {GodfriDetails}/>
+            <OCModal src={asirimath.src} alt="Asirimath" frontText="Asirimath" backText= {AsirimathDetails}/>
+            <OCModal src={darshana.src} alt="Darshana" frontText="Darshana" backText= {DarshanaDetails}/>
+            <OCModal src={godfri.src} alt="Godfri" frontText="Godfri" backText= {GodfriDetails}/>
           </div>
         </div>
       </div>

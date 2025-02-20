@@ -219,7 +219,7 @@ const Register = () => {
         <div className={`registration-container ${showLoading ? 'loading' : ''}`}>
           <div className={`registration-modal ${showModal ? "slide-in" : ""}`}>
             <div className="modal-left">
-              <img src={images[page]} alt="Registration Visual" />
+              <img src={images[page].src} alt="Registration Visual" />
             </div>
             <div className="modal-right">
               <form onSubmit={handleSubmit} className="carousel-content">
@@ -393,7 +393,7 @@ const Register = () => {
                   <div className="input-group">
                   {/* Merch Details */}
                   <img
-                    src={MerchFlyer}
+                    src={MerchFlyer.src}
                     alt="Merch"
                     style={{ width: "40%", height: "auto", margin:'30px auto 0 auto' }} // Adjust size as needed
                   />

@@ -4,6 +4,7 @@ import about_imgt from "../Assets/3.jpg"
 
 
 const AbNlds = () => {
+  console.log(about_img);
   return (
       <div className="about" id='AbNlds'>
         <div className="aboutright">
@@ -19,8 +20,8 @@ const AbNlds = () => {
           
          </div>
         <div className="aboutleft">
-        <img src={about_img} alt="" className="about-img"/>
-        <img src={about_imgt} alt="" className="about-img"/>
+        <img src={about_img.src} alt="" className="about-img"/>
+        <img src={about_imgt.src} alt="" className="about-img"/>
         </div>
         
       </div>

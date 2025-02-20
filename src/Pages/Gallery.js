@@ -88,7 +88,7 @@ function Gallery() {
               index === currentIndex ? "active" : ""
             }`}
           >
-            <img src={image.src} alt={`Slide ${index + 1}`} />
+            <img src={image.src.src} alt={`Slide ${index + 1}`} />
             <div
               className={`carousel-text ${index % 2 === 0 ? "left" : "right"}`}
             >

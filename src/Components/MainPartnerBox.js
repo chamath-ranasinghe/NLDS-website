@@ -8,7 +8,7 @@ const MainPartnerBox = ({logoSrc,partnerTitle,description}) => {
        <p className='partner-title'>{partnerTitle}</p>
       <div className="left-section">
         {/* Replace with your logo image */}
-        <img src={logoSrc} alt="Logo" className="partner-logo" />
+        <img src={logoSrc.src} alt="Logo" className="partner-logo" />
       </div>
       <div className="right-section">
         <button className="learn-more-btn">Learn More</button>

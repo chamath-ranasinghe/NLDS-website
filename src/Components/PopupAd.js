@@ -20,7 +20,7 @@ const PopupAd = () => {
     visible && (
       <div className="popup-ad-container">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <img src={imageSrc} alt="Pop-up Ad" className="popup-ad-image" />
+          <img src={imageSrc.src} alt="Pop-up Ad" className="popup-ad-image" />
         </a>
         <button className="popup-ad-close-btn" onClick={handleClose}>
           &times;

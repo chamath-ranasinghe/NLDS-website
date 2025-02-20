@@ -39,19 +39,19 @@ const Partners = () => {
         <div className="partner-container">
           <div className="partner-row">
             <MainPartnerBox
-              logoSrc={Ceylinco}
+              logoSrc={Ceylinco.src}
               partnerTitle="Title Partner"
               description="Ceylinco Life has helped people progress towards their aspirations with peace of mind for over 36 years. Their insurance solutions are built around keeping you and those who you love secure, so that you can follow your goals and ambitions, free of any risks."
               className="main-partner-box"
             />
             <MainPartnerBox
-              logoSrc={Ceyline}
+              logoSrc={Ceyline.src}
               partnerTitle="Platinum Partner"
               description="Ceyline Life has provided insurance solutions for over 36 years, keeping people safe as they pursue their goals."
               className="main-partner-box"
             />
             <MainPartnerBox
-              logoSrc={Abans}
+              logoSrc={Abans.src}
               partnerTitle="Official Mobile Partner"
               description="Ceyline Life has provided insurance solutions for over 36 years, keeping people safe as they pursue their goals."
               className="main-partner-box"
@@ -59,43 +59,43 @@ const Partners = () => {
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={GPTW} partnerTitle="Bronze Partner" />
-            <PartnerBox logoSrc={Dulux} partnerTitle="Associate Partner" />
-            <PartnerBox logoSrc={IEC} partnerTitle="Banner Partner" description="International Education Consultancy" styleClass={"logo-resize"} />
+            <PartnerBox logoSrc={GPTW.src} partnerTitle="Bronze Partner" />
+            <PartnerBox logoSrc={Dulux.src} partnerTitle="Associate Partner" />
+            <PartnerBox logoSrc={IEC.src} partnerTitle="Banner Partner" description="International Education Consultancy" styleClass={"logo-resize"} />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={Iris} partnerTitle="Gift Partner" description="Iris Garden" />
-            <PartnerBox logoSrc={Frella} partnerTitle="Gift Partner" description="Frella International" styleClass={'logo-resize'} />
-            <PartnerBox logoSrc={MINT} partnerTitle="Gift Partner" description="MINT Products" styleClass={'logo-resize'}/>
+            <PartnerBox logoSrc={Iris.src} partnerTitle="Gift Partner" description="Iris Garden" />
+            <PartnerBox logoSrc={Frella.src} partnerTitle="Gift Partner" description="Frella International" styleClass={'logo-resize'} />
+            <PartnerBox logoSrc={MINT.src} partnerTitle="Gift Partner" description="MINT Products" styleClass={'logo-resize'}/>
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={Browniebae} partnerTitle="Food Partner" description="Browniebae" />
-            <PartnerBox logoSrc={CakeCloud} partnerTitle="Food Partner" description="Cake Cloud" />
-            <PartnerBox logoSrc={Kalo} partnerTitle="Official Snacking Partner" description="Kalo" />
+            <PartnerBox logoSrc={Browniebae.src} partnerTitle="Food Partner" description="Browniebae" />
+            <PartnerBox logoSrc={CakeCloud.src} partnerTitle="Food Partner" description="Cake Cloud" />
+            <PartnerBox logoSrc={Kalo.src} partnerTitle="Official Snacking Partner" description="Kalo" />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={Fonterra} partnerTitle="Official Nutrition Partner" description="Fonterra" />
-            <PartnerBox logoSrc={Mahagedara} partnerTitle="Official Merchandise Partner" description="Tshirt Mahagedara" />
-            <PartnerBox logoSrc={DeepPlus} partnerTitle="Official Entertainment Partner" description="Deep Plus" />
+            <PartnerBox logoSrc={Fonterra.src} partnerTitle="Official Nutrition Partner" description="Fonterra" />
+            <PartnerBox logoSrc={Mahagedara.src} partnerTitle="Official Merchandise Partner" description="Tshirt Mahagedara" />
+            <PartnerBox logoSrc={DeepPlus.src} partnerTitle="Official Entertainment Partner" description="Deep Plus" />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={NYSM} partnerTitle="Official Photography Partner" description="NowYouSeeMe" />
-            <PartnerBox logoSrc={MOODZ} partnerTitle="GALA Photography Partner" description="MOODZ" />
-            <PartnerBox logoSrc={SecretSeeker} partnerTitle="OBT Dronography Partner" description="Secret Seeker" />
+            <PartnerBox logoSrc={NYSM.src} partnerTitle="Official Photography Partner" description="NowYouSeeMe" />
+            <PartnerBox logoSrc={MOODZ.src} partnerTitle="GALA Photography Partner" description="MOODZ" />
+            <PartnerBox logoSrc={SecretSeeker.src} partnerTitle="OBT Dronography Partner" description="Secret Seeker" />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={HiOnline} partnerTitle="Digital Media Partner" description="Hi Online" />
-            <PartnerBox logoSrc={SundayTimes} partnerTitle="Printed Media Partner" description="Sunday Times – Education Times" styleClass={'logo-resize'} />
+            <PartnerBox logoSrc={HiOnline.src} partnerTitle="Digital Media Partner" description="Hi Online" />
+            <PartnerBox logoSrc={SundayTimes.src} partnerTitle="Printed Media Partner" description="Sunday Times – Education Times" styleClass={'logo-resize'} />
           </div>
 
           <div className="partner-row">
-          <PartnerBox logoSrc={TGWater} partnerTitle="Complimentary Partner" description="TG Water Technologies (Pvt) Ltd" />
-          <PartnerBox logoSrc={DNC} partnerTitle="Complimentary Partner" description="DNC Sports" />
+          <PartnerBox logoSrc={TGWater.src} partnerTitle="Complimentary Partner" description="TG Water Technologies (Pvt) Ltd" />
+          <PartnerBox logoSrc={DNC.src} partnerTitle="Complimentary Partner" description="DNC Sports" />
           </div>
         </div>
       </div>

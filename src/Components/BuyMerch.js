@@ -1,12 +1,12 @@
 import React from 'react'
-import merch from "../Assets/Merch/merchpack.png"
+import merch from "../Assets/Merch/merchpack.webp"
 import "../Styles/BuyMerch.css"
 function BuyMerch() {
   return (
     <div className='buymerch'>
       <div className="buy-content">
                 <div className="merch-pack">
-                    <img src={merch} alt="Logo" className="merch-items" />
+                    <img src={merch.src} alt="Logo" className="merch-items" />
                 </div>
                 <div className="buy-text">
         {/* <p>CLICK HERE TO BUY THE MERCH PACK</p>

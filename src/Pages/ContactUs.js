@@ -24,9 +24,9 @@ const ContactUs = () => {
         <div className="organize-content">
           <p> Contact Us </p>
           <div className="organize">
-            <ContactUsModal src={chamath} alt="Chamath" frontText="Chamath" backText= {ChamathDetails} />
-            <ContactUsModal src={dinuli} alt="Dinuli" frontText="Dinuli" backText= {DinuliDetails}/>
-            <ContactUsModal src={sheveke} alt="Sheveke" frontText="Sheveke" backText= {SheveDetails}/>
+            <ContactUsModal src={chamath.src} alt="Chamath" frontText="Chamath" backText= {ChamathDetails} />
+            <ContactUsModal src={dinuli.src} alt="Dinuli" frontText="Dinuli" backText= {DinuliDetails}/>
+            <ContactUsModal src={sheveke.src} alt="Sheveke" frontText="Sheveke" backText= {SheveDetails}/>
           </div>
           <p style={{fontSize: "15px"}}> Click for contact details</p>
         </div>
