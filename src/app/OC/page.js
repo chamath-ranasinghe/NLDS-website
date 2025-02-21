@@ -1,20 +1,20 @@
 import React from "react";
-import chamath from "../Assets/OC/Chamath2.jpg";
-import amaya from "../Assets/OC/Amaya.jpg";
-import chelaka from "../Assets/OC/Chelaka.jpg";
-import mahima from "../Assets/OC/Mahima.jpg";
-import dinuli from "../Assets/OC/Dinuli.jpg";
-import sheveke from "../Assets/OC/SheV.jpg";
-import indeera from "../Assets/OC/Indeera.jpg";
-import isuru from "../Assets/OC/Isuru.jpg";
-import lasith from "../Assets/OC/Lasith.jpg";
-import dhanushi from "../Assets/OC/danuc.jpg";
-import asirimath from "../Assets/OC/Asirimath.jpg";
-import darshana from "../Assets/OC/Darshana.jpg";
-import godfri from "../Assets/OC/Godfri.jpg";
+import chamath from "../../Assets/OC/Chamath2.jpg";
+import amaya from "../../Assets/OC/Amaya.jpg";
+import chelaka from "../../Assets/OC/Chelaka.jpg";
+import mahima from "../../Assets/OC/Mahima.jpg";
+import dinuli from "../../Assets/OC/Dinuli.jpg";
+import sheveke from "../../Assets/OC/SheV.jpg";
+import indeera from "../../Assets/OC/Indeera.jpg";
+import isuru from "../../Assets/OC/Isuru.jpg";
+import lasith from "../../Assets/OC/Lasith.jpg";
+import dhanushi from "../../Assets/OC/danuc.jpg";
+import asirimath from "../../Assets/OC/Asirimath.jpg";
+import darshana from "../../Assets/OC/Darshana.jpg";
+import godfri from "../../Assets/OC/Godfri.jpg";
 import OCModal from "../Components/OCModal";
 
-import "../Styles/OC.css";
+import "../../Styles/OC.css";
 import NavBar from "../Components/NavBar";
 
 const ChamathDetails = {name: "Chamath Ranasinghe", nickname:"Chama", funfact: "Ahinsakaya vage boruwa danne"};

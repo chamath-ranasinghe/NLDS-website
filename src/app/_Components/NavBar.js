@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { Link as RLink} from 'react-router-dom';
 import logo from "../Assets/2024.png";

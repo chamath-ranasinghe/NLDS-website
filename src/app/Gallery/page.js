@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import NavBar from "../Components/NavBar";
 import Overlay from "../Components/Overlay"; // Import the Overlay component

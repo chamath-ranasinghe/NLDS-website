@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import "../Styles/OCModal.css"; // CSS file for rounded rectangle styling
 

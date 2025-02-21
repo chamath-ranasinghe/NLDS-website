@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import "../Styles/FAQ.css"; // Import the CSS file
 import NavBar from "../Components/NavBar";

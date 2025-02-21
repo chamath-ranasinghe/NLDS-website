@@ -1,7 +1,7 @@
-// src/Pages/ProductShowcase.js
+'use client'
 import React,{useEffect} from "react";
 import "../../Styles/Abans.css";
-import NavBar from "../../Components/NavBar";
+import NavBar from "../../_Components/NavBar";
 import Product from "../../Assets/1.jpg"
 import Logo from "../../Assets/Partner_Logos/Abans.png"
 import DescriptionImage from "../../Assets/10.jpg"

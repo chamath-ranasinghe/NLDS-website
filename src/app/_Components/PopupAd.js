@@ -1,4 +1,6 @@
 
+'use client'
+
 import React, { useState } from 'react';
 import '../Styles/PopUpAd.css';
 import imageSrc from "../Assets/MerchFlyer.jpg"

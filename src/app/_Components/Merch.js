@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useRef } from 'react'
 import next from "../Assets/icons/next-icon.png"
 import back from "../Assets/icons/back-icon.png"

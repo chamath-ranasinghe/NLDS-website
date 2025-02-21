@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useEffect }from 'react'
 import img1 from "../Assets/1.jpg"
 import img2 from "../Assets/2.jpg"

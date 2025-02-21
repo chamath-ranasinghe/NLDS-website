@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useRef, useState } from 'react'
 import image1 from '../Assets/Merch/tshirt.png';
 import image2 from '../Assets/Merch/cap.png';

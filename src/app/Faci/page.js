@@ -4,11 +4,11 @@ import FaciModal from "../Components/FaciModal";
 import "../Styles/OC.css";
 import NavBar from "../Components/NavBar";
 
-import chair from "../Assets/Faci/Chair.png";
-import vikum from "../Assets/Faci/vikum.jpeg";
-import dineli from "../Assets/Faci/dineli 2.jpeg";
-import hassan from "../Assets/Faci/hassan.jpeg";
-import uthpalani from "../Assets/Faci/upi.jpeg";
+import chair from "../../Assets/Faci/Chair.png";
+import vikum from "../../Assets/Faci/vikum.jpeg";
+import dineli from "../../Assets/Faci/dineli 2.jpeg";
+import hassan from "../../Assets/Faci/hassan.jpeg";
+import uthpalani from "../../Assets/Faci/upi.jpeg";
 import akasha from "../Assets/Faci/akasha.jpeg";
 import imesh from "../Assets/Faci/imesh.jpeg";
 import dunithi from "../Assets/Faci/dunithi.jpeg";

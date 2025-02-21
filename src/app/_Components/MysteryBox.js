@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import box from "../Assets/Merch/giftbox.png"
 import "../Styles/Mystery.css"
