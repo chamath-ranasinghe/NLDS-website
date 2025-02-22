@@ -146,10 +146,9 @@ const Register = () => {
   };
 
   const handleMerch = (e)=>{
-    useEffect(()=>{
       e.preventDefault(); 
       window.open('https://forms.gle/DZbGMCKoFzqBwt92A', '_blank');
-    },[]);
+
   }
 
   const handleSubmit = async (e) => {
