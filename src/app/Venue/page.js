@@ -14,7 +14,7 @@ const Venue = () => {
       <div className="venue-content">
         <div className="venue-image-section">
           <img
-            src={require('../Assets/Venue/Carolina.jpg').src}
+            src={require('../../Assets/Venue/Carolina.jpg').src}
             alt="Conference Venue"
             className="venue-image"
           />

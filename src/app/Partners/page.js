@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../_Components/NavBar";
 import PartnerBox from "../_Components/PartnerBox";
 import MainPartnerBox from "../_Components/MainPartnerBox";
-import "../..Styles/Partners.css";
+import "../../Styles/Partners.css";
 import Ceylinco from "../../Assets/Partner_Logos/Ceylinco_Life.png";
 import Ceyline from "../../Assets/Partner_Logos/Ceyline.jpg";
 import Abans from "../../Assets/Partner_Logos/Abans.png";
