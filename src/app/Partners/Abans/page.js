@@ -1,10 +1,10 @@
 'use client'
 import React,{useEffect} from "react";
-import "../../Styles/Abans.css";
+import "../../../Styles/Abans.css";
 import NavBar from "../../_Components/NavBar";
-import Product from "../../Assets/1.jpg"
-import Logo from "../../Assets/Partner_Logos/Abans.png"
-import DescriptionImage from "../../Assets/10.jpg"
+import Product from "../../../Assets/1.jpg"
+import Logo from "../../../Assets/Partner_Logos/Abans.png"
+import DescriptionImage from "../../../Assets/10.jpg"
 
 const Abans = () => {
     useEffect(() => {
