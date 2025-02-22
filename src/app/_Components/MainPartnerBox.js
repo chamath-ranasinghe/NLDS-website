@@ -1,6 +1,6 @@
 // PartnerBox.js
 import React from 'react';
-import '../Styles/PartnerBox.css';
+import '../../Styles/PartnerBox.css';
 
 const MainPartnerBox = ({logoSrc,partnerTitle,description}) => {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
-import MerchHero from "../Components/MerchHero";
-import NavBar from "../Components/NavBar";
-import MerchSlider from "../Components/MerchSlider";
-import ClickInfoSection from "../Components/ClickInfoSection";
-import BuyMerch from "../Components/BuyMerch";
-import GiftBox from "../Components/MysteryBox";
-import Footer from "../Components/Footer";
+import MerchHero from "../_Components/MerchHero";
+import NavBar from "../_Components/NavBar";
+import MerchSlider from "../_Components/MerchSlider";
+import ClickInfoSection from "../_Components/ClickInfoSection";
+import BuyMerch from "../_Components/BuyMerch";
+import GiftBox from "../_Components/MysteryBox";
+import Footer from "../_Components/Footer";
 const MerchHome = () => {
   return (
     <div id="MerchHome">

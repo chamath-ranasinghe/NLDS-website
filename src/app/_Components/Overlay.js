@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from "react";
-import "../Styles/Overlay.css";
+import "../../Styles/Overlay.css";
 
 function Overlay({ image, text, onClose, images }) {
   const [currentIndex, setCurrentIndex] = useState(0);

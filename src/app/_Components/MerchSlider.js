@@ -1,12 +1,12 @@
 'use client'
 
 import React, { useState }  from 'react'
-import image1 from '../Assets/Merch/tshirt.png';
-import image2 from '../Assets/Merch/skinny.webp';
-import image3 from '../Assets/Merch/cap.png';
-import image4 from '../Assets/Merch/band.png';
+import image1 from '../../Assets/Merch/tshirt.png';
+import image2 from '../../Assets/Merch/skinny.webp';
+import image3 from '../../Assets/Merch/cap.png';
+import image4 from '../../Assets/Merch/band.png';
 
-import '../Styles/MerchSlider.css'
+import '../../Styles/MerchSlider.css'
 
 const slides = [
   { png: image1, heading: 'T-SHIRT', details: 'Available Sizes: XS S M L XL XXL XXXL | Available Color: Blue', color: 'blue', sizes: 'XS S M L XL XXL XXXL' },

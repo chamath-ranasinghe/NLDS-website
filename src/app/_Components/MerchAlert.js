@@ -1,9 +1,8 @@
 import React from "react";
-import "../Styles/MerchAlert.css"; // Ensure you have styles for your modal
-import { Link } from "react-router-dom";
+import "../../Styles/MerchAlert.css"; // Ensure you have styles for your modal
 
-import imageSrc from "../Assets/MerchFlyer.jpg";
-import MerchRaffle from "../Assets/MerchRaffleDraw.jpg"
+import imageSrc from "../../Assets/MerchFlyer.jpg";
+import MerchRaffle from "../../Assets/MerchRaffleDraw.jpg"
 
 const MerchAlert = ({ isOpen, onClose }) => {
   if (!isOpen) return null;

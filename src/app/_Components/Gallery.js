@@ -1,9 +1,9 @@
 import React from 'react'
-import gallery_1 from "../Assets/1.jpg"
-import gallery_2 from "../Assets/2.jpg"
-import gallery_3 from "../Assets/3.jpg"
-import gallery_4 from "../Assets/4.jpg"
-import arrow from "../Assets/icons/white-arrow.png"
+import gallery_1 from "../../Assets/1.jpg"
+import gallery_2 from "../../Assets/2.jpg"
+import gallery_3 from "../../Assets/3.jpg"
+import gallery_4 from "../../Assets/4.jpg"
+import arrow from "../../Assets/icons/white-arrow.png"
 
 const Gallery = () => {
   return (

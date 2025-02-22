@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from "react";
-import "../Styles/OCModal.css"; // CSS file for rounded rectangle styling
+import "../../Styles/OCModal.css"; // CSS file for rounded rectangle styling
 
 const OCModal = ({ src, alt, frontText, backText }) => {
   const [flipped, setFlipped] = useState(false);

@@ -1,12 +1,12 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
-import image1 from '../Assets/Merch/tshirt.png';
-import image2 from '../Assets/Merch/cap.png';
-import image3 from '../Assets/Merch/skinny.webp';
-import image4 from '../Assets/Merch/band.png';
-import image5 from '../Assets/Merch/giftbox.png';
-import '../Styles/MerchHero.css'
+import image1 from '../../Assets/Merch/tshirt.png';
+import image2 from '../../Assets/Merch/cap.png';
+import image3 from '../../Assets/Merch/skinny.webp';
+import image4 from '../../Assets/Merch/band.png';
+import image5 from '../../Assets/Merch/giftbox.png';
+import '../../Styles/MerchHero.css'
 
 
 const MerchHero = () => {

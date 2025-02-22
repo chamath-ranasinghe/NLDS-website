@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState } from "react";
-import "../Styles/FAQ.css"; // Import the CSS file
-import NavBar from "../Components/NavBar";
+import "../../Styles/FAQ.css"; // Import the CSS file
+import NavBar from "../_Components/NavBar";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);

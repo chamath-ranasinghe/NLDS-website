@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Styles/Venue.css'; // Separate CSS file for the Venue page
-import NavBar from '../Components/NavBar';
+import '../../Styles/Venue.css'; // Separate CSS file for the Venue page
+import NavBar from '../_Components/NavBar';
 
 const Venue = () => {
   return (

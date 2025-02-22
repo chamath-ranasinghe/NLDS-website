@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useEffect } from "react";
-import "../Styles/Agenda.css";
-import NavBar from "../Components/NavBar";
+import "../../Styles/Agenda.css";
+import NavBar from "../_Components/NavBar";
 
 // Updated gradient colors using shades around #00C7C7 and #7800A2
 const gradientColors = [

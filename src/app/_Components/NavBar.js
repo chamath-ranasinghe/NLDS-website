@@ -1,47 +1,60 @@
-'use client'
+"use client";
 
-import React, { useEffect, useState } from 'react'
-import { Link as RLink} from 'react-router-dom';
-import logo from "../Assets/2024.png";
-import newLogo from "../Assets/2024-new.png";
-import newTitleLogo from "../Assets/2024-New-Title.png"
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import logo from "../../Assets/2024.png";
+import newLogo from "../../Assets/2024-new.png";
+import newTitleLogo from "../../Assets/2024-New-Title.png";
 
-import menu from "../Assets/icons/menu-icon.png"
-
-
-
+import menu from "../../Assets/icons/menu-icon.png";
 
 const NavBar = () => {
+  const [sticky, setSticky] = useState(false);
 
-
-  const [sticky,setSticky] = useState(false);
-  
-  useEffect(()=>{
-    window.addEventListener('scroll',()=>{
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
       window.scrollY > 50 ? setSticky(true) : setSticky(false);
-    })
-  },[])
+    });
+  }, []);
   const [mobileMenu, setMobileMenu] = useState(false);
-  const toggleMenu = ()=> {
-    mobileMenu? setMobileMenu(false) : setMobileMenu(true);
-  }
+  const toggleMenu = () => {
+    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+  };
 
   return (
-    <nav className={`container ${sticky ? 'darknav': ''}`}>
-    <a href="/"><img src={newTitleLogo.src} alt="" className ="logo"/></a>
-      <ul className={mobileMenu?'':'hide-mobile-menu'}>
-        <li><RLink to="/" smooth={true} offset={-200} duration={500}>Home</RLink></li>
-        <li><RLink to="/Gallery" smooth={true} offset={-250} duration={500}>Gallery</RLink></li>
-        <li><RLink to="/OC" smooth={true} offset={-250} duration={500}>OC</RLink></li>
-        <li><RLink to="/Faci" smooth={true} offset={-250} duration={500}>Faci</RLink></li>
-        <li><RLink to="/MerchHome" smooth={true} offset={-250} duration={500}>Merch</RLink></li>
-        <li><RLink to="/FAQ" smooth={true} offset={-250} duration={500}>FAQ</RLink></li>
-        {/* <li><RLink to="/Partners" smooth={true} offset={-250} duration={500}>Partners</RLink></li> */}
-        <li><RLink to="/Register" smooth={true} offset={-250} duration={500} className='btn bt'>Register</RLink></li>
+    <nav className={`container ${sticky ? "darknav" : ""}`}>
+      <a href="/">
+        <img src={newTitleLogo.src} alt="" className="logo" />
+      </a>
+      <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/Gallery">Gallery</Link>
+        </li>
+        <li>
+          <Link href="/OC">OC</Link>
+        </li>
+        <li>
+          <Link href="/Faci">Faci</Link>
+        </li>
+        <li>
+          <Link href="/MerchHome">Merch</Link>
+        </li>
+        <li>
+          <Link href="/FAQ">FAQ</Link>
+        </li>
+        {/* <li>RLink href="/Partners">Partners</Link></li> */}
+        <li>
+          <Link href="/Register" className="btn bt">
+            Register
+          </Link>
+        </li>
       </ul>
-      <img src={menu.src} alt="" className='menu-icon' onClick={toggleMenu}/>
+      <img src={menu.src} alt="" className="menu-icon" onClick={toggleMenu} />
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

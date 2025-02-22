@@ -1,11 +1,11 @@
-import React,{useState} from "react";
-import chamath from "../Assets/OC/Chamath2.jpg";
-import dinuli from "../Assets/OC/Dinuli.jpg";
-import sheveke from "../Assets/OC/SheV.jpg";
-import ContactUsModal from "../Components/ContactUsModal";
+import React from "react";
+import chamath from "../../Assets/OC/Chamath2.jpg";
+import dinuli from "../../Assets/OC/Dinuli.jpg";
+import sheveke from "../../Assets/OC/SheV.jpg";
+import ContactUsModal from "../_Components/ContactUsModal";
 
-import "../Styles/OC.css";
-import NavBar from "../Components/NavBar";
+import "../../Styles/OC.css";
+import NavBar from "../_Components/NavBar";
 
 const ChamathDetails = {name: "Chamath Ranasinghe", email: "chamath.ranasinghe@aiesec.net", whatsapp: "+94 72 494 7677"};
 

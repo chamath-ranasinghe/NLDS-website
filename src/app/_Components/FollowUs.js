@@ -1,6 +1,6 @@
 import React from 'react'
-import element from "../Assets/FollowUs/fbelement.png"
-import "../Styles/FollowUs.css"
+import element from "../../Assets/FollowUs/fbelement.png"
+import "../../Styles/FollowUs.css"
 
 const FollowUs = () => {
   return (

@@ -1,8 +1,8 @@
-'use client'
-import React,{ useState, useEffect } from 'react'
+"use client";
+import React, { useState, useEffect } from "react";
 
 const CountDown = () => {
-  const targetDate = new Date('2024-10-24T00:00:00');
+  const targetDate = new Date("2024-10-24T00:00:00");
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -10,16 +10,24 @@ const CountDown = () => {
 
     let timeLeft = {
       months: Math.floor(difference / (1000 * 60 * 60 * 24 * 30)),
-      days: Math.floor((difference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      days: Math.floor(
+        (difference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
+      ),
+      hours: Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      ),
       minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-      seconds: Math.floor((difference % (1000 * 60)) / 1000)
+      seconds: Math.floor((difference % (1000 * 60)) / 1000),
     };
 
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
+  const [timeLeft, setTimeLeft] = useState("");
+
+  useEffect(() => {
+    setTimeLeft(calculateTimeLeft);
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -27,10 +35,11 @@ const CountDown = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [calculateTimeLeft]);
+  }, []);
+
   return (
-    <div className='countdown-container'>
-       <div className="stay-tuned">Days Passed!</div>
+    <div className="countdown-container">
+      <div className="stay-tuned">Days Passed!</div>
       <div className="countdown">
         <div className="countdown-item">
           <div className="countdown-number">{timeLeft.months}</div>
@@ -54,7 +63,7 @@ const CountDown = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CountDown
+export default CountDown;

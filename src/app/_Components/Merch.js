@@ -1,12 +1,12 @@
 'use client'
 
 import React, { useRef } from 'react'
-import next from "../Assets/icons/next-icon.png"
-import back from "../Assets/icons/back-icon.png"
-import tshirt from "../Assets/Merch/1.jpg"
-import cap from "../Assets/Merch/1.jpg"
-import band from "../Assets/Merch/1.jpg"
-import tanktop from "../Assets/Merch/1.jpg"
+import next from "../../Assets/icons/next-icon.png"
+import back from "../../Assets/icons/back-icon.png"
+import tshirt from "../../Assets/Merch/1.jpg"
+import cap from "../../Assets/Merch/1.jpg"
+import band from "../../Assets/Merch/1.jpg"
+import tanktop from "../../Assets/Merch/1.jpg"
 const Merch = () => {
 
     const slider = useRef();

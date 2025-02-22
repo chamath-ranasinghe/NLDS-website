@@ -12,10 +12,10 @@ import dhanushi from "../../Assets/OC/danuc.jpg";
 import asirimath from "../../Assets/OC/Asirimath.jpg";
 import darshana from "../../Assets/OC/Darshana.jpg";
 import godfri from "../../Assets/OC/Godfri.jpg";
-import OCModal from "../Components/OCModal";
+import OCModal from "../_Components/OCModal";
 
 import "../../Styles/OC.css";
-import NavBar from "../Components/NavBar";
+import NavBar from "../_Components/NavBar";
 
 const ChamathDetails = {name: "Chamath Ranasinghe", nickname:"Chama", funfact: "Ahinsakaya vage boruwa danne"};
 

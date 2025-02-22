@@ -1,44 +1,44 @@
 'use client'
 
 import React, { useState } from "react";
-import NavBar from "../Components/NavBar";
-import Overlay from "../Components/Overlay"; // Import the Overlay component
-import "../Styles/Gallery.css";
+import NavBar from "../_Components/NavBar";
+import Overlay from "../_Components/Overlay"; // Import the Overlay component
+import "../../Styles/Gallery.css";
 
 //OBT
-import obt1 from "../Assets/Gallery/OBT/1.jpg"
-import obt2 from "../Assets/Gallery/OBT/2.jpg"
-import obt3 from "../Assets/Gallery/OBT/3.jpg"
-import obt4 from "../Assets/Gallery/OBT/4.jpg"
-import obt5 from "../Assets/Gallery/OBT/5.jpg"
+import obt1 from "../../Assets/Gallery/OBT/1.jpg"
+import obt2 from "../../Assets/Gallery/OBT/2.jpg"
+import obt3 from "../../Assets/Gallery/OBT/3.jpg"
+import obt4 from "../../Assets/Gallery/OBT/4.jpg"
+import obt5 from "../../Assets/Gallery/OBT/5.jpg"
 
 //Theme Party
-import theme1 from "../Assets/Gallery/Theme_Party/1.jpg"
-import theme2 from "../Assets/Gallery/Theme_Party/2.jpg"
-import theme3 from "../Assets/Gallery/Theme_Party/3.jpg"
-import theme4 from "../Assets/Gallery/Theme_Party/4.jpg"
-import theme5 from "../Assets/Gallery/Theme_Party/5.jpg"
-import theme6 from "../Assets/Gallery/Theme_Party/6.jpg"
+import theme1 from "../../Assets/Gallery/Theme_Party/1.jpg"
+import theme2 from "../../Assets/Gallery/Theme_Party/2.jpg"
+import theme3 from "../../Assets/Gallery/Theme_Party/3.jpg"
+import theme4 from "../../Assets/Gallery/Theme_Party/4.jpg"
+import theme5 from "../../Assets/Gallery/Theme_Party/5.jpg"
+import theme6 from "../../Assets/Gallery/Theme_Party/6.jpg"
 
 //Gala Night
 
-import gn1 from "../Assets/Gallery/Gala_Night/1.jpg"
-import gn2 from "../Assets/Gallery/Gala_Night/2.jpg"
-import gn3 from "../Assets/Gallery/Gala_Night/3.jpg"
-import gn4 from "../Assets/Gallery/Gala_Night/4.jpg"
-import gn5 from "../Assets/Gallery/Gala_Night/5.jpg"
-import gn6 from "../Assets/Gallery/Gala_Night/6.jpg"
-import gn7 from "../Assets/Gallery/Gala_Night/7.jpg"
+import gn1 from "../../Assets/Gallery/Gala_Night/1.jpg"
+import gn2 from "../../Assets/Gallery/Gala_Night/2.jpg"
+import gn3 from "../../Assets/Gallery/Gala_Night/3.jpg"
+import gn4 from "../../Assets/Gallery/Gala_Night/4.jpg"
+import gn5 from "../../Assets/Gallery/Gala_Night/5.jpg"
+import gn6 from "../../Assets/Gallery/Gala_Night/6.jpg"
+import gn7 from "../../Assets/Gallery/Gala_Night/7.jpg"
 
 // Sessions
-import ses1 from "../Assets/Gallery/Sessions/1.jpg"
-import ses2 from "../Assets/Gallery/Sessions/2.jpg"
-import ses3 from "../Assets/Gallery/Sessions/3.jpg"
-import ses4 from "../Assets/Gallery/Sessions/4.jpg"
-import ses5 from "../Assets/Gallery/Sessions/5.jpg"
-import ses6 from "../Assets/Gallery/Sessions/6.jpg"
-import ses7 from "../Assets/Gallery/Sessions/7.jpg"
-import ses8 from "../Assets/Gallery/Sessions/8.jpg"
+import ses1 from "../../Assets/Gallery/Sessions/1.jpg"
+import ses2 from "../../Assets/Gallery/Sessions/2.jpg"
+import ses3 from "../../Assets/Gallery/Sessions/3.jpg"
+import ses4 from "../../Assets/Gallery/Sessions/4.jpg"
+import ses5 from "../../Assets/Gallery/Sessions/5.jpg"
+import ses6 from "../../Assets/Gallery/Sessions/6.jpg"
+import ses7 from "../../Assets/Gallery/Sessions/7.jpg"
+import ses8 from "../../Assets/Gallery/Sessions/8.jpg"
 
 
 const obtImages = [obt1,obt2,obt3,obt4,obt5]

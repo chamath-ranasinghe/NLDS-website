@@ -119,6 +119,7 @@ nav ul li{
   max-width: 700px;
   margin: 25px auto 0;
   line-height: 1;
+  font-weight: bold;
   font-size: 25px;
   text-align: center;
 }

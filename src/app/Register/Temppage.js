@@ -1,22 +1,22 @@
 'use client'
 
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
-import MerchAlert from '../Components/MerchAlert';
+import MerchAlert from '../_Components/MerchAlert';
 
-import "../Styles/Register.css";
-import "../Styles/Loading.css"
+import "../../Styles/Register.css";
+import "../../Styles/Loading.css"
 
-import img1 from "../Assets/1.jpg";
-import img2 from "../Assets/2.jpg";
-import img3 from "../Assets/4.jpg";
-import img4 from "../Assets/5.jpg";
-import img5 from "../Assets/6.jpg";
-import img6 from "../Assets/7.jpg";
-import img7 from "../Assets/8.jpg";
-import img8 from "../Assets/11.jpg";
-import MerchFlyer from "../Assets/MerchFlyer.jpg"
+import img1 from "../../Assets/1.jpg";
+import img2 from "../../Assets/2.jpg";
+import img3 from "../../Assets/4.jpg";
+import img4 from "../../Assets/5.jpg";
+import img5 from "../../Assets/6.jpg";
+import img6 from "../../Assets/7.jpg";
+import img7 from "../../Assets/8.jpg";
+import img8 from "../../Assets/11.jpg";
+import MerchFlyer from "../../Assets/MerchFlyer.jpg"
 
 import NavBar from "../Components/NavBar";
 
@@ -29,8 +29,7 @@ const Loading = () => {
 };
 
 const Register = () => {
-  const navigate = useNavigate();
-
+  const router = useRouter();
   const [page, setPage] = useState(0);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -98,7 +97,7 @@ const Register = () => {
   const images = [img1, img2, img3, img4, img6, img7, img8, img5];
 
   const handleContact = ()=>{
-    navigate('/ContactUs');
+    router.push('/ContactUs');
   }
 
   // Make sure all the boxes are filled before moving to the next page
@@ -147,8 +146,10 @@ const Register = () => {
   };
 
   const handleMerch = (e)=>{
-    e.preventDefault(); 
-    window.open('https://forms.gle/DZbGMCKoFzqBwt92A', '_blank');
+    useEffect(()=>{
+      e.preventDefault(); 
+      window.open('https://forms.gle/DZbGMCKoFzqBwt92A', '_blank');
+    },[]);
   }
 
   const handleSubmit = async (e) => {
@@ -177,10 +178,6 @@ const Register = () => {
       const responseText = await response.text();
       console.log("Submission successful:", responseText);
 
-      // Optionally show a success message to the user
-      //alert("Your application is recieved! Await for further instructions...");
-      //navigate("/");
-
       setModalOpen(true);
 
       // Clear the form or take other actions
@@ -198,7 +195,7 @@ const Register = () => {
 
   const closeModal = () => {
     setModalOpen(false);
-    navigate("/"); // Navigate after closing the modal
+    router.push("/"); // Navigate after closing the modal
   };
 
 

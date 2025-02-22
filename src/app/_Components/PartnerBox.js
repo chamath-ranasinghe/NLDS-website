@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/PartnerBox.css';
+import '../../Styles/PartnerBox.css';
 
 const PartnerBox = ({ logoSrc, partnerTitle, description, styleClass }) => {
   return (

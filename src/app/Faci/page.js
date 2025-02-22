@@ -1,26 +1,26 @@
 import React from "react";
-import FaciModal from "../Components/FaciModal";
+import FaciModal from "../_Components/FaciModal";
 
-import "../Styles/OC.css";
-import NavBar from "../Components/NavBar";
+import "../../Styles/OC.css";
+import NavBar from "../_Components/NavBar";
 
 import chair from "../../Assets/Faci/Chair.png";
 import vikum from "../../Assets/Faci/vikum.jpeg";
 import dineli from "../../Assets/Faci/dineli 2.jpeg";
 import hassan from "../../Assets/Faci/hassan.jpeg";
 import uthpalani from "../../Assets/Faci/upi.jpeg";
-import akasha from "../Assets/Faci/akasha.jpeg";
-import imesh from "../Assets/Faci/imesh.jpeg";
-import dunithi from "../Assets/Faci/dunithi.jpeg";
-import prabashi from "../Assets/Faci/prabashi.jpeg";
-import dileesha from "../Assets/Faci/dileesha 2.jpeg";
-import sanjeev from "../Assets/Faci/sanjeev 2.jpeg";
-import sapna from "../Assets/Faci/sapna.jpeg";
-import sanuthi from "../Assets/Faci/sanuthi.jpeg";
-import senuri from "../Assets/Faci/senuri.jpeg";
-import aakkash from "../Assets/Faci/aakkash.jpeg";
-import chamuditha from "../Assets/Faci/chamuditha 2.jpeg";
-import jayani from "../Assets/Faci/jayani.jpeg";
+import akasha from "../../Assets/Faci/akasha.jpeg";
+import imesh from "../../Assets/Faci/imesh.jpeg";
+import dunithi from "../../Assets/Faci/dunithi.jpeg";
+import prabashi from "../../Assets/Faci/prabashi.jpeg";
+import dileesha from "../../Assets/Faci/dileesha 2.jpeg";
+import sanjeev from "../../Assets/Faci/sanjeev 2.jpeg";
+import sapna from "../../Assets/Faci/sapna.jpeg";
+import sanuthi from "../../Assets/Faci/sanuthi.jpeg";
+import senuri from "../../Assets/Faci/senuri.jpeg";
+import aakkash from "../../Assets/Faci/aakkash.jpeg";
+import chamuditha from "../../Assets/Faci/chamuditha 2.jpeg";
+import jayani from "../../Assets/Faci/jayani.jpeg";
 
 const ChairDetails = {name: "?", position:"?"};
 

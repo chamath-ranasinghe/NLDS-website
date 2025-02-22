@@ -1,7 +1,7 @@
 import React from "react";
 
-import "../Styles/Register.css";
-import NavBar from "../Components/NavBar";
+import "../../Styles/Register.css";
+import NavBar from "../_Components/NavBar";
 
 const TempRegister = () => {
   return (

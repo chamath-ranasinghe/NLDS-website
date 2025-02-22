@@ -1,11 +1,11 @@
 'use client'
 
 import React, { useState, useEffect }from 'react'
-import img1 from "../Assets/1.jpg"
-import img2 from "../Assets/2.jpg"
-import img3 from "../Assets/3.jpg"
-import img4 from "../Assets/4.jpg"
-import img5 from "../Assets/5.jpg"
+import img1 from "../../Assets/1.jpg"
+import img2 from "../../Assets/2.jpg"
+import img3 from "../../Assets/3.jpg"
+import img4 from "../../Assets/4.jpg"
+import img5 from "../../Assets/5.jpg"
 
 
 
@@ -46,7 +46,7 @@ const Hero = () => {
       </div>
       <div className="Hero-content">
         <div className="hero-text">
-          <p className="defy"><bold>DEFY YOUR LIMITS!</bold></p>
+          <p className="defy">DEFY YOUR LIMITS!</p>
           <div className="hero-heading">
       TRANSCEND <br/>      
       NATIONAL<br />

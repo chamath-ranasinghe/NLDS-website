@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/When.css'; // Import the CSS file
+import '../../Styles/When.css'; // Import the CSS file
 
 const When = () => {
   return (

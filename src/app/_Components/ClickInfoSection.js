@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/ClickInfo.css'
+import '../../Styles/ClickInfo.css'
 function ClickInfoSection() {
   return (
     <section className="click-info-section">

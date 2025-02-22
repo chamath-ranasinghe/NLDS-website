@@ -1,6 +1,6 @@
 import React from 'react'
-import merch from "../Assets/Merch/merchpack.webp"
-import "../Styles/BuyMerch.css"
+import merch from "../../Assets/Merch/merchpack.webp"
+import "../../Styles/BuyMerch.css"
 function BuyMerch() {
   return (
     <div className='buymerch'>
