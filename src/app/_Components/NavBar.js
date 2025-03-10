@@ -34,6 +34,9 @@ const NavBar = () => {
           <Link href="/Gallery">Gallery</Link>
         </li>
         <li>
+          <Link href="/Agenda">Agenda</Link>
+        </li>
+        <li>
           <Link href="/OC">OC</Link>
         </li>
         <li>
@@ -45,7 +48,7 @@ const NavBar = () => {
         <li>
           <Link href="/FAQ">FAQ</Link>
         </li>
-        {/* <li>RLink href="/Partners">Partners</Link></li> */}
+        {/* <li>Link href="/Partners">Partners</Link></li> */}
         <li>
           <Link href="/Register" className="btn bt">
             Register
