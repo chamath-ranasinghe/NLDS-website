@@ -11,14 +11,16 @@ import GPTW from "../../Assets/Partner_Logos/GPTW.png";
 import Dulux from "../../Assets/Partner_Logos/Dulux.png";
 import IEC from "../../Assets/Partner_Logos/IEC.png";
 // import CIPM from "../../Assets/Partner_Logos/CIPM.png";
+// import GRI from "../../Assets/Partner_Logos/GRI.png";
 import Iris from "../../Assets/Partner_Logos/Iris.png";
 import MINT from "../../Assets/Partner_Logos/MINT.png";
 import Frella from "../../Assets/Partner_Logos/Frella.png";
+// import Cinnamon from "../../Assets/Partner_Logos/Cinnamon.png";
 import Browniebae from "../../Assets/Partner_Logos/BrownieBae.jpg";
 import CakeCloud from "../../Assets/Partner_Logos/CakeCloud.jpg";
 import Kalo from "../../Assets/Partner_Logos/Kalo.png";
 import Fonterra from "../../Assets/Partner_Logos/Fonterra.png";
-// import ElephantHouse from "../../Assets/Partner_Logos/ElephantHouse.png";
+// import Samaposha from "../../Assets/Partner_Logos/Samaposha.png";
 import Mahagedara from "../../Assets/Partner_Logos/Mahagedara.png";
 import DeepPlus from "../../Assets/Partner_Logos/DeepPlus.jpeg";
 import NYSM from "../../Assets/Partner_Logos/NYSM.jpg";
@@ -26,6 +28,8 @@ import MOODZ from "../../Assets/Partner_Logos/MOODZ.jpg";
 import SecretSeeker from "../../Assets/Partner_Logos/SecretSeeker.png";
 import TGWater from "../../Assets/Partner_Logos/TGWater.jpeg";
 import DNC from "../../Assets/Partner_Logos/DNC.png";
+// import AdaDerana from "../../Assets/Partner_Logos/AdaDerana.png";
+// import FMDerana from "../../Assets/Partner_Logos/FMDerana.png";
 import HiOnline from "../../Assets/Partner_Logos/HiOnline.jpg";
 import SundayTimes from "../../Assets/Partner_Logos/SundayTimes.png";
 
@@ -61,13 +65,27 @@ const Partners = () => {
           <div className="partner-row">
             <PartnerBox logoSrc={GPTW.src} partnerTitle="Bronze Partner" />
             <PartnerBox logoSrc={Dulux.src} partnerTitle="Associate Partner" />
+          </div>
+
+          <div className="partner-row">
+            {/* CA */}
+            {/* CIPM */}
+          </div>
+
+          <div className="partner-row">
             <PartnerBox logoSrc={IEC.src} partnerTitle="Banner Partner" description="International Education Consultancy" styleClass={"logo-resize"} />
+            {/* GRI */}
           </div>
 
           <div className="partner-row">
             <PartnerBox logoSrc={Iris.src} partnerTitle="Gift Partner" description="Iris Garden" />
             <PartnerBox logoSrc={Frella.src} partnerTitle="Gift Partner" description="Frella International" styleClass={'logo-resize'} />
             <PartnerBox logoSrc={MINT.src} partnerTitle="Gift Partner" description="MINT Products" styleClass={'logo-resize'}/>
+          </div>
+
+          <div className="partner-row">
+            {/* Cinnamon */}
+            {/* Samaposha */}
           </div>
 
           <div className="partner-row">
@@ -86,6 +104,11 @@ const Partners = () => {
             <PartnerBox logoSrc={NYSM.src} partnerTitle="Official Photography Partner" description="NowYouSeeMe" />
             <PartnerBox logoSrc={MOODZ.src} partnerTitle="GALA Photography Partner" description="MOODZ" />
             <PartnerBox logoSrc={SecretSeeker.src} partnerTitle="OBT Dronography Partner" description="Secret Seeker" />
+          </div>
+
+          <div className="partner-row">
+            {/* AdaDerana */}
+            {/* FMDerana */}
           </div>
 
           <div className="partner-row">

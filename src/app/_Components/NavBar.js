@@ -37,6 +37,9 @@ const NavBar = () => {
           <Link href="/Agenda">Agenda</Link>
         </li>
         <li>
+          <Link href="/Gala">Gala</Link>
+        </li>
+        <li>
           <Link href="/OC">OC</Link>
         </li>
         <li>
