@@ -1,0 +1,19 @@
+.roll-call-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.roll-call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.roll-call-title{
+    font-size: 30px;
+    color: #462255; /* Customize as per your theme */
+    margin-bottom: 10px;
+}
