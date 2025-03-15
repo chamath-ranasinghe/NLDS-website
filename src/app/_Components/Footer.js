@@ -14,8 +14,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-copyright">
-                &copy; Copyright 2024 AIESEC in Sri Lanka <br/>
-                Created by OC Diablos
+                &copy; Copyright 2025 AIESEC in Sri Lanka <br/>
+                Created by OC Diablos 
             </div>
         </footer>
   

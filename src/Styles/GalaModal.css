@@ -1,6 +1,6 @@
 .gala-modal-container {
-    width: 200px; /* Adjust size as needed */
-    height: 200px; /* Adjust size as needed */
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
     position: relative;
     border-radius: 15px; /* Rounds the corners of the box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a drop shadow */

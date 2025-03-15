@@ -17,14 +17,14 @@ import OCModal from "../_Components/OCModal";
 import "../../Styles/OC.css";
 import NavBar from "../_Components/NavBar";
 
-const ChamathDetails = {name: "Chamath Ranasinghe", nickname:"Chama", funfact: "Ahinsakaya vage boruwa danne"};
+const ChamathDetails = {name: "Chamath Ranasinghe", nickname:"Camat", funfact: "Ahinsakaya vage boruwa danne"};
 
-const AmayaDetails = {name: "Amaya Amarasinghe", nickname:"Amaya", funfact: "Looks innocent but not"};
-const ChelakaDetails = {name: "Chelaka Wijesekara", nickname:"Che", funfact: "Sugarmommy lover"};
+const AmayaDetails = {name: "Amaya Amarasinghe", nickname:"Amayo", funfact: "Looks innocent but not"};
+const ChelakaDetails = {name: "Chelaka Wijesekara", nickname:"Chela", funfact: "Sugarmommy lover"};
 const MahimaDetails = {name: "Mahima Yasas", nickname:"Mahi", funfact: "Doesn't know about the Kandy Beach"};
 
-const DinuliDetails = {name: "Dinuli Liyanage", nickname:"Season 01", funfact: "Only watches Season 01 in every series"};
-const SheveDetails = {name: "Sheveke Gnanapandithen", nickname:"Sheve/Bridgerton", funfact: "Bridgeton>>>"};
+const DinuliDetails = {name: "Dinuli Liyanage", nickname:"Jessica", funfact: "Only watches Season 01 in every series"};
+const SheveDetails = {name: "Sheveke Gnanapandithen", nickname:"Sheve", funfact: "Bridgeton>>>"};
 
 const IndeeraDetails = {name: "Indeera Udayanga", nickname:"Indu", funfact: "Always late but not late enough"};
 const IsuruDetails = {name: "Isuru Fernando", nickname:"Batch Top", funfact: "A ekak ganna misak exam ekata yn na"};
