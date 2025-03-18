@@ -7,10 +7,12 @@ import CountDown from './_Components/CountDown'
 import FollowUs from './_Components/FollowUs'
 import RollCalls from './_Components/RollCalls'
 import AfterMovies from './_Components/AfterMovies'
+import ThankYouOverlay from './_Components/ThankYouOverlay'
 
 const Home = () => {
   return (
     <div className="home-container">
+      <ThankYouOverlay/>
       <NavBar/>
       <Hero/>
       <CountDown/>
