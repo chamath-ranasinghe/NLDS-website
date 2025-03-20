@@ -35,7 +35,6 @@ import HiOnline from "../../Assets/Partner_Logos/HiOnline.jpg";
 import SundayTimes from "../../Assets/Partner_Logos/SundayTimes.png";
 import PearlBay from "../../Assets/Partner_Logos/PearlBay.png";
 
-
 const Partners = () => {
   return (
     <>
@@ -73,64 +72,168 @@ const Partners = () => {
           </div>
 
           <div className="partner-row">
-          <PartnerBox logoSrc={CA.src} partnerTitle="Professional Education Partner" />
-          <PartnerBox logoSrc={CIPM.src} partnerTitle="Professional Education Partner" />
+            <PartnerBox
+              logoSrc={CA.src}
+              partnerTitle="Professional Education Partner"
+            />
+            <PartnerBox
+              logoSrc={CIPM.src}
+              partnerTitle="Professional Education Partner"
+            />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={IEC.src} partnerTitle="Banner Partner" description="International Education Consultancy" styleClass={"logo-resize"} />
-            <PartnerBox logoSrc={GRI.src} partnerTitle="Banner Partner" description="International Education Consultancy" styleClass={"logo-resize"} />
+            <PartnerBox
+              logoSrc={IEC.src}
+              partnerTitle="Banner Partner"
+              description="International Education Consultancy"
+              styleClass={"logo-resize"}
+            />
+            <PartnerBox
+              logoSrc={GRI.src}
+              partnerTitle="Banner Partner"
+              description="International Education Consultancy"
+              styleClass={"logo-resize"}
+            />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={Iris.src} partnerTitle="Gift Partner" description="Iris Garden" />
-            <PartnerBox logoSrc={Frella.src} partnerTitle="Gift Partner" description="Frella International" styleClass={'logo-resize'} />
-            <PartnerBox logoSrc={MINT.src} partnerTitle="Gift Partner" description="MINT Products" styleClass={'logo-resize'}/>
+            <PartnerBox
+              logoSrc={Iris.src}
+              partnerTitle="Gift Partner"
+              description="Iris Garden"
+            />
+            <PartnerBox
+              logoSrc={Frella.src}
+              partnerTitle="Gift Partner"
+              description="Frella International"
+              styleClass={"logo-resize"}
+            />
+            <PartnerBox
+              logoSrc={MINT.src}
+              partnerTitle="Gift Partner"
+              description="MINT Products"
+              styleClass={"logo-resize"}
+            />
           </div>
 
           <div className="partner-row">
-          <PartnerBox logoSrc={Cinnamon.src} partnerTitle="Gift Partner" description="Cinnamon Grand Colombo" styleClass={'logo-resize'}/>
-          <PartnerBox logoSrc={PearlBay.src} partnerTitle="Gift Partner" description="Pearl Bay"/>
-          <PartnerBox logoSrc={Samaposha.src} partnerTitle="Foof Partner" description="Samaposha" styleClass={'logo-resize'}/>
+            <PartnerBox
+              logoSrc={Cinnamon.src}
+              partnerTitle="Gift Partner"
+              description="Cinnamon Grand Colombo"
+              styleClass={"logo-resize"}
+            />
+            <PartnerBox
+              logoSrc={PearlBay.src}
+              partnerTitle="Gift Partner"
+              description="Pearl Bay"
+            />
+            <PartnerBox
+              logoSrc={Samaposha.src}
+              partnerTitle="Food Partner"
+              description="Samaposha"
+              styleClass={"logo-resize"}
+            />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={Browniebae.src} partnerTitle="Food Partner" description="Browniebae" />
-            <PartnerBox logoSrc={CakeCloud.src} partnerTitle="Food Partner" description="Cake Cloud" />
-            <PartnerBox logoSrc={Kalo.src} partnerTitle="Official Snacking Partner" description="Kalo" />
+            <PartnerBox
+              logoSrc={Browniebae.src}
+              partnerTitle="Food Partner"
+              description="Browniebae"
+            />
+            <PartnerBox
+              logoSrc={CakeCloud.src}
+              partnerTitle="Food Partner"
+              description="Cake Cloud"
+            />
+            <PartnerBox
+              logoSrc={Kalo.src}
+              partnerTitle="Official Snacking Partner"
+              description="Kalo"
+            />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={Fonterra.src} partnerTitle="Official Nutrition Partner" description="Fonterra" />
-            <PartnerBox logoSrc={Mahagedara.src} partnerTitle="Official Merchandise Partner" description="Tshirt Mahagedara" />
-            <PartnerBox logoSrc={DeepPlus.src} partnerTitle="Official Entertainment Partner" description="Deep Plus" />
+            <PartnerBox
+              logoSrc={Fonterra.src}
+              partnerTitle="Official Nutrition Partner"
+              description="Fonterra"
+            />
+            <PartnerBox
+              logoSrc={Mahagedara.src}
+              partnerTitle="Official Merchandise Partner"
+              description="Tshirt Mahagedara"
+            />
+            <PartnerBox
+              logoSrc={DeepPlus.src}
+              partnerTitle="Official Entertainment Partner"
+              description="Deep Plus"
+            />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={NYSM.src} partnerTitle="Official Photography Partner" description="NowYouSeeMe" />
-            <PartnerBox logoSrc={MOODZ.src} partnerTitle="GALA Photography Partner" description="MOODZ" />
-            <PartnerBox logoSrc={SecretSeeker.src} partnerTitle="OBT Dronography Partner" description="Secret Seeker" />
+            <PartnerBox
+              logoSrc={NYSM.src}
+              partnerTitle="Official Photography Partner"
+              description="NowYouSeeMe"
+            />
+            <PartnerBox
+              logoSrc={MOODZ.src}
+              partnerTitle="GALA Photography Partner"
+              description="MOODZ"
+            />
+            <PartnerBox
+              logoSrc={SecretSeeker.src}
+              partnerTitle="OBT Dronography Partner"
+              description="Secret Seeker"
+            />
           </div>
 
           <div className="partner-row">
-          <PartnerBox logoSrc={AdaDerana.src} partnerTitle="Official Broadcasting Partner" description="Ada Derana 24" />
-          <PartnerBox logoSrc={FMDerana.src} partnerTitle="Official Radio Partner" description="FM Derana" />
+            <PartnerBox
+              logoSrc={AdaDerana.src}
+              partnerTitle="Official Broadcasting Partner"
+              description="Ada Derana 24"
+            />
+            <PartnerBox
+              logoSrc={FMDerana.src}
+              partnerTitle="Official Radio Partner"
+              description="FM Derana"
+            />
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={HiOnline.src} partnerTitle="Digital Media Partner" description="Hi Online" />
-            <PartnerBox logoSrc={SundayTimes.src} partnerTitle="Printed Media Partner" description="Sunday Times – Education Times" styleClass={'logo-resize'} />
+            <PartnerBox
+              logoSrc={HiOnline.src}
+              partnerTitle="Digital Media Partner"
+              description="Hi Online"
+            />
+            <PartnerBox
+              logoSrc={SundayTimes.src}
+              partnerTitle="Printed Media Partner"
+              description="Sunday Times – Education Times"
+              styleClass={"logo-resize"}
+            />
           </div>
 
           <div className="partner-row">
-          <PartnerBox logoSrc={TGWater.src} partnerTitle="Complimentary Partner" description="TG Water Technologies (Pvt) Ltd" />
-          <PartnerBox logoSrc={DNC.src} partnerTitle="Complimentary Partner" description="DNC Sports" />
+            <PartnerBox
+              logoSrc={TGWater.src}
+              partnerTitle="Complimentary Partner"
+              description="TG Water Technologies (Pvt) Ltd"
+            />
+            <PartnerBox
+              logoSrc={DNC.src}
+              partnerTitle="Complimentary Partner"
+              description="DNC Sports"
+            />
           </div>
         </div>
       </div>
     </>
   );
 };
-
 
 export default Partners;

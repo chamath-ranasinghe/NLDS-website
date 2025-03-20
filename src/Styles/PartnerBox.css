@@ -55,15 +55,15 @@
 }
 
 .learn-more-btn:hover {
-  background-color: #AA4465;
+  background-color: #aa4465;
 }
 
-.logo-resize{
-  width:150px;
+.logo-resize {
+  width: 150px;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1115px) {
   .partner-box {
     width: 80%; /* Full width on smaller screens */
     height: auto;
