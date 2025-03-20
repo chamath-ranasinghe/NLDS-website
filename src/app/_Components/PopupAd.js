@@ -1,10 +1,8 @@
+"use client";
 
-'use client'
-
-import React, { useState } from 'react';
-import '../../Styles/PopUpAd.css';
-import imageSrc from "../../Assets/MerchFlyer.jpg"
-
+import React, { useState } from "react";
+import "../../Styles/PopUpAd.css";
+import imageSrc from "../../Assets/MerchFlyer.jpg";
 
 const PopupAd = () => {
   const [visible, setVisible] = useState(true);
@@ -12,9 +10,9 @@ const PopupAd = () => {
   const link = "https://transcend24.aiesec.lk/MerchHome";
 
   const handleClose = () => {
-    const container = document.querySelector('.popup-ad-container');
-    container.style.animation = 'slideOut 0.5s ease-out';
-    
+    const container = document.querySelector(".popup-ad-container");
+    container.style.animation = "slideOut 0.5s ease-out";
+
     setTimeout(() => setVisible(false), 500); // Wait for animation to complete before hiding
   };
 

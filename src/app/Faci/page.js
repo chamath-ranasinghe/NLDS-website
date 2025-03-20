@@ -5,7 +5,7 @@ import "../../Styles/OC.css";
 import NavBar from "../_Components/NavBar";
 
 import chair from "../../Assets/Faci/Chair.png";
-import UD from "../../Assets/Faci/UD.png"
+import UD from "../../Assets/Faci/UD.png";
 import vikum from "../../Assets/Faci/vikum.jpeg";
 import dineli from "../../Assets/Faci/dineli 2.jpeg";
 import hassan from "../../Assets/Faci/hassan.jpeg";
@@ -23,33 +23,32 @@ import aakkash from "../../Assets/Faci/aakkash.jpeg";
 import chamuditha from "../../Assets/Faci/chamuditha 2.jpeg";
 import jayani from "../../Assets/Faci/jayani.jpeg";
 
-const ChairDetails = {name: "UD", position:"Chair"};
+const ChairDetails = { name: "UD", position: "Chair" };
 
-const VikumDetails = {name: "Vikum Wijekoon", position:"President"};
+const VikumDetails = { name: "Vikum Wijekoon", position: "President" };
 
 // CMs
-const DineliDetails = {name: "Dineli Perera", position:"MCVP PR & NM"};
-const HassanDetails = {name: "Fouzul Hassan", position:"MCVP IM"};
+const DineliDetails = { name: "Dineli Perera", position: "MCVP PR & NM" };
+const HassanDetails = { name: "Fouzul Hassan", position: "MCVP IM" };
 
 // AM
-const UthpalaniDetails = {name: "Uthpalani Jayasinghe", position:"MCVP TM"};
+const UthpalaniDetails = { name: "Uthpalani Jayasinghe", position: "MCVP TM" };
 
-const AkashaDetails = {name: "Akasha Wijesiriwardane", position:"MCVP B2C"};
-const ImeshDetails = {name: "Imesh Cooray", position:"MCVP Brand"};
-const DunithiDetails = {name: "Dunithi Leuwanduwa", position:"MCVP oGT"};
+const AkashaDetails = { name: "Akasha Wijesiriwardane", position: "MCVP B2C" };
+const ImeshDetails = { name: "Imesh Cooray", position: "MCVP Brand" };
+const DunithiDetails = { name: "Dunithi Leuwanduwa", position: "MCVP oGT" };
 
-const PrabashiDetails = {name: "Prabashi Wanigasinghe", position:"MCVP oGV"};
-const DileeshaDetails = {name: "Dileesha Hettiarachchi", position:"MCVP NS"};
-const SanjeevDetails = {name: "Sanjeev Dhananjana", position:"MCVP BD"};
+const PrabashiDetails = { name: "Prabashi Wanigasinghe", position: "MCVP oGV" };
+const DileeshaDetails = { name: "Dileesha Hettiarachchi", position: "MCVP NS" };
+const SanjeevDetails = { name: "Sanjeev Dhananjana", position: "MCVP BD" };
 
-const SapnaDetails = {name: "Sapna Ravishika", position:"MCVP FnL"};
-const SanuthiDetails = {name: "Sanuthi Weerasena", position:"MCVP iGV"};
-const SenuriDetails = {name: "Senuri Bandara", position:"MCVP iGT"};
+const SapnaDetails = { name: "Sapna Ravishika", position: "MCVP FnL" };
+const SanuthiDetails = { name: "Sanuthi Weerasena", position: "MCVP iGV" };
+const SenuriDetails = { name: "Senuri Bandara", position: "MCVP iGT" };
 
-const AakkashDetails = {name: "Aakkash Gnanarathnam", position:"MCVP OD"};
-const ChamudithaDetails = {name: "Chamuditha Guruge", position:"MCVP OPS"};
-const JayaniDetails = {name: "Jayani Aluthge", position:"MCVP ED"};
-
+const AakkashDetails = { name: "Aakkash Gnanarathnam", position: "MCVP OD" };
+const ChamudithaDetails = { name: "Chamuditha Guruge", position: "MCVP OPS" };
+const JayaniDetails = { name: "Jayani Aluthge", position: "MCVP ED" };
 
 const OC = () => {
   return (
@@ -57,51 +56,135 @@ const OC = () => {
       <div className="organize-container">
         <NavBar />
         <div className="organize-content">
-
           <p> Chair </p>
           <div className="organize">
-            <FaciModal src={UD.src} alt="UD" frontText="Chair" backText= {ChairDetails} />
+            <FaciModal
+              src={UD.src}
+              alt="UD"
+              frontText="Chair"
+              backText={ChairDetails}
+            />
           </div>
 
           <p> MCP </p>
           <div className="organize">
-            <FaciModal src={vikum.src} alt="vikum" frontText="Vikum" backText= {VikumDetails}/>
+            <FaciModal
+              src={vikum.src}
+              alt="vikum"
+              frontText="Vikum"
+              backText={VikumDetails}
+            />
           </div>
 
           <p> Conference Managers </p>
           <div className="organize">
-            <FaciModal src={dineli.src} alt="Dineli" frontText="Dineli" backText= {DineliDetails}/>
-            <FaciModal src={hassan.src} alt="Hassan" frontText="Hassan" backText= {HassanDetails}/>
+            <FaciModal
+              src={dineli.src}
+              alt="Dineli"
+              frontText="Dineli"
+              backText={DineliDetails}
+            />
+            <FaciModal
+              src={hassan.src}
+              alt="Hassan"
+              frontText="Hassan"
+              backText={HassanDetails}
+            />
           </div>
 
-          <p> Agenda Managers </p>  
+          <p> Agenda Managers </p>
           <div className="organize">
-            <FaciModal src={aakkash.src} alt="Aakkash" frontText="Aakkash" backText= {AakkashDetails}/>
-            <FaciModal src={chamuditha.src} alt="Chamuditha" frontText="Chamuditha" backText= {ChamudithaDetails}/>
+            <FaciModal
+              src={aakkash.src}
+              alt="Aakkash"
+              frontText="Aakkash"
+              backText={AakkashDetails}
+            />
+            <FaciModal
+              src={chamuditha.src}
+              alt="Chamuditha"
+              frontText="Chamuditha"
+              backText={ChamudithaDetails}
+            />
           </div>
 
           <p>MCVPs</p>
           <div className="organize">
-            <FaciModal src={akasha.src} alt="Akasha" frontText="Akasha" backText= {AkashaDetails}/>
-            <FaciModal src={imesh.src} alt="Imesh" frontText="Imesh" backText= {ImeshDetails}/>
-            <FaciModal src={dunithi.src} alt="Dunithi" frontText="Dunithi" backText= {DunithiDetails}/>
+            <FaciModal
+              src={akasha.src}
+              alt="Akasha"
+              frontText="Akasha"
+              backText={AkashaDetails}
+            />
+            <FaciModal
+              src={imesh.src}
+              alt="Imesh"
+              frontText="Imesh"
+              backText={ImeshDetails}
+            />
+            <FaciModal
+              src={dunithi.src}
+              alt="Dunithi"
+              frontText="Dunithi"
+              backText={DunithiDetails}
+            />
           </div>
 
           <div className="organize">
-            <FaciModal src={prabashi.src} alt="Prabashi" frontText="Prabashi" backText= {PrabashiDetails}/>
-            <FaciModal src={dileesha.src} alt="Dileesha" frontText="Dileesha" backText= {DileeshaDetails}/>
-            <FaciModal src={sanjeev.src} alt="Sanjeev" frontText="Sanjeev" backText= {SanjeevDetails}/>
+            <FaciModal
+              src={prabashi.src}
+              alt="Prabashi"
+              frontText="Prabashi"
+              backText={PrabashiDetails}
+            />
+            <FaciModal
+              src={dileesha.src}
+              alt="Dileesha"
+              frontText="Dileesha"
+              backText={DileeshaDetails}
+            />
+            <FaciModal
+              src={sanjeev.src}
+              alt="Sanjeev"
+              frontText="Sanjeev"
+              backText={SanjeevDetails}
+            />
           </div>
 
           <div className="organize">
-            <FaciModal src={sapna.src} alt="Sapna" frontText="Sapna" backText= {SapnaDetails}/>
-            <FaciModal src={sanuthi.src} alt="Sanuthi" frontText="Sanuthi" backText= {SanuthiDetails}/>
-            <FaciModal src={senuri.src} alt="Senuri" frontText="Senuri" backText= {SenuriDetails}/>
+            <FaciModal
+              src={sapna.src}
+              alt="Sapna"
+              frontText="Sapna"
+              backText={SapnaDetails}
+            />
+            <FaciModal
+              src={sanuthi.src}
+              alt="Sanuthi"
+              frontText="Sanuthi"
+              backText={SanuthiDetails}
+            />
+            <FaciModal
+              src={senuri.src}
+              alt="Senuri"
+              frontText="Senuri"
+              backText={SenuriDetails}
+            />
           </div>
 
           <div className="organize">
-            <FaciModal src={uthpalani.src} alt="Uthpalani" frontText="Uthpalani" backText= {UthpalaniDetails}/>
-            <FaciModal src={jayani.src} alt="Jayani" frontText="Jayani" backText= {JayaniDetails}/>
+            <FaciModal
+              src={uthpalani.src}
+              alt="Uthpalani"
+              frontText="Uthpalani"
+              backText={UthpalaniDetails}
+            />
+            <FaciModal
+              src={jayani.src}
+              alt="Jayani"
+              frontText="Jayani"
+              backText={JayaniDetails}
+            />
           </div>
         </div>
       </div>

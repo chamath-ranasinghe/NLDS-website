@@ -1,11 +1,10 @@
 .buymerch {
-  background: url('../Assets/Merch/BGM.jpg') no-repeat center center;
+  background: url("../Assets/Merch/BGM.jpg") no-repeat center center;
   background-size: cover; /* Ensure the background image covers the entire section */
   padding: 20px;
   color: white;
   text-align: center;
   height: auto; /* Adjust height to fit content */
-  
 }
 
 .buy-content {
@@ -77,7 +76,6 @@
   }
 
   .buy-text {
-    
     margin-right: 0; /* Remove margin-right */
     text-align: center; /* Center text */
     flex-basis: auto;

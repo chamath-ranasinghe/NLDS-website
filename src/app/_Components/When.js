@@ -1,5 +1,5 @@
-import React from 'react';
-import '../../Styles/When.css'; // Import the CSS file
+import React from "react";
+import "../../Styles/When.css"; // Import the CSS file
 
 const When = () => {
   return (
@@ -10,6 +10,6 @@ const When = () => {
       </div>
     </div>
   );
-}
+};
 
 export default When;

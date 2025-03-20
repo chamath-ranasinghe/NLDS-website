@@ -8,14 +8,10 @@ const TempRegister = () => {
     <>
       <NavBar />
       <div className="registration-container">
-      <div className="initial-modal">
+        <div className="initial-modal">
           <div className="modal-content">
-            <p>
-              For the ones who registered: Await your call!
-            </p>
-            <p>
-              If you missed it: Tough luck :(
-            </p>
+            <p>For the ones who registered: Await your call!</p>
+            <p>If you missed it: Tough luck :(</p>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import "../../Styles/FAQ.css"; // Import the CSS file
@@ -21,9 +21,10 @@ const FAQ = () => {
       answer: "Carolina Beach Resort, Chilaw",
     },
     {
-        question: "Should I pay a total of 19,000 LKR to participate?",
-        answer: "Don't worry. Your entity will cover a portion for you. Contact your OEVP/LCVP for more details",
-      },
+      question: "Should I pay a total of 19,000 LKR to participate?",
+      answer:
+        "Don't worry. Your entity will cover a portion for you. Contact your OEVP/LCVP for more details",
+    },
   ];
 
   return (
@@ -39,7 +40,9 @@ const FAQ = () => {
           >
             <div className="faq-question">
               {faq.question}
-              <span className={`arrow ${activeIndex === index ? "arrow-up" : "arrow-down"}`}></span>
+              <span
+                className={`arrow ${activeIndex === index ? "arrow-up" : "arrow-down"}`}
+              ></span>
             </div>
             <div className="faq-answer">
               {activeIndex === index && <p>{faq.answer}</p>}
@@ -49,6 +52,6 @@ const FAQ = () => {
       </div>
     </div>
   );
-};  
+};
 
 export default FAQ;

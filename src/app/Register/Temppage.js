@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-import MerchAlert from '../_Components/MerchAlert';
+import MerchAlert from "../_Components/MerchAlert";
 
 import "../../Styles/Register.css";
-import "../../Styles/Loading.css"
+import "../../Styles/Loading.css";
 
 import img1 from "../../Assets/1.jpg";
 import img2 from "../../Assets/2.jpg";
@@ -16,7 +16,7 @@ import img5 from "../../Assets/6.jpg";
 import img6 from "../../Assets/7.jpg";
 import img7 from "../../Assets/8.jpg";
 import img8 from "../../Assets/11.jpg";
-import MerchFlyer from "../../Assets/MerchFlyer.jpg"
+import MerchFlyer from "../../Assets/MerchFlyer.jpg";
 
 import NavBar from "../Components/NavBar";
 
@@ -39,16 +39,16 @@ const Register = () => {
     dob: "",
     contactno: "",
     faculty: "",
-    yearOfStudy:"",
-    role:"",
-    nic:"",
+    yearOfStudy: "",
+    role: "",
+    nic: "",
     gender: "",
     foodpreference: "",
     allergiesMedication: "",
-    address:"",
-    guardianName:"",
-    emergency:"",
-    partnerConsent:"",
+    address: "",
+    guardianName: "",
+    emergency: "",
+    partnerConsent: "",
     excitement: "",
   });
   const [showModal, setShowModal] = useState(true);
@@ -87,7 +87,7 @@ const Register = () => {
   const genders = ["Female", "Male", "Prefer not to say"];
 
   const excitementList = [
-    "1. Curious – \"I'm interested but still exploring\"",
+    '1. Curious – "I\'m interested but still exploring"',
     '2. Warming Up – "Starting to feel the excitement!"',
     '3. Pretty Excited – "Can’t wait to meet new people and learn!"',
     '4. Super Excited – "Ready for the challenges and fun ahead!"',
@@ -96,9 +96,9 @@ const Register = () => {
 
   const images = [img1, img2, img3, img4, img6, img7, img8, img5];
 
-  const handleContact = ()=>{
-    router.push('/ContactUs');
-  }
+  const handleContact = () => {
+    router.push("/ContactUs");
+  };
 
   // Make sure all the boxes are filled before moving to the next page
   const validateInputs = () => {
@@ -106,7 +106,7 @@ const Register = () => {
     if (page === 4) return true;
 
     const inputs = document.querySelectorAll(
-      ".carousel-content input, .carousel-content select, .carousel-content textarea"
+      ".carousel-content input, .carousel-content select, .carousel-content textarea",
     );
     return Array.from(inputs).every((input) => input.value.trim() !== "");
   };
@@ -145,15 +145,14 @@ const Register = () => {
     }
   };
 
-  const handleMerch = (e)=>{
-      e.preventDefault(); 
-      window.open('https://forms.gle/DZbGMCKoFzqBwt92A', '_blank');
-
-  }
+  const handleMerch = (e) => {
+    e.preventDefault();
+    window.open("https://forms.gle/DZbGMCKoFzqBwt92A", "_blank");
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       setShowLoading(true);
 
@@ -170,7 +169,7 @@ const Register = () => {
       if (!response.ok) {
         setShowLoading(false);
         throw new Error(
-          `Network response was not ok. Status: ${response.status}`
+          `Network response was not ok. Status: ${response.status}`,
         );
       }
 
@@ -197,7 +196,6 @@ const Register = () => {
     router.push("/"); // Navigate after closing the modal
   };
 
-
   return (
     <div>
       <NavBar />
@@ -214,7 +212,9 @@ const Register = () => {
         </div>
       )}
       {!showModal && (
-        <div className={`registration-container ${showLoading ? 'loading' : ''}`}>
+        <div
+          className={`registration-container ${showLoading ? "loading" : ""}`}
+        >
           <div className={`registration-modal ${showModal ? "slide-in" : ""}`}>
             <div className="modal-left">
               <img src={images[page].src} alt="Registration Visual" />
@@ -352,7 +352,9 @@ const Register = () => {
                       <option value="veg">Veg</option>
                       {/* Add more options here */}
                     </select>
-                    <label>Any allergies or medical conditions we should know about?</label>
+                    <label>
+                      Any allergies or medical conditions we should know about?
+                    </label>
                     <textarea
                       value={formData.allergiesMedication}
                       onChange={(e) =>
@@ -389,20 +391,33 @@ const Register = () => {
                 )}
                 {page === 6 && (
                   <div className="input-group">
-                  {/* Merch Details */}
-                  <img
-                    src={MerchFlyer.src}
-                    alt="Merch"
-                    style={{ width: "40%", height: "auto", margin:'30px auto 0 auto' }} // Adjust size as needed
-                  />
-                  <button
-                    onClick={(e)=>e.preventDefault()}
-                    className="reg-merch-btn"
-                    style={{ width:'40%', margin: '10px auto 0 auto', padding: '10px', backgroundColor: '#462255', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
-                  >
-                    You Just Missed it :(
-                  </button>
-                </div>
+                    {/* Merch Details */}
+                    <img
+                      src={MerchFlyer.src}
+                      alt="Merch"
+                      style={{
+                        width: "40%",
+                        height: "auto",
+                        margin: "30px auto 0 auto",
+                      }} // Adjust size as needed
+                    />
+                    <button
+                      onClick={(e) => e.preventDefault()}
+                      className="reg-merch-btn"
+                      style={{
+                        width: "40%",
+                        margin: "10px auto 0 auto",
+                        padding: "10px",
+                        backgroundColor: "#462255",
+                        color: "white",
+                        border: "none",
+                        borderRadius: "5px",
+                        cursor: "pointer",
+                      }}
+                    >
+                      You Just Missed it :(
+                    </button>
+                  </div>
                 )}
                 {page === 7 && (
                   <div className="input-group">
@@ -433,8 +448,12 @@ const Register = () => {
                         </option>
                       ))}
                     </select>
-                    <p>An adventure of a lifetime awaits for just 19,000/- LKR!
-                    (Investment from your Local Entity will be unlocked through the efforts and impact you make within your entity.)</p>
+                    <p>
+                      An adventure of a lifetime awaits for just 19,000/- LKR!
+                      (Investment from your Local Entity will be unlocked
+                      through the efforts and impact you make within your
+                      entity.)
+                    </p>
                   </div>
                 )}
                 {errorMessage && (
@@ -470,7 +489,6 @@ const Register = () => {
               </div>
             </div>
           </div>
-
         </div>
       )}
       <MerchAlert isOpen={modalOpen} onClose={closeModal} />

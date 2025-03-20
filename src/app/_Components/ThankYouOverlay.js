@@ -35,7 +35,11 @@ export default function ThankYouOverlay() {
       <div className="overlay">
         <div className="overlay-content">
           {/* Image */}
-          <img src={OCImage.src} alt="Overlay Image" className="overlay-image" />
+          <img
+            src={OCImage.src}
+            alt="Overlay Image"
+            className="overlay-image"
+          />
           <p id="thank-you">Thank You for making it the best conference ever</p>
           <p>Much love from OC Diablos!</p>
           {/* Close Button */}

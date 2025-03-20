@@ -1,5 +1,5 @@
 .followus {
-  background: url('../Assets/FollowUs/followus.jpg') no-repeat center center;
+  background: url("../Assets/FollowUs/followus.jpg") no-repeat center center;
   padding: 20px;
   color: white;
   text-align: center;
@@ -40,7 +40,6 @@
 }
 
 .follow-text-link {
- 
   font-size: 20px;
   color: #fff;
   text-decoration: none;
@@ -57,32 +56,32 @@
 }
 
 @media (max-width: 768px) {
-  .followus{
+  .followus {
     overflow: hidden;
   }
   .follow-content {
-      flex-direction: column; /* Stack image and text vertically */
-      align-items: center;
-      text-align: center;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    text-align: center;
   }
 
   .fbelmnt {
-      flex-direction: column; /* Stack the image above the text */
-      justify-content: center;
+    flex-direction: column; /* Stack the image above the text */
+    justify-content: center;
   }
 
   .element-item {
-      width: 80%;
-      margin-top: 20px;
-      margin-right: 0;
-      margin-bottom: 20px; /* Add margin below the image */
+    width: 80%;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 20px; /* Add margin below the image */
   }
 
   .follow-text {
-      text-align: center; /* Center the text on mobile */
+    text-align: center; /* Center the text on mobile */
   }
 
   .follow-text p {
-      font-size: 45px; /* Reduce font size for mobile */
+    font-size: 45px; /* Reduce font size for mobile */
   }
 }

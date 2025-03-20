@@ -9,13 +9,13 @@ import Footer from "../_Components/Footer";
 const MerchHome = () => {
   return (
     <div id="MerchHome">
-       <NavBar /> 
+      <NavBar />
       <MerchHero />
-      <ClickInfoSection/>
-      <MerchSlider/>
-      <BuyMerch/>
-      <GiftBox/>
-      <Footer/>
+      <ClickInfoSection />
+      <MerchSlider />
+      <BuyMerch />
+      <GiftBox />
+      <Footer />
     </div>
   );
 };

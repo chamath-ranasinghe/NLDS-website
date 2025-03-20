@@ -43,6 +43,3 @@ const AfterMovies = () => {
 };
 
 export default AfterMovies;
-
-
-

@@ -16,7 +16,7 @@ export default function getAwards() {
   const imagesDirectory = path.join(process.cwd(), "public/awards");
   const imageFiles = fs.readdirSync(imagesDirectory);
 
-  const awards =  imageFiles.map((fileName) => ({
+  const awards = imageFiles.map((fileName) => ({
     title: "Award Title",
     frontImg: `/awards/${fileName}`, // Public folder automatically serves these
     frontAlt: fileName,

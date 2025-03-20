@@ -23,7 +23,7 @@
   justify-content: center; /* Center items vertically */
   border-radius: 15px; /* Curved corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Drop shadow */
-  background: url('../Assets/Merch/BG.jpg'); /* Background image for items */
+  background: url("../Assets/Merch/BG.jpg"); /* Background image for items */
   background-size: cover;
   background-position: center;
   color: white; /* Ensure text is readable */
@@ -84,7 +84,7 @@
   align-items: center;
   z-index: 1001; /* Ensure popup content is above overlay */
   position: relative; /* Required for positioning the close button */
-  flex-direction:row; /* Stack image and text vertically */
+  flex-direction: row; /* Stack image and text vertically */
 }
 
 /* Popup Image */
@@ -118,9 +118,9 @@
   display: inline-block;
   width: 20px; /* Adjust size as needed */
   height: 20px; /* Adjust size as needed */
-  border-radius:0%; /* Optional, for rounded color boxes */
+  border-radius: 0%; /* Optional, for rounded color boxes */
   margin-right: 5px;
-  margin-left:5px; /* Spacing between color boxes */
+  margin-left: 5px; /* Spacing between color boxes */
 }
 
 /* Additional class for color text */

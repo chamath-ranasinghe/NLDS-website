@@ -1,24 +1,14 @@
-'use client'
+"use client";
 
-import React, { useState, useEffect }from 'react'
-import img1 from "../../Assets/1.jpg"
-import img2 from "../../Assets/2.jpg"
-import img3 from "../../Assets/3.jpg"
-import img4 from "../../Assets/4.jpg"
-import img5 from "../../Assets/5.jpg"
-
-
-
+import React, { useState, useEffect } from "react";
+import img1 from "../../Assets/1.jpg";
+import img2 from "../../Assets/2.jpg";
+import img3 from "../../Assets/3.jpg";
+import img4 from "../../Assets/4.jpg";
+import img5 from "../../Assets/5.jpg";
 
 const Hero = () => {
-
-  const images = [
-    img1,
-    img2,
-    img3,
-    img4,
-    img5
-    ];
+  const images = [img1, img2, img3, img4, img5];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -34,12 +24,12 @@ const Hero = () => {
   };
 
   return (
-    <div className="Hero container" id='Hero'>
+    <div className="Hero container" id="Hero">
       <div className="slides-container">
         {images.map((image, index) => (
           <div
             key={index}
-            className={`hero-slide ${index === currentIndex ? 'active' : ''}`}
+            className={`hero-slide ${index === currentIndex ? "active" : ""}`}
             style={{ backgroundImage: `url(${image.src})` }}
           ></div>
         ))}
@@ -48,28 +38,31 @@ const Hero = () => {
         <div className="hero-text">
           <p className="defy">DEFY YOUR LIMITS!</p>
           <div className="hero-heading">
-      TRANSCEND <br/>      
-      NATIONAL<br />
-      LEADERSHIP<br />
-      DEVELOPMENT<br />
-      SEMINAR 2024
-    </div>
-          <p className='date'>25th-27th October 2024</p>
+            TRANSCEND <br />
+            NATIONAL
+            <br />
+            LEADERSHIP
+            <br />
+            DEVELOPMENT
+            <br />
+            SEMINAR 2024
+          </div>
+          <p className="date">25th-27th October 2024</p>
           <br></br>
         </div>
       </div>
-      <br/>
+      <br />
       <div className="dots">
         {images.map((_, index) => (
           <span
             key={index}
-            className={`dot ${index === currentIndex ? 'active' : ''}`}
+            className={`dot ${index === currentIndex ? "active" : ""}`}
             onClick={() => handleDotClick(index)}
           ></span>
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

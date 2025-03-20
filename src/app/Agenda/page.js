@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState, useEffect } from "react";
 import "../../Styles/Agenda.css";
@@ -27,13 +27,11 @@ const Agenda = () => {
       { time: "8:00 AM", title: "Registrations" },
       { time: "8:30 AM", title: "Ice Breaker" },
       { time: "9:15 AM", title: "Opening Plenary" },
-      { time: "11:30 PM",
+      {
+        time: "11:30 PM",
         title: "",
-        parallel: [
-          { title: "Check in" },
-          { title: "Jugglers Game" },
-        ],
-       },
+        parallel: [{ title: "Check in" }, { title: "Jugglers Game" }],
+      },
       { time: "12.30 PM", title: "Lunch" },
       { time: "13.30 PM", title: "Clock" },
       {
@@ -113,10 +111,7 @@ const Agenda = () => {
       {
         time: "10:30 AM",
         title: "",
-        parallel: [
-          { title: "Partner Space" },
-          { title: "Juggle Game" },
-        ],
+        parallel: [{ title: "Partner Space" }, { title: "Juggle Game" }],
       },
       { time: "11:15 AM", title: "Juggle Game" },
       { time: "12:00 PM", title: "Hackathon Happy Hour" },
