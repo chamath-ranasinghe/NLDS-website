@@ -1,7 +1,7 @@
 import React from "react";
 import chamath from "../../Assets/OC/Chamath2.jpg";
 import dinuli from "../../Assets/OC/Dinuli.jpg";
-import sheveke from "../../Assets/OC/SheV.jpg";
+import sheveke from "../../Assets/OC/SheV.jpg"
 import ContactUsModal from "../_Components/ContactUsModal";
 
 import "../../Styles/OC.css";

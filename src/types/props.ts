@@ -4,11 +4,11 @@ export interface ModalImage{
     frontText: string;
     backText: {
         name: string;
-        nickname: string;
-        funfact: string;
-        position: string;
-        email: string;
-        whatsapp: string;
+        nickname?: string;
+        funfact?: string;
+        position?: string;
+        email?: string;
+        whatsapp?: string;
     };
 }
 
@@ -41,4 +41,5 @@ export interface PartnerBoxData{
     description: string;
     url: string;
     styleClass: string;
+    className?: string;
 }

@@ -5,7 +5,7 @@ import React from "react";
 import "../../Styles/PartnerBox.css";
 import { PartnerBoxData } from "../../types/props";
 
-const MainPartnerBox = ({ logoSrc, partnerTitle, description, className, url }) => {
+const MainPartnerBox = ({ logoSrc, partnerTitle, description, className, url }: PartnerBoxData) => {
   const handleLearnMore = () => {
     window.open(url, "_blank");
   };

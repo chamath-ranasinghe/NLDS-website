@@ -21,7 +21,7 @@ function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showOverlay, setShowOverlay] = useState(false);
 
-  const [images, setImages] = useState<GalleryContent[]>(null);
+  const [images, setImages] = useState<GalleryContent[]>([]);
 
   useEffect(() => {
     async function loadImages() {

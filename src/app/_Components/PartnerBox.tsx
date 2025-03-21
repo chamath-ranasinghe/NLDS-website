@@ -2,7 +2,7 @@ import React from "react";
 import "../../Styles/PartnerBox.css";
 import { PartnerBoxData } from "../../types/props";
 
-const PartnerBox = ({ logoSrc, partnerTitle, description, styleClass }) => {
+const PartnerBox = ({ logoSrc, partnerTitle, description, styleClass }: PartnerBoxData) => {
   return (
     <div className="partner-box">
       <p className="partner-title">{partnerTitle}</p>

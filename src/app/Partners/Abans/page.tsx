@@ -8,7 +8,7 @@ import DescriptionImage from "../../../Assets/10.jpg";
 
 const Abans = () => {
   useEffect(() => {
-    const featureItems = document.querySelectorAll(".abans-feature-item");
+    const featureItems: NodeListOf<Element> = document.querySelectorAll(".abans-feature-item");
 
     const observer = new IntersectionObserver(
       (entries) => {
