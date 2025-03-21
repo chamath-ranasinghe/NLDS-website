@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import "../../Styles/Agenda.css";
 import NavBar from "../_Components/NavBar";
+import { AgendaContent, AgendaItemNormal, AgendaItemParallel } from "../../types/agenda";
 
 // Updated gradient colors using shades around #00C7C7 and #7800A2
 const gradientColors = [
@@ -22,7 +23,7 @@ const Agenda = () => {
   const [currentDay, setCurrentDay] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const agendaData = {
+  const agendaData: AgendaContent = {
     day1: [
       { time: "8:00 AM", title: "Registrations" },
       { time: "8:30 AM", title: "Ice Breaker" },
@@ -123,8 +124,8 @@ const Agenda = () => {
   };
 
   // Function to render agenda items
-  const renderAgendaItems = (items) => {
-    return items.map((item, index) => (
+  const renderAgendaItems = (items: (AgendaItemNormal | AgendaItemParallel)[]) => {
+    return items.map((item: any, index) => (
       <div
         key={index}
         className={`agenda-item ${isTransitioning ? "hidden" : "visible"}`} // Toggle visibility for smooth transitions

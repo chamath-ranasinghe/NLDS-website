@@ -19,7 +19,7 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const handleDotClick = (index) => {
+  const handleDotClick = (index: number) => {
     setCurrentIndex(index);
   };
 

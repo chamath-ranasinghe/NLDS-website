@@ -18,7 +18,7 @@ import img7 from "../../Assets/8.jpg";
 import img8 from "../../Assets/11.jpg";
 import MerchFlyer from "../../Assets/MerchFlyer.jpg";
 
-import NavBar from "../Components/NavBar";
+import NavBar from "../_Components/NavBar";
 
 const Loading = () => {
   return (
@@ -105,7 +105,7 @@ const Register = () => {
     // Skip validation if on page 3
     if (page === 4) return true;
 
-    const inputs = document.querySelectorAll(
+    const inputs: NodeListOf<HTMLInputElement> | null = document.querySelectorAll(
       ".carousel-content input, .carousel-content select, .carousel-content textarea",
     );
     return Array.from(inputs).every((input) => input.value.trim() !== "");

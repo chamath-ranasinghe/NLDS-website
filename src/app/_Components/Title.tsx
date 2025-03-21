@@ -1,6 +1,6 @@
 import React from "react";
 
-const Title = ({ subtitle, title }) => {
+const Title = ({ subtitle, title }: {subtitle: string, title: string}) => {
   return (
     <div className="title">
       <p>{subtitle}</p>

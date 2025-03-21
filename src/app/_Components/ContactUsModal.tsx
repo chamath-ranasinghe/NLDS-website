@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import "../../Styles/OCModal.css"; // CSS file for rounded rectangle styling
+import { ContactUsModalImage, ModalImage } from "../../types/props";
 
 const ContactUsModal = ({ src, alt, frontText, backText }) => {
   const [flipped, setFlipped] = useState(false);

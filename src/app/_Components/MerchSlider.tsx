@@ -7,8 +7,17 @@ import image3 from "../../Assets/Merch/cap.png";
 import image4 from "../../Assets/Merch/band.png";
 
 import "../../Styles/MerchSlider.css";
+import { StaticImageData } from "next/image";
 
-const slides = [
+interface MerchItem{
+  png: StaticImageData;
+  heading: string;
+  details: string;
+  color: string;
+  sizes: string;
+}
+
+const slides: MerchItem[] = [
   {
     png: image1,
     heading: "T-SHIRT",
@@ -40,9 +49,9 @@ const slides = [
 ];
 
 function MerchSlider() {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState<MerchItem>(null);
 
-  const handleItemClick = (item) => {
+  const handleItemClick = (item: MerchItem) => {
     setSelectedItem(item);
   };
 

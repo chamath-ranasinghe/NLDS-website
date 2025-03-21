@@ -7,18 +7,24 @@ import ContactUsModal from "../_Components/ContactUsModal";
 import "../../Styles/OC.css";
 import NavBar from "../_Components/NavBar";
 
-const ChamathDetails = {
+interface ContactDetails{
+  name: string;
+  email: string;
+  whatsapp: string;
+}
+
+const ChamathDetails: ContactDetails = {
   name: "Chamath Ranasinghe",
   email: "chamath.ranasinghe@aiesec.net",
   whatsapp: "+94 72 494 7677",
 };
 
-const DinuliDetails = {
+const DinuliDetails: ContactDetails = {
   name: "Dinuli Liyanage",
   email: "dinuli.liyanage@aiesec.net",
   whatsapp: "+94 70 121 2764",
 };
-const SheveDetails = {
+const SheveDetails: ContactDetails = {
   name: "Sheveke Gnanapandithen",
   email: "shevekegnanapandithen@aiesec.net",
   whatsapp: "+94 75 716 1649",

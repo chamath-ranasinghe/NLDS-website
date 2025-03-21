@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { JSX, useState } from "react";
 import "../../Styles/GalaModal.css";
+import { GalaImage } from "../../types/props";
 
-const GalaModal = ({ frontImg, backImg, frontAlt, backAlt }) => {
+const GalaModal = ({ frontImg, backImg, frontAlt, backAlt }: GalaImage): JSX.Element => {
   const [flipped, setFlipped] = useState(false);
 
   const handleTouch = () => {

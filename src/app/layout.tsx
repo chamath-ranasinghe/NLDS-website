@@ -1,4 +1,4 @@
-import { MetaData } from "next"; // Will need for tsx
+import { Metadata } from "next"; // Will need for tsx
 import "./App.css";
 
 export const metadata = {

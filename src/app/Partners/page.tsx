@@ -67,18 +67,24 @@ const Partners = () => {
           </div>
 
           <div className="partner-row">
-            <PartnerBox logoSrc={GPTW.src} partnerTitle="Bronze Partner" />
-            <PartnerBox logoSrc={Dulux.src} partnerTitle="Associate Partner" />
+            <PartnerBox logoSrc={GPTW.src} partnerTitle="Bronze Partner"description={""}
+              styleClass={""}/>
+            <PartnerBox logoSrc={Dulux.src} partnerTitle="Associate Partner" description={""}
+              styleClass={""}/>
           </div>
 
           <div className="partner-row">
             <PartnerBox
               logoSrc={CA.src}
               partnerTitle="Professional Education Partner"
+              description={""}
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={CIPM.src}
               partnerTitle="Professional Education Partner"
+              description={""}
+              styleClass={""}
             />
           </div>
 
@@ -102,6 +108,7 @@ const Partners = () => {
               logoSrc={Iris.src}
               partnerTitle="Gift Partner"
               description="Iris Garden"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={Frella.src}
@@ -128,6 +135,7 @@ const Partners = () => {
               logoSrc={PearlBay.src}
               partnerTitle="Gift Partner"
               description="Pearl Bay"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={Samaposha.src}
@@ -142,16 +150,19 @@ const Partners = () => {
               logoSrc={Browniebae.src}
               partnerTitle="Food Partner"
               description="Browniebae"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={CakeCloud.src}
               partnerTitle="Food Partner"
               description="Cake Cloud"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={Kalo.src}
               partnerTitle="Official Snacking Partner"
               description="Kalo"
+              styleClass={""}
             />
           </div>
 
@@ -160,16 +171,19 @@ const Partners = () => {
               logoSrc={Fonterra.src}
               partnerTitle="Official Nutrition Partner"
               description="Fonterra"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={Mahagedara.src}
               partnerTitle="Official Merchandise Partner"
               description="Tshirt Mahagedara"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={DeepPlus.src}
               partnerTitle="Official Entertainment Partner"
               description="Deep Plus"
+              styleClass={""}
             />
           </div>
 
@@ -178,16 +192,19 @@ const Partners = () => {
               logoSrc={NYSM.src}
               partnerTitle="Official Photography Partner"
               description="NowYouSeeMe"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={MOODZ.src}
               partnerTitle="GALA Photography Partner"
               description="MOODZ"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={SecretSeeker.src}
               partnerTitle="OBT Dronography Partner"
               description="Secret Seeker"
+              styleClass={""}
             />
           </div>
 
@@ -196,11 +213,13 @@ const Partners = () => {
               logoSrc={AdaDerana.src}
               partnerTitle="Official Broadcasting Partner"
               description="Ada Derana 24"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={FMDerana.src}
               partnerTitle="Official Radio Partner"
               description="FM Derana"
+              styleClass={""}
             />
           </div>
 
@@ -209,6 +228,7 @@ const Partners = () => {
               logoSrc={HiOnline.src}
               partnerTitle="Digital Media Partner"
               description="Hi Online"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={SundayTimes.src}
@@ -223,11 +243,13 @@ const Partners = () => {
               logoSrc={TGWater.src}
               partnerTitle="Complimentary Partner"
               description="TG Water Technologies (Pvt) Ltd"
+              styleClass={""}
             />
             <PartnerBox
               logoSrc={DNC.src}
               partnerTitle="Complimentary Partner"
               description="DNC Sports"
+              styleClass={""}
             />
           </div>
         </div>

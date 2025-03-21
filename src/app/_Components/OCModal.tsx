@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { JSX, useState } from "react";
 import "../../Styles/OCModal.css"; // CSS file for rounded rectangle styling
+import {ModalImage} from "../../types/props";
 
-const OCModal = ({ src, alt, frontText, backText }) => {
-  const [flipped, setFlipped] = useState(false);
+const OCModal = ({ src, alt, frontText, backText }): JSX.Element => {
+  const [flipped, setFlipped]= useState(false);
 
-  const handleTouch = () => {
+  const handleTouch = (): void=> {
     setFlipped(!flipped);
   };
 

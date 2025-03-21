@@ -1,20 +1,28 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
+interface Time {
+  months: number;
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
+
 const CountDown = () => {
-  const targetDate = new Date("2024-10-24T00:00:00");
+  const targetDate: any = new Date("2024-10-24T00:00:00");
 
   const calculateTimeLeft = () => {
-    const now = new Date();
-    const difference = now - targetDate;
+    const now: any = new Date();
+    const difference: any = now - targetDate;
 
-    let timeLeft = {
+    let timeLeft: Time = {
       months: Math.floor(difference / (1000 * 60 * 60 * 24 * 30)),
       days: Math.floor(
-        (difference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24),
+        (difference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
       ),
       hours: Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       ),
       minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
       seconds: Math.floor((difference % (1000 * 60)) / 1000),
@@ -23,7 +31,13 @@ const CountDown = () => {
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState("");
+  const [timeLeft, setTimeLeft] = useState<Time>({
+    months: 0,
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
     setTimeLeft(calculateTimeLeft);

@@ -55,7 +55,7 @@ const Venue = () => {
           width="100%"
           height="450"
           style={{ border: "0" }}
-          allowFullScreen=""
+          allowFullScreen= {false}
           loading="lazy"
           title="Conference Venue Map"
         />

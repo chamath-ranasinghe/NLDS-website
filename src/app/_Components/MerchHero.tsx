@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import image1 from "../../Assets/Merch/tshirt.png";
 import image2 from "../../Assets/Merch/cap.png";
 import image3 from "../../Assets/Merch/skinny.webp";

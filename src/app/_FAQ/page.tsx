@@ -4,14 +4,19 @@ import React, { useState } from "react";
 import "../../Styles/FAQ.css"; // Import the CSS file
 import NavBar from "../_Components/NavBar";
 
-const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+interface FAQItem{
+  question: string;
+  answer: string;
+}
 
-  const toggleFAQ = (index) => {
+const FAQ = () => {
+  const [activeIndex, setActiveIndex] = useState<number>(null);
+
+  const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const faqs = [
+  const faqs: FAQItem[] = [
     {
       question: "What are the event dates?",
       answer: "25th to 27th October 2024.",

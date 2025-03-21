@@ -4,7 +4,12 @@ import "../../Styles/MerchAlert.css"; // Ensure you have styles for your modal
 import imageSrc from "../../Assets/MerchFlyer.jpg";
 import MerchRaffle from "../../Assets/MerchRaffleDraw.jpg";
 
-const MerchAlert = ({ isOpen, onClose }) => {
+interface Callbacks{
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+const MerchAlert = ({ isOpen, onClose }: Callbacks) => {
   if (!isOpen) return null;
 
   return (

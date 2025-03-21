@@ -8,7 +8,7 @@ import cap from "../../Assets/Merch/1.jpg";
 import band from "../../Assets/Merch/1.jpg";
 import tanktop from "../../Assets/Merch/1.jpg";
 const Merch = () => {
-  const slider = useRef();
+  const slider = useRef(null);
   let tx = 0;
 
   const slideFoward = () => {

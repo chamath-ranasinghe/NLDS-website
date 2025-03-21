@@ -3,8 +3,9 @@
 // PartnerBox.js
 import React from "react";
 import "../../Styles/PartnerBox.css";
+import { PartnerBoxData } from "../../types/props";
 
-const MainPartnerBox = ({ logoSrc, partnerTitle, url }) => {
+const MainPartnerBox = ({ logoSrc, partnerTitle, description, className, url }) => {
   const handleLearnMore = () => {
     window.open(url, "_blank");
   };

@@ -4,9 +4,10 @@ import NavBar from "../_Components/NavBar";
 import GalaModal from "../_Components/GalaModal";
 import getAwards from "./awardsUtil";
 import "../../Styles/Gala.css";
+import { Image } from "../../types/gala";
 
 const Gala = () => {
-  const awardsList = getAwards();
+  const awardsList: Image[][] = getAwards();
   return (
     <div className="gala-container">
       <NavBar />

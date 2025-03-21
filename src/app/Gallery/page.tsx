@@ -4,27 +4,12 @@ import React, { useState, useEffect } from "react";
 import NavBar from "../_Components/NavBar";
 import Overlay from "../_Components/Overlay"; // Import the Overlay component
 import "../../Styles/Gallery.css";
-
-// Ice breaker
-import ice1 from "../../Assets/Gallery/Sessions/1.jpg";
-
-//OBT
-import obt1 from "../../Assets/Gallery/OBT/1.jpg";
-
-//Theme Party
-import theme1 from "../../Assets/Gallery/Theme_Party/1.jpg";
-
-//Gala Night
-
-import gn1 from "../../Assets/Gallery/Gala_Night/1.jpg";
-
-// Sessions
-import ses1 from "../../Assets/Gallery/Sessions/1.jpg";
+import { GalleryContent } from "../../types/gallery";
 
 async function fetchImages() {
   try {
     const response = await fetch(`/api/galleryImages`);
-    const data = await response.json();
+    const data: GalleryContent[] = await response.json();
     return data || [];
   } catch (error) {
     console.error("Error fetching images:", error);
@@ -36,7 +21,7 @@ function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showOverlay, setShowOverlay] = useState(false);
 
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState<GalleryContent[]>(null);
 
   useEffect(() => {
     async function loadImages() {

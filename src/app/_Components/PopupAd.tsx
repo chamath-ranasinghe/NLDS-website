@@ -10,7 +10,7 @@ const PopupAd = () => {
   const link = "https://transcend24.aiesec.lk/MerchHome";
 
   const handleClose = () => {
-    const container = document.querySelector(".popup-ad-container");
+    const container: HTMLDivElement | null = document.querySelector(".popup-ad-container");
     container.style.animation = "slideOut 0.5s ease-out";
 
     setTimeout(() => setVisible(false), 500); // Wait for animation to complete before hiding
